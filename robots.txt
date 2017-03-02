@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Allow: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+Allow: https://s10.histats.com/js15_as.js
 Sitemap: http://rizkimufrizal.github.io/sitemap.xml
