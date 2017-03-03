@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
+User-agent: Googlebot
+Allow: .js
+Allow: .css
+
 Sitemap: http://rizkimufrizal.github.io/sitemap.xml
