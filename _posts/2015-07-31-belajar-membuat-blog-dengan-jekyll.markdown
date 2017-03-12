@@ -12,13 +12,13 @@ share: true
 date: 2015-07-31T19:38:00+07:00
 ---
 
-Zaman sekarang banyak banget blog yang ditawarkan dalam bantuk cms seperti blogspot, wordpress dan sebagainya. Akan tetapi ada salah satu tool yang dapat kita gunakan untuk membuat blog tanpa menggunakan cms yaitu [Jekyll](http://jekyllrb.com/).
+Zaman sekarang banyak banget blog yang ditawarkan dalam bantuk cms seperti blogspot, wordpress dan sebagainya. Akan tetapi ada salah satu tool yang dapat kita gunakan untuk membuat blog tanpa menggunakan cms yaitu [Jekyll](http://adf.ly/1lOCZD){:target="_blank"}.
 
->[Jekyll](http://jekyllrb.com/) merupakan sebuah tool yang disediakan untuk membuat sebuah blog.
+>[Jekyll](http://adf.ly/1lOCZD){:target="_blank"} merupakan sebuah tool yang disediakan untuk membuat sebuah blog.
 
 Halaman blog pada jekyll dibuat dengan format markdown. Markdown adalah sebuah bentuk file yang biasanya digunakan untuk format penulisan. Markdown ditemukan oleh John Gruber. Jekyll ini menyediakan format penulisan markdown yang nantinya akan di convert ke html. Kita akan memulai membuat blog, berikut adalah tahap - tahapanya.
 
-- Instalasi ruby, tutorial [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/) jika anda belum melakukan instalasi ruby.
+- Instalasi ruby, tutorial [instalasi ruby](http://adf.ly/1lOCbO){:target="_blank"} jika anda belum melakukan instalasi ruby.
 - Instalasi jekyll
 - Generate sebuah blog dengan jekyll
 - Hosting blog ke github page
@@ -247,7 +247,7 @@ lihat aturan diatas dan sesuaikan dengan ektensi masing - masing file.
 
 Github page merupakan salah satu hosting gratis. Salah satu kelebihannya adalah kita dapat menggunakan jekyll pada github page tersebut. Bagi yang terbiasa dengan menggunakan version control git maka tidak lah susah untuk melakukan deploy ke github page, tidak seperti melakukan deploy ke open shift yang memerlukan banyak konfigurasi. Untuk melakukan deploy web, anda hanya perlu melakukan.
 
-- Instalasi dan konfigurasi git. Bagi yang belum melakukannya dapat dilihat pada tutorial [Belajar Git](http://rizkimufrizal.github.io/belajar-git/).
+- Instalasi dan konfigurasi git. Bagi yang belum melakukannya dapat dilihat pada tutorial [Belajar Git](http://adf.ly/1lOCfo){:target="_blank"}.
 - Buat repository baru dengan username akun anda seperti ini `username.github.io`, contohnya adalah `RizkiMufrizal.github.io`.
 - clone repository tersebut dan copy semua file jekyll ke project
 - kemudian lakukan add dengan perintah `git add --all`

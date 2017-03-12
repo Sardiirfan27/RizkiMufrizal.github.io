@@ -69,12 +69,12 @@ sudo apt install openjdk-8-jdk openjdk-8-jre icedtea-8-plugin icedtea-plugin
 
 Di dalam bahasa pemrograman java ada beberapa build tool diantaranya adalah
 
-- [Maven](http://maven.apache.org/)
-- [Gradle](https://gradle.org/)
-- [Ant](http://ant.apache.org/)
-- [Sbt](http://www.scala-sbt.org/)
+- [Maven](http://adf.ly/1lO96F){:target="_blank"}
+- [Gradle](http://adf.ly/1lO9P6){:target="_blank"}
+- [Ant](http://adf.ly/1lOAxv){:target="_blank"}
+- [Sbt](http://adf.ly/1lOAzI){:target="_blank"}
 
-Pada tutorial kali ini, kita hanya menggunakan maven sebagai build toolnya, silahkan anda download di [Maven](http://maven.apache.org/) dan ekstrak pada sebuah folder.
+Pada tutorial kali ini, kita hanya menggunakan maven sebagai build toolnya, silahkan anda download di [Maven](http://adf.ly/1lO96F) dan ekstrak pada sebuah folder.
 
 Instalasi JDK dan build tool telah dilakukan, tahap selanjutnya adalah menambahkan environment variabel sehingga variabel tersebut terbaca pada saat kita menggunakan terminal. buka file `environment` dengan perintah berikut
 
@@ -106,20 +106,20 @@ mvn -version
 
 Terdapat beberapa IDE yang sering digunakan oleh developer java diantaranya adalah
 
-- [NetBeans](https://netbeans.org/)
-- [Eclipse](http://www.eclipse.org/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [NetBeans](http://adf.ly/1lOB2m){:target="_blank"}
+- [Eclipse](http://adf.ly/1lOB4q){:target="_blank"}
+- [IntelliJ IDEA](http://adf.ly/1lOB72){:target="_blank"}
 
 ### Instalasi NetBeans
 
-Download NetBeans pada [NetBeans](https://netbeans.org/), lalu beri akses eksekusi dengan perintah `chmod a+x netbeans.sh`. jalankan dengan perintah `./netbeans` maka akan muncul GUI instalasi netbeans.
+Download NetBeans pada [NetBeans](http://adf.ly/1lOB2m){:target="_blank"}, lalu beri akses eksekusi dengan perintah `chmod a+x netbeans.sh`. jalankan dengan perintah `./netbeans` maka akan muncul GUI instalasi netbeans.
 
 ### Instalasi Eclipse
 
-Silahkan download pada [Eclipse](http://www.eclipse.org/), ekstrak folder tersebut lalu beri akses eksekusi dengan perintah `chmod a+x eclipse.sh`. dan jalankan eclipse dengan perintah `./eclipse`. Untuk memudahkan, maka buatlah shortcut untuk IDE tersebut.
+Silahkan download pada [Eclipse](http://adf.ly/1lOB4q){:target="_blank"}, ekstrak folder tersebut lalu beri akses eksekusi dengan perintah `chmod a+x eclipse.sh`. dan jalankan eclipse dengan perintah `./eclipse`. Untuk memudahkan, maka buatlah shortcut untuk IDE tersebut.
 
 ### Instalasi IntelliJ IDEA
 
-Download IDE tersebut pada [IntelliJ IDEA](https://www.jetbrains.com/idea/), lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
+Download IDE tersebut pada [IntelliJ IDEA](http://adf.ly/1lOB72){:target="_blank"}, lalu ekstrak pada folder tertentu. Di dalam folder tersebut terdapat folder bin yang di dalamnya terdapat file `idea.sh`, beri akses eksekusi dengan perintah `chmod a+x idea.sh` lalu jalankan file tersebut dengan perintah `./idea.sh` Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
 
 Sekian tutorial kali ini dan selamat coding java. Terima kasih :).

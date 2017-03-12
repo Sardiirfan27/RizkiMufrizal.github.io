@@ -12,7 +12,7 @@ share: true
 date: 2015-07-23T11:35:10+07:00
 ---
 
-Setelah melakukan banyak [konfigurasi untuk coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/), selanjutnya kita akan belajar tentang framework hibernate. Sebelum kita belajar hibernate, alangkah baiknya kita mengenal terlebih dahulu konsep dari hibernate itu sendiri.
+Setelah melakukan banyak [konfigurasi untuk coding java](http://adf.ly/1lOBKt){:target="_blank"}, selanjutnya kita akan belajar tentang framework hibernate. Sebelum kita belajar hibernate, alangkah baiknya kita mengenal terlebih dahulu konsep dari hibernate itu sendiri.
 
 ## Object Relational Mapping (ORM)
 
@@ -463,4 +463,4 @@ mvn exec:java -Dexec.mainClass="com.rizki.mufrizal.belajarHibernate.App"
 
 {% endhighlight %}
 
-Jangan lupa sesuaikan dengan package project anda. Sekian tutorial belajar hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Hibernate](https://github.com/RizkiMufrizal/Belajar-Hibernate).
+Jangan lupa sesuaikan dengan package project anda. Sekian tutorial belajar hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Hibernate](http://adf.ly/1lOBl4){:target="_blank"}.
