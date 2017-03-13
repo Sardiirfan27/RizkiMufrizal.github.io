@@ -98,9 +98,9 @@ Dari tabel diatas kita bisa melihat bahwa jika tabel penjualan dihapus maka seca
 
 ## Implementasi Pada H2 Database
 
->>[H2 Database](http://www.h2database.com/html/main.html) adalah salah satu dbms yang bisa kita gunakan sebagai database server maupun embedded database dan ditulis dengan menggunakan bahasa pemrograman java.
+>>[H2 Database](http://adf.ly/1lPLzN){:target="_blank"} adalah salah satu dbms yang bisa kita gunakan sebagai database server maupun embedded database dan ditulis dengan menggunakan bahasa pemrograman java.
 
-Pada tutorial ini, kita akan menggunakan h2 database untuk membuat relasi dengan menggunakan foreign key. Silahkan download h2 database di [h2 database](http://www.h2database.com/html/download.html). Penulis mendownload file binary yang ada pada bagian Maven (Binary, Javadoc, and Source), kemudian jalankan perintah berikut.
+Pada tutorial ini, kita akan menggunakan h2 database untuk membuat relasi dengan menggunakan foreign key. Silahkan download h2 database di [h2 database](http://adf.ly/1lPN8q){:target="_blank"}. Penulis mendownload file binary yang ada pada bagian Maven (Binary, Javadoc, and Source), kemudian jalankan perintah berikut.
 
 {% highlight bash %}
 java -jar h2-1.4.191.jar
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS tb_penjualan_detail(
 );
 {% endhighlight %}
 
-Untuk dapat mengenerate ERD dari tabel yang telah dibuat maka kita akan menggunakan [Execute Query](http://executequery.org/index.php). Silahkan download aplikasi tersebut, jika sudah langsung buka aplikasi tersebut. Silahkan lakukan konfigurasi driver h2 database, setelah selesai, lakukan konfigurasi seperti berikut.
+Untuk dapat mengenerate ERD dari tabel yang telah dibuat maka kita akan menggunakan [Execute Query](http://adf.ly/1lPN6d){:target="_blank"}. Silahkan download aplikasi tersebut, jika sudah langsung buka aplikasi tersebut. Silahkan lakukan konfigurasi driver h2 database, setelah selesai, lakukan konfigurasi seperti berikut.
 
 ![Screenshot from 2016-03-26 15:46:35.png](../images/Screenshot from 2016-03-26 15:46:35.png)
 
