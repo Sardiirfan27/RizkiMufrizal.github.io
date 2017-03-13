@@ -14,9 +14,9 @@ date: 2015-08-09T16:45:24+07:00
 
 Perkembangan teknologi sangat pesat hingga menghasilkan berbagai teknologi. Diantaranya adalah berkembangannya bahasa pemrograman javascript. Javascript biasanya hanya berkerja pada bagian front end sebuah project akan tetapi pada hari ini, javascript telah dapat bekerja di bagian back end (server side) sebuah project. Javascript yang dapat jalan pada bagian server side adalah node js.
 
->[Node JS](https://nodejs.org/) adalah sebuah platform software yang dipakai untuk membangun aplikasi – aplikasi serverside yang fleksibel di sebuah network / jaringan. Node.js menggunakan JavaScript sebagai bahasa pemrogaman dan dapat dengan mudah menghasilkan throughput / pemrosesan tingkat tinggi melalui non-blocking I/O. Node.js memiliki fitur built-in HTTP server library yang menjadikannya mampu menjadi sebuah web server tanpa bantuan software lainnya seperti Apache atau Nginx.
+>[Node JS](http://adf.ly/1lPIAS){:target="_blank"} adalah sebuah platform software yang dipakai untuk membangun aplikasi – aplikasi serverside yang fleksibel di sebuah network / jaringan. Node.js menggunakan JavaScript sebagai bahasa pemrogaman dan dapat dengan mudah menghasilkan throughput / pemrosesan tingkat tinggi melalui non-blocking I/O. Node.js memiliki fitur built-in HTTP server library yang menjadikannya mampu menjadi sebuah web server tanpa bantuan software lainnya seperti Apache atau Nginx.
 
-[Node js](https://nodejs.org/) pertama kali dibuat oleh Ryan Dahl pada tahun 2009 yang kemudian berkembang pesat di bawah licensi Open Source MIT oleh sebuah perusahaan bernama Joyent Inc. Pada hakikatnya Node js dikembangkan berdasarkan teknologi Google V8 JavaScript engine serta berisi kompilasi skrip inti dan banyak modul siap pakai yang bermanfaat sehingga pengguna (dalam hal ini web developer) tidak perlu melakukan coding dan mendesain segalanya dari awal.
+[Node js](http://adf.ly/1lPIAS){:target="_blank"} pertama kali dibuat oleh Ryan Dahl pada tahun 2009 yang kemudian berkembang pesat di bawah licensi Open Source MIT oleh sebuah perusahaan bernama Joyent Inc. Pada hakikatnya Node js dikembangkan berdasarkan teknologi Google V8 JavaScript engine serta berisi kompilasi skrip inti dan banyak modul siap pakai yang bermanfaat sehingga pengguna (dalam hal ini web developer) tidak perlu melakukan coding dan mendesain segalanya dari awal.
 
 Berbagai framework juga muncul pada perkembangan node js diantaranya adalah
 
@@ -28,15 +28,17 @@ Berbagai framework juga muncul pada perkembangan node js diantaranya adalah
 - Strong Loop
 - dan lain - lain
 
-Baiklah kita akan memulai bagaimana instalasi node js pada linux. Sebelum melakukan install node js, anda diwajibkan untuk melakukan instalasi version control git. Bagi yang belum melakukan instalasi git, silahkan lihat di tutorial [belajar git](http://rizkimufrizal.github.io/belajar-git). Yang perlu diperhatikan pada langkah instalasi node js adalah
+Baiklah kita akan memulai bagaimana instalasi node js pada linux. Sebelum melakukan install node js, anda diwajibkan untuk melakukan instalasi version control git. Bagi yang belum melakukan instalasi git, silahkan lihat di tutorial [belajar git](http://adf.ly/1lOCfo){:target="_blank"}. Yang perlu diperhatikan pada langkah instalasi node js adalah
 
-- Clone NVM
-- Instalasi dan konfigurasi Node JS
-- Latihan Sekilas Tentang Node JS
+- [Clone NVM](#clone-nvm)
+- [Instalasi dan konfigurasi Node JS](#instalasi-dan-konfigurasi-node-js)
+- [Latihan Sekilas Tentang Node JS](#latihan-sekilas-tentang-node-js)
+    - [Instalasi Nodemon](#instalasi-nodemon)
+    - [Instalasi Bower](#instalasi-bower)
 
 ## Clone NVM
 
-Langkah selanjutnya adalah melakukan instalasi [NVM](https://github.com/creationix/nvm). Jika pada [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/) kita mengenal dengan [RVM(ruby version manager)](https://rvm.io/) maka pada node js juga terdapat [NVM(node version manager)](https://github.com/creationix/nvm). Bedanya adalah pada NVM kita harus melakukan clone repository NVM dengan menggunakan version control git. Untuk melakukan clone, jalankan perintah berikut.
+Langkah selanjutnya adalah melakukan instalasi [NVM](http://adf.ly/1lPIFF){:target="_blank"}. Jika pada [instalasi ruby](http://adf.ly/1lPIG0){:target="_blank"} kita mengenal dengan [RVM(ruby version manager)](http://adf.ly/1lOC3e){:target="_blank"} maka pada node js juga terdapat [NVM(node version manager)](http://adf.ly/1lPIFF){:target="_blank"}. Bedanya adalah pada NVM kita harus melakukan clone repository NVM dengan menggunakan version control git. Untuk melakukan clone, jalankan perintah berikut.
 
 {% highlight bash %}
 {% raw %}
@@ -160,7 +162,7 @@ node app.js
 
 ### Instalasi Nodemon
 
-Untuk mempermudah pengembangan aplikasi, kita membutuhkan server yang bisa autoreload ketika developer mengubah source code. Salah satu tool yang mendukung tersebut adalah dengan menggunakan [Nodemon](http://nodemon.io/). Untuk melakukan instalasi cukup dengan menggunakan perintah.
+Untuk mempermudah pengembangan aplikasi, kita membutuhkan server yang bisa autoreload ketika developer mengubah source code. Salah satu tool yang mendukung tersebut adalah dengan menggunakan [Nodemon](http://adf.ly/1lPIIF){:target="_blank"}. Untuk melakukan instalasi cukup dengan menggunakan perintah.
 
 {% highlight bash %}
 npm install -g nodemon
@@ -172,7 +174,7 @@ perintah `-g` berarti bersifat global. Kemudian untuk menjalankan source code ta
 nodemon app.js
 {% endhighlight %}
 
-Salah satu kelebihan nodemon adalah dapat menjalankan source code dalam bentuk [coffee script](http://coffeescript.org/) dan terdapat fitur autoreload server. Coba anda ganti source code tanpa mematikan server, kemudian di save maka nodemon akan melakukan reload server.
+Salah satu kelebihan nodemon adalah dapat menjalankan source code dalam bentuk [coffee script](http://adf.ly/1lPIJ0){:target="_blank"} dan terdapat fitur autoreload server. Coba anda ganti source code tanpa mematikan server, kemudian di save maka nodemon akan melakukan reload server.
 
 ### Instalasi Bower
 
