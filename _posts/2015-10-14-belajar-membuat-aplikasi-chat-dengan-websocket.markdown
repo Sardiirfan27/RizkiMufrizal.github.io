@@ -99,10 +99,10 @@ Berikut penjelasan dari codingan diatas :
 * `var path = require('path');` berfungsi sebagai path dari aplikasi
 * `app.set('port', process.env.PORT);` berfungsi untuk deklarasi port dari aplikasi
 * `app.set('views');` berfungsi untuk deklarasikan folder view / halaman html
-* `app.set('view engine', 'jade');` berfungsi untuk mendeklarasikan bahwa kita menggunakan template engine [Jade](http://jade-lang.com/)
+* `app.set('view engine', 'jade');` berfungsi untuk mendeklarasikan bahwa kita menggunakan template engine [Jade](http://adf.ly/1lPIXR)
 * `app.get('/'` berfungsi untuk melakukan render terhadap file index.jade, ini berfungsi sebagai root halaman dari aplikasi
 * `io.on('connection', function(socket)` berfungsi untuk inisialisasi koneksi dengan websocket
-* `socket.on('chat:pesan', function(pesan)` function ini menunggu event sebuah request dari client, sedangkan `chat:pesan` merupakan perintah socket yang akan dikirim dari client, jika perintah sama maka perintah yang di dalam function ini akan dijalankan. `pesan` yang merupakan parameter dari function diatas berfungsi sebagai data yang dikirim dari client, data dapat berupa object atau array dalam format [JSON](http://www.json.org/).
+* `socket.on('chat:pesan', function(pesan)` function ini menunggu event sebuah request dari client, sedangkan `chat:pesan` merupakan perintah socket yang akan dikirim dari client, jika perintah sama maka perintah yang di dalam function ini akan dijalankan. `pesan` yang merupakan parameter dari function diatas berfungsi sebagai data yang dikirim dari client, data dapat berupa object atau array dalam format [JSON](http://adf.ly/1lPJ6y).
 * `io.emit('chat:pesan', pesan);` berfungsi untuk memberikan response ke seluruh client, seperti pengertian diatas, jika client tidak melakukan request, server tetap dapat memberikan response ke client. Nah disini hanya 1 client yang melakukan request maka seluruh client nantinya akan mendapatkan response agar dapat yang diterima antara 1 client dengan clientnya sama.
 * `http.listen(app.get('port')` berfungsi untuk menjalankan server.
 
@@ -167,9 +167,9 @@ block content
             button(id="kirim", type="button").btn.btn-primary.btn-fab.btn-raised.mdi-content-send
 {% endhighlight %}
 
-Teryata tidak hanya java yang bisa menggunakan extend, template engine juga bisa :D secara otomatis file `layout.jade` akan di include di dalam file `index.jade` ini salah satu fungsi template engine, jadinya kita tidak perlu banyak - banyak mendeklarasikan file js, css dan img :) . jangan lupa dari masing - masing komponent seperti `input`, `button` dan `list` dikasih `id` fungsinya nanti kita akan mengambil value dari masing - masing komponent tersebut dengan bantuan [JQuery](https://jquery.com/).
+Teryata tidak hanya java yang bisa menggunakan extend, template engine juga bisa :D secara otomatis file `layout.jade` akan di include di dalam file `index.jade` ini salah satu fungsi template engine, jadinya kita tidak perlu banyak - banyak mendeklarasikan file js, css dan img :) . jangan lupa dari masing - masing komponent seperti `input`, `button` dan `list` dikasih `id` fungsinya nanti kita akan mengambil value dari masing - masing komponent tersebut dengan bantuan [JQuery](http://adf.ly/1lPJ7N).
 
-Selesai untuk layoutnya, selanjutnya buat folder `public` di dalam folder root folder project, buat juga folder `scripts` di dalam folder `public`. Buat sebuah file `BelajarWebSocket.js` di dalam folder `scripts`. Nah file `BelajarWebSocket.js` kita akan isi dengan konfigurasi [JQuery](https://jquery.com/) dan [Socket.IO](http://socket.io). Berikut codingan nya.
+Selesai untuk layoutnya, selanjutnya buat folder `public` di dalam folder root folder project, buat juga folder `scripts` di dalam folder `public`. Buat sebuah file `BelajarWebSocket.js` di dalam folder `scripts`. Nah file `BelajarWebSocket.js` kita akan isi dengan konfigurasi [JQuery](http://adf.ly/1lPJ7N) dan [Socket.IO](http://adf.ly/1lPJ7o). Berikut codingan nya.
 
 {% highlight js %}
 'use strict';
@@ -221,8 +221,7 @@ Berikut tampilan list chat
 
 ## Deploy Aplikasi ke Heroku
 
-Heroku merupakan hosting gratis untuk percobaan aplikasi, heroku mendukung beberapa bahasa pemrograman diantaranya adalah javascript, disini node js sebagai javascript yang jalan pada bagian server. Silahkan daftar di [Heroku](https://www.heroku.com/
-) kemudian jangan lupa setting key ssh anda.
+Heroku merupakan hosting gratis untuk percobaan aplikasi, heroku mendukung beberapa bahasa pemrograman diantaranya adalah javascript, disini node js sebagai javascript yang jalan pada bagian server. Silahkan daftar di [Heroku](http://adf.ly/1lPJBK) kemudian jangan lupa setting key ssh anda.
 
 Buatlah sebuah file `Procfile` di dalam root folder, kemudian isikan kodingan berikut.
 
@@ -255,4 +254,4 @@ Install bower pada aplikasi dengan perintah `npm install bower --save`. Disini p
 
 ![Screenshot from 2015-10-14 15:22:23.png](../images/Screenshot from 2015-10-14 15:22:23.png)
 
-Oke aplikasi chat akhirnya berhasil online :D silahkan akses di [Aplikasi Chat](https://aplikasichat.herokuapp.com/) :) . Sekian tutorial membuat aplikasi chat dengan teknologi node js dan socket.io dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar WebSocket](https://github.com/RizkiMufrizal/Belajar-WebSocket-Socket.IO).
+Oke aplikasi chat akhirnya berhasil online :D silahkan akses di [Aplikasi Chat](http://adf.ly/1lPJ8G) :) . Sekian tutorial membuat aplikasi chat dengan teknologi node js dan socket.io dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar WebSocket](http://adf.ly/1lPJ8b).
