@@ -14,18 +14,18 @@ date: 2016-05-14T10:56:41+07:00
 
 ## Apa Itu Laravel ?
 
->>[Laravel](https://laravel.com/) adalah framework berbasis PHP yang open source, menggunakan konsep model–view–controller (MVC). Laravel berada dibawah lisensi MIT.
+>>[Laravel](http://adf.ly/1lPNiH){:target="_blank"} adalah framework berbasis PHP yang open source, menggunakan konsep model–view–controller (MVC). Laravel berada dibawah lisensi MIT.
 
 Beberapa tahun yang lalu, framework laravel tidak begitu terkenal di dalam dunia pemrograman php, akan tetapi dengan perkembangan teknologi tidak dapat dipungkiri sehingga framework laravel berkembang begitu pesat. Terdapat banyak kelebihan di dalam framework laravel salah satu nya adalah memungkinkan kita menggunakan konsep orm, dimana di dalam laravel biasanya kita menggunakan eloquent orm untuk mengabstraksikan antara model object dengan database.
 
-Singkat cerita, penulis ingin belajar mengenai framework laravel, biasanya penulis menggunakan framework [codeigniter](https://www.codeigniter.com/) untuk membuat aplikasi. Framework laravel merupakan framework yang telah banyak digunakan untuk aplikasi production, dan sangat dihandalkan untuk urusan keamanan sebuah website. Jika dilihat dari case study, framework laravel merupakan framework yang bisa dikatakan lumayan lama jika ingin anda pelajari dikarenakan berbagai konfigurasi dan pemahaman yang harus anda kuasai. Pada artikel ini, penulis akan membagi beberapa bagian dikarenakan artikel akan sangat panjang jika membahas laravel hanya pada 1 bagian artikel saja.
+Singkat cerita, penulis ingin belajar mengenai framework laravel, biasanya penulis menggunakan framework [codeigniter](http://adf.ly/1lPNgr){:target="_blank"} untuk membuat aplikasi. Framework laravel merupakan framework yang telah banyak digunakan untuk aplikasi production, dan sangat dihandalkan untuk urusan keamanan sebuah website. Jika dilihat dari case study, framework laravel merupakan framework yang bisa dikatakan lumayan lama jika ingin anda pelajari dikarenakan berbagai konfigurasi dan pemahaman yang harus anda kuasai. Pada artikel ini, penulis akan membagi beberapa bagian dikarenakan artikel akan sangat panjang jika membahas laravel hanya pada 1 bagian artikel saja.
 
 ## Setup Project
 
 Langkah yang pertama kali kita lakukan adalah melakukan setup project. Untuk mempermudah tahap development, kita akan menggunakan beberapa tool berikut diantaranya adalah
 
-1. Vagrant, bagi yang belum mengerti apa itu vagrant, silahkan lihat di artikel [belajar vagrant](https://rizkimufrizal.github.io/belajar-vagrant/).
-2. [Vim](http://www.vim.org/) merupakan editor yang akan kita gunakan
+1. Vagrant, bagi yang belum mengerti apa itu vagrant, silahkan lihat di artikel [belajar vagrant](http://adf.ly/1lPLAD){:target="_blank"}.
+2. [Vim](http://adf.ly/1lPNe2){:target="_blank"} merupakan editor yang akan kita gunakan
 
 sedangkan tool yang lain seperti composer, hhvm, nginx dan lain sebagainya akan kita lakukan konfigurasi pada vagrant.
 
@@ -177,7 +177,7 @@ composer create-project --prefer-dist laravel/laravel Aplikasi-Perpustakaan
 
 secara otomatis, composer akan membuatkan anda sebuah project laravel dengan nama Aplikasi-Perpustakaan. 
 
-Setelah selesai, yang perlu diperhatikan lagi adalah bahwa agar project laravel benar - benar dapat menggunakan autocomplete pada vim, kita akan menggunakan [laravel IDE helper](https://github.com/barryvdh/laravel-ide-helper). Silahkan buka kembali terminal pada vagrant anda, silahkan akses folder project laravel anda, lalu ketikan perintah berikut.
+Setelah selesai, yang perlu diperhatikan lagi adalah bahwa agar project laravel benar - benar dapat menggunakan autocomplete pada vim, kita akan menggunakan [laravel IDE helper](http://adf.ly/1lPNbc){:target="_blank"}. Silahkan buka kembali terminal pada vagrant anda, silahkan akses folder project laravel anda, lalu ketikan perintah berikut.
 
 {% highlight bash %}
 composer require barryvdh/laravel-ide-helper
