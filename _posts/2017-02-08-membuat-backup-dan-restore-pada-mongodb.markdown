@@ -16,7 +16,7 @@ Bicara mengenai database, seorang database administrator harus mengetahui seluk 
 
 ## Perlengkapan Project
 
-Untuk membuat virtual database maka kita akan menggunakan docker, bagi anda yang belum mengerti tentang docker, silakan baca artikel [Belajar Docker](https://rizkimufrizal.github.io/belajar-docker/). Silahkan jalan docker anda, jika anda pengguna linux maka secara default service docker akan berjalan, jika anda pengguna osx maka anda harus menjalankan docker terlebih dahulu. Berikut adalah arsitektur yang akan kita gunakan untuk membuat backup dan restore database mongodb.
+Untuk membuat virtual database maka kita akan menggunakan docker, bagi anda yang belum mengerti tentang docker, silakan baca artikel [Belajar Docker](http://adf.ly/1lPOUj){:target="_blank"}. Silahkan jalan docker anda, jika anda pengguna linux maka secara default service docker akan berjalan, jika anda pengguna osx maka anda harus menjalankan docker terlebih dahulu. Berikut adalah arsitektur yang akan kita gunakan untuk membuat backup dan restore database mongodb.
 
 ![arsitektur-backup-restore.svg](../images/arsitektur-backup-restore.svg)
 
@@ -58,7 +58,7 @@ Jika berhasil maka di terminal anda akan muncul seperti berikut.
 
 ![Screen Shot 2017-02-08 at 2.43.17 PM.png](../images/Screen Shot 2017-02-08 at 2.43.17 PM.png)
 
-Langkah selanjutnya kita akan membuat file shell script, bagi anda yang belum paham shell script, silahkan baca pada artikel [Belajar Shell Script](https://rizkimufrizal.github.io/belajar-shell-script/). Silahkan buat sebuah file dengan nama `mongodb-backup.sh`, kemudian isikan codingan seperti berikut.
+Langkah selanjutnya kita akan membuat file shell script, bagi anda yang belum paham shell script, silahkan baca pada artikel [Belajar Shell Script](http://adf.ly/1lPOhV){:target="_blank"}. Silahkan buat sebuah file dengan nama `mongodb-backup.sh`, kemudian isikan codingan seperti berikut.
 
 {% highlight bash %}
 #!/bin/bash
@@ -279,7 +279,7 @@ Untuk memastikan bahwa database anda telah di backup, silahkan cek path folder b
 
 ## Melakukan Restore Database
 
-Pada tahap sebelumnya kita telah berhasil membuat backup database, nah sekarang kita akan melakukan restore database, sebelumnya, untuk mempermudah kita akan menggunakan [Robomongo](https://robomongo.org/) untuk mengakses database production. Silahkan download dan lakukan instalasi, jika telah selesai, silahkan buka robomongo anda, lalu lakukan konfigurasi seperti berikut.
+Pada tahap sebelumnya kita telah berhasil membuat backup database, nah sekarang kita akan melakukan restore database, sebelumnya, untuk mempermudah kita akan menggunakan [Robomongo](http://adf.ly/1lPOgO){:target="_blank"} untuk mengakses database production. Silahkan download dan lakukan instalasi, jika telah selesai, silahkan buka robomongo anda, lalu lakukan konfigurasi seperti berikut.
 
 ![Screen Shot 2017-02-08 at 8.14.42 PM.png](../images/Screen Shot 2017-02-08 at 8.14.42 PM.png)
 
