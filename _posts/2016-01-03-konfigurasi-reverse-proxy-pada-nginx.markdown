@@ -32,11 +32,11 @@ Berikut adalah arsitektur dari reverse proxy.
 
 ![Screenshot from 2016-01-03 17:47:48.png](../images/Screenshot from 2016-01-03 17:47:48.png)
 
-Dari gambar diatas dapat dilihat bahwa sebuah proxy dapat menghandle beberapa web server. Adapun cara kerjanya adalah client akan melakukan akses terhadap sebuah URL misalnya [https://www.google.co.id](https://www.google.co.id/) maka secara otomatis client akan melakukan request terlebih dahulu ke proxy server akan tetapi seolah - olah client melakukan request langsung ke web server. Setelah menerima request dari client, maka proxy server akan meneruskan request tersebut ke web server yang dituju. Untuk mempermudah pemahaman langsung saja kita melakukan setting reverse proxy pada nginx :D.
+Dari gambar diatas dapat dilihat bahwa sebuah proxy dapat menghandle beberapa web server. Adapun cara kerjanya adalah client akan melakukan akses terhadap sebuah URL misalnya [https://www.google.co.id](http://adf.ly/1lPLB5){:target="_blank"} maka secara otomatis client akan melakukan request terlebih dahulu ke proxy server akan tetapi seolah - olah client melakukan request langsung ke web server. Setelah menerima request dari client, maka proxy server akan meneruskan request tersebut ke web server yang dituju. Untuk mempermudah pemahaman langsung saja kita melakukan setting reverse proxy pada nginx :D.
 
 ## Setup Vagrant
 
-Pada artikel kali ini, penulis akan menggunakan vagrant. Bagi yang belum tau apa itu vagrant, silahkan lihat di [Belajar Vagrant](http://rizkimufrizal.github.io/belajar-vagrant/). Pada kesempatan kali ini, penulis menggunakan box [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) atau ubuntu 14.04 LTS.
+Pada artikel kali ini, penulis akan menggunakan vagrant. Bagi yang belum tau apa itu vagrant, silahkan lihat di [Belajar Vagrant](http://adf.ly/1lPLAD){:target="_blank"}. Pada kesempatan kali ini, penulis menggunakan box [ubuntu/trusty64](http://adf.ly/1lPL8W){:target="_blank"} atau ubuntu 14.04 LTS.
 
 Silahkan buat sebuah folder `ubuntu-nginx-reverse-proxy` kemudian jalankan perintah berikut di dalam folder tersebut.
 
@@ -156,7 +156,7 @@ server {
 
 ## Konfigurasi Repository Dan Environment
 
-Karena kita menggunakan ubuntu, maka tahap selanjutnya kita melakukan konfigurasi repository dan environment pada ubuntu. Untuk konfigurasi repository, kita akan menggunakan repository [kambing ui](http://kambing.ui.ac.id/). Silahkan buat sebuah file `sources.list` kemudian isikan codingan berikut.
+Karena kita menggunakan ubuntu, maka tahap selanjutnya kita melakukan konfigurasi repository dan environment pada ubuntu. Untuk konfigurasi repository, kita akan menggunakan repository [kambing ui](http://adf.ly/1lPL6b){:target="_blank"}. Silahkan buat sebuah file `sources.list` kemudian isikan codingan berikut.
 
 {% highlight bash %}
 #repository kambing ui
@@ -295,4 +295,4 @@ Output diatas dapat dikatakan bahwa aplikasi node js telah berjalan dengan baik.
 
 ![Screenshot from 2016-01-15 14:59:12.png](../images/Screenshot from 2016-01-15 14:59:12.png)
 
-Untuk source code nya silahkan lihat di [ubuntu nginx reverse proxy](https://github.com/RizkiMufrizal/ubuntu-nginx-reverse-proxy). Sekian artikel mengenai konfigurasi reverse proxy pada nginx dan terima kasih :)
+Untuk source code nya silahkan lihat di [ubuntu nginx reverse proxy](http://adf.ly/1lPL4f){:target="_blank"}. Sekian artikel mengenai konfigurasi reverse proxy pada nginx dan terima kasih :)
