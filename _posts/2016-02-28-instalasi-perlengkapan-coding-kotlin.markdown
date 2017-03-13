@@ -14,7 +14,7 @@ date: 2016-02-28T16:41:12+07:00
 
 ## Apa itu Kotlin ?
 
->>[Kotlin](https://kotlinlang.org) adalah bahasa pemrograman pragmatis untuk JVM dan Android yang mengkombinasikan Object Oriented (OO) dan fitur fungsional dan fokus pada interoperabilitas, keamanan, kejelasan dan dukungan integrasi dengan berbagai tools major.
+>>[Kotlin](http://adf.ly/1lPLWb){:target="_blank"} adalah bahasa pemrograman pragmatis untuk JVM dan Android yang mengkombinasikan Object Oriented (OO) dan fitur fungsional dan fokus pada interoperabilitas, keamanan, kejelasan dan dukungan integrasi dengan berbagai tools major.
 
 Kotlin dikembangankan oleh perusahaan jetbrains sejak tahun 2010 dan diumumkan pada bulan juli 2011. Kotlin telah di open source kan dan direlease diatas lisensi apache 2.
 
@@ -22,7 +22,7 @@ Mengapa disebut pemrograman pragmatis ? dikarenakan kotlin fokus pada interopera
 
 ## Instalasi Kotlin
 
-Untuk melakukan instalasi kotlin, kita akan menggunakan [SDKMAN](http://sdkman.io/) (Software Development Kit Manager). Silahkan jalankan perintah berikut untuk instalasi SDKMAN.
+Untuk melakukan instalasi kotlin, kita akan menggunakan [SDKMAN](http://adf.ly/1lPLXP){:target="_blank"} (Software Development Kit Manager). Silahkan jalankan perintah berikut untuk instalasi SDKMAN.
 
 {% highlight bash %}
 curl -s get.sdkman.io | bash
