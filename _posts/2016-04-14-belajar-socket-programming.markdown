@@ -235,7 +235,7 @@ Pada codingan diatas, kita membuat sebuah aplikasi chat untuk bagian client, por
 
 ### Uji Coba TCP Socket
 
-Untuk melakukan uji coba TCP Socket, kita dapat menggunakan aplikasi [wireshark](https://www.wireshark.org/). Untuk melakukan instalasi wireshark, silahkan tambahkan ppa berikut.
+Untuk melakukan uji coba TCP Socket, kita dapat menggunakan aplikasi [wireshark](http://adf.ly/1lPNHU){:target="_blank"}. Untuk melakukan instalasi wireshark, silahkan tambahkan ppa berikut.
 
 {% highlight bash %}
 sudo add-apt-repository ppa:wireshark-dev/stable
