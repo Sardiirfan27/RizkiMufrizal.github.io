@@ -16,11 +16,11 @@ date: 2016-07-01T07:59:27+07:00
 
 >>Vue js adalah salah satu framework javascript. Vue Js merupakan framework untuk kebutuhan front end dari sebuah project.
 
-Vue js merupakan salah satu framework yang banyak digunakan. Jika anda telah terbiasa dengan menggunakan angular js, maka untuk melakukan migrasi ke vue js tidak lah terlalu susah karena mereka mempunyai kemiripan di bagian sintak, hanya saja angular js memiliki development stack yang lebih rumit dibandingkan dengan vue js :). Bagi anda yang penasaran dengan angular js, silahkan lihat di artikel [belajar angular js](http://rizkimufrizal.github.io/belajar-angular-js/). Vue js juga menggunakan fitur data binding sama seperti angular js. Jika di angular js kita menggunakan fungsi controller, maka di vue js kita akan menggunakan pendekatan dom yaitu kita akan menggunakan id, name atau class dari suatu component html. Vue js juga memiliki component routing yaitu vue-router, akan tetapi bagian router akan dibahas pada artikel selanjutnya :). Pada artikel ini, penulis hanya akan memberikan contoh sederhana vue js dengan menggunakan ecmascript 5 (ES5).
+Vue js merupakan salah satu framework yang banyak digunakan. Jika anda telah terbiasa dengan menggunakan angular js, maka untuk melakukan migrasi ke vue js tidak lah terlalu susah karena mereka mempunyai kemiripan di bagian sintak, hanya saja angular js memiliki development stack yang lebih rumit dibandingkan dengan vue js :). Bagi anda yang penasaran dengan angular js, silahkan lihat di artikel [belajar angular js](http://adf.ly/1lPO33){:target="_blank"}. Vue js juga menggunakan fitur data binding sama seperti angular js. Jika di angular js kita menggunakan fungsi controller, maka di vue js kita akan menggunakan pendekatan dom yaitu kita akan menggunakan id, name atau class dari suatu component html. Vue js juga memiliki component routing yaitu vue-router, akan tetapi bagian router akan dibahas pada artikel selanjutnya :). Pada artikel ini, penulis hanya akan memberikan contoh sederhana vue js dengan menggunakan ecmascript 5 (ES5).
 
 ## Membuat Hello Word Dengan Vue JS
 
-Seperti biasa, sebelum menggunakan sebuah framework, kita akan melakukan test hello word terlebih dahulu untuk mempermudah pemahaman tentang alur kerja dari sebuah framework yang akan kita gunakan :D. Untuk mendownload dependency, kita akan menggunakan [bower](http://bower.io/). Bagi anda yang masing bingung dengan bower, silahkan baca di artikel [Instalasi Perlengkapan Coding Node JS](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Silahkan buat sebuah folder dengan nama `Belajar-VueJS` kemudian akses folder tersebut dengan menggunakan terminal lalu jalankan perintah berikut.
+Seperti biasa, sebelum menggunakan sebuah framework, kita akan melakukan test hello word terlebih dahulu untuk mempermudah pemahaman tentang alur kerja dari sebuah framework yang akan kita gunakan :D. Untuk mendownload dependency, kita akan menggunakan [bower](http://adf.ly/1lPNMs){:target="_blank"}. Bagi anda yang masing bingung dengan bower, silahkan baca di artikel [Instalasi Perlengkapan Coding Node JS](http://adf.ly/1lPNOT){:target="_blank"}. Silahkan buat sebuah folder dengan nama `Belajar-VueJS` kemudian akses folder tersebut dengan menggunakan terminal lalu jalankan perintah berikut.
 
 {% highlight bash %}
 bower init
@@ -89,7 +89,7 @@ new Vue({
 });
 {% endhighlight %}
 
-Nah cukup sederhana, kita bisa melihat bahwa codingan diatas melakukan inisialisasi element dengan menggunakan variabel id belajar, sehingga view yang tadi akan dikenali sebagai project vue js. Setelah selesai, seperti biasa kita akan menggunakan bantuan [http-server](https://github.com/indexzero/http-server) untuk menjalankan file index.html. Bagi anda yang belum melakukan instalasi [http-server](https://github.com/indexzero/http-server), silahkan jalankan perintah berikut.
+Nah cukup sederhana, kita bisa melihat bahwa codingan diatas melakukan inisialisasi element dengan menggunakan variabel id belajar, sehingga view yang tadi akan dikenali sebagai project vue js. Setelah selesai, seperti biasa kita akan menggunakan bantuan [http-server](http://adf.ly/1lPNQV){:target="_blank"} untuk menjalankan file index.html. Bagi anda yang belum melakukan instalasi [http-server](http://adf.ly/1lPNQV){:target="_blank"}, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
  npm install -g http-server
