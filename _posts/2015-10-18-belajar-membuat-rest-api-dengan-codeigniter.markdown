@@ -12,13 +12,13 @@ share: true
 date: 2015-10-18T10:21:28+07:00
 ---
 
-Jika kita bicara mengenai web pasti tidak terlepas dari bahasa pemrograman PHP, mengapa demikian ? dikarenakan PHP merupakan bahasa pemrograman yang sangat banyak digunakan untuk membuat sebuah web secara dinamis. Tidak hanya banyak digunakan, bahkan laboratorium teknik informatika di universitas gunadarma juga terdapat sebuah mata praktikum pemrograman web yang dikhususkan untuk tingkat 4 yang berfungsi menambah ilmu pengetahuan mahasiswa mengenai pemrograman berbasis web dengan menggunakan PHP. Salah satu framework yang akan digunakan adalah [CodeIgniter](https://codeigniter.com/).
+Jika kita bicara mengenai web pasti tidak terlepas dari bahasa pemrograman PHP, mengapa demikian ? dikarenakan PHP merupakan bahasa pemrograman yang sangat banyak digunakan untuk membuat sebuah web secara dinamis. Tidak hanya banyak digunakan, bahkan laboratorium teknik informatika di universitas gunadarma juga terdapat sebuah mata praktikum pemrograman web yang dikhususkan untuk tingkat 4 yang berfungsi menambah ilmu pengetahuan mahasiswa mengenai pemrograman berbasis web dengan menggunakan PHP. Salah satu framework yang akan digunakan adalah [CodeIgniter](http://adf.ly/1lPJNp){:target="_blank"}.
 
 Pada tutorial kali ini, penulis akan berbagi tulisan mengenai bagaimana membuat sebuah REST API dengan framework codeigniter.
 
->>[CodeIgniter](https://codeigniter.com/) adalah sebuah framework PHP yang berfungsi untuk mempermudah sebuah development aplikasi dengan pattern MVC (model view controller).
+>>[CodeIgniter](http://adf.ly/1lPJNp){:target="_blank"} adalah sebuah framework PHP yang berfungsi untuk mempermudah sebuah development aplikasi dengan pattern MVC (model view controller).
 
-Beberapa dari kita pernah mendengar framework, framework sebenarnya merupakan sebuah kerangka kerja yang akan kita gunakan. Dengan adanya kerangka kerja maka akan mempermudah development sebuah aplikasi, adanya standarisasi pembuatan aplikasi sehingga memperkecil kesalahan antara 1 developer dengan developer yang lain. Bagi yang belum melakukan instalasi kelengkapan coding PHP, silahkan akses di [Instalasi Perlengkapan Coding PHP](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-php/) 
+Beberapa dari kita pernah mendengar framework, framework sebenarnya merupakan sebuah kerangka kerja yang akan kita gunakan. Dengan adanya kerangka kerja maka akan mempermudah development sebuah aplikasi, adanya standarisasi pembuatan aplikasi sehingga memperkecil kesalahan antara 1 developer dengan developer yang lain. Bagi yang belum melakukan instalasi kelengkapan coding PHP, silahkan akses di [Instalasi Perlengkapan Coding PHP](http://adf.ly/1lPJMc){:target="_blank"} 
 
 Berikut merupakan tahapan yang akan kita kerjakan pada saat development REST API dengan codeigniter.
 
@@ -49,7 +49,7 @@ Setelah selesai dengan database selanjutnya kita akan mulai membuat project code
 composer.phar create-project kenjis/codeigniter-composer-installer Belajar-REST-CodeIgniter
 {% endhighlight %}
 
-Kemudian update project dengan perintah `composer.phar update`. Kita membuat project codeigniter berasal dari repository [kenjis](https://github.com/kenjis/codeigniter-composer-installer) dikarenakan project codeigniter ini telah lengkap dan mudah dikonfigurasikan. Perintah diatas akan membuat sebuah project dengan nama `Belajar-REST-CodeIgniter`. Silahkan buka project tersebut dengan editor kesayangan anda.
+Kemudian update project dengan perintah `composer.phar update`. Kita membuat project codeigniter berasal dari repository [kenjis](http://adf.ly/1lPJLA){:target="_blank"} dikarenakan project codeigniter ini telah lengkap dan mudah dikonfigurasikan. Perintah diatas akan membuat sebuah project dengan nama `Belajar-REST-CodeIgniter`. Silahkan buka project tersebut dengan editor kesayangan anda.
 
 Selanjutnya kita akan melakukan beberapa konfigurasi. Buka file `autoload.php` di dalam folder `application/config/` kemudian ubah seperti berikut.
 
@@ -248,7 +248,7 @@ Bisa dilihat bahwa kita melakukan custom terhadap URI tersebut, berikut penjelas
 
 ## Uji Coba REST API
 
-Akhirnya selesai juga :D, Yuks lakukan uji coba REST API dengan [postman](https://www.getpostman.com/). Jalankan server PHP terlebih dahulu dengan cara, masuk ke folder root project dengan terminal lalu jalankan perintah 
+Akhirnya selesai juga :D, Yuks lakukan uji coba REST API dengan [postman](http://adf.ly/1lPIvG){:target="_blank"}. Jalankan server PHP terlebih dahulu dengan cara, masuk ke folder root project dengan terminal lalu jalankan perintah 
 
 {% highlight bash %}
 php -S localhost:8000 -t public/ bin/router.php
@@ -274,4 +274,4 @@ Berikut uji coba dengan menggunakan method DELETE untuk menghapus data.
 
 ![Screenshot from 2015-10-18 10:10:47.png](../images/Screenshot from 2015-10-18 10:10:47.png)
 
-Sekian tutorial membuat REST API dengan codeigniter dan terima kasih :). Untuk source code lengkap, penulis publish di [Belajar REST CodeIgniter](https://github.com/RizkiMufrizal/Belajar-REST-CodeIgniter).
+Sekian tutorial membuat REST API dengan codeigniter dan terima kasih :). Untuk source code lengkap, penulis publish di [Belajar REST CodeIgniter](http://adf.ly/1lPJJb){:target="_blank"}.
