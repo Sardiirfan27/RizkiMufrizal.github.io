@@ -12,13 +12,13 @@ share: true
 date: 2016-05-19T09:02:57+07:00
 ---
 
-Pada [artikel sebelumnya](https://rizkimufrizal.github.io/belajar-laravel-bagian-1/), penulis telah menjelaskan bagaimana cara melakukan setup project laravel, mulai dari konfigurasi vagrant hingga mengenerate project laravel. Pada artikel kali ini, penulis akan membahas mengenai database migration, seed dan model pada laravel. 
+Pada [artikel sebelumnya](http://adf.ly/1lPNmz){:target="_blank"}, penulis telah menjelaskan bagaimana cara melakukan setup project laravel, mulai dari konfigurasi vagrant hingga mengenerate project laravel. Pada artikel kali ini, penulis akan membahas mengenai database migration, seed dan model pada laravel. 
 
 ## Konfigurasi Vim Pada Vagrant
 
 Sebelum memulai ngoding, alangkah baiknya kita melakukan konfigurasi terlebih dahulu terhadap text editor yang akan kita gunakan. Vim merupakan salah satu text editor yang sangat banyak digunakan, terdapat banyak plugin yang dapat kita gunakan untuk memudahkan dalam proses development. 
 
-Tahap pertama, kita akan melakukan konfigurasi plugin [pathogen](https://github.com/tpope/vim-pathogen) pada vim, silahkan jalankan perintah berikut.
+Tahap pertama, kita akan melakukan konfigurasi plugin [pathogen](http://adf.ly/1lPNnH){:target="_blank"} pada vim, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
@@ -107,7 +107,7 @@ Karena project yang akan kita buat adalah sebuah perpustakaan maka disini kita a
 
 ![Screenshot from 2016-05-18 21-49-10.png](../images/Screenshot from 2016-05-18 21-49-10.png)
 
-Bagi yang masih bingung cara membaca ERD tersebut silahkan baca artikel [belajar membuat foreign key pada h2 database](http://rizkimufrizal.github.io/belajar-membuat-foreign-key-pada-h2-database/). Nah setelah mengetahui tentang ERD nya, selanjutnya kita akan membuat database migration dengan menggunakan perintah artisan pada laravel. Untuk membuat database migration untuk tabel buku maka jalankan perintah berikut.
+Bagi yang masih bingung cara membaca ERD tersebut silahkan baca artikel [belajar membuat foreign key pada h2 database](http://adf.ly/1lPNnp){:target="_blank"}. Nah setelah mengetahui tentang ERD nya, selanjutnya kita akan membuat database migration dengan menggunakan perintah artisan pada laravel. Untuk membuat database migration untuk tabel buku maka jalankan perintah berikut.
 
 {% highlight bash %}
 php artisan make:migration create_buku_table --create=tb_buku
@@ -363,7 +363,7 @@ Migrated: 2016_05_18_111553_create_peminjaman_table
 
 ## Membuat Model Pada Laravel
 
-Pada [artikel sebelumnya](https://rizkimufrizal.github.io/belajar-laravel-bagian-1/), penulis telah menjelaskan bahwa laravel menggunakan pendekatan mvc pada projectnya. Nah yang pertama kali kita buat adalah model, dimana model ini merupakan represntasi dari pada tabel atau data yang terdapat pada database. Karena pada database migration terdapat 3 tabel maka kita harus membuat 3 model untuk mewakili tabel - tabel yang ada di database migration.
+Pada [artikel sebelumnya](http://adf.ly/1lPNmz){:target="_blank"}, penulis telah menjelaskan bahwa laravel menggunakan pendekatan mvc pada projectnya. Nah yang pertama kali kita buat adalah model, dimana model ini merupakan represntasi dari pada tabel atau data yang terdapat pada database. Karena pada database migration terdapat 3 tabel maka kita harus membuat 3 model untuk mewakili tabel - tabel yang ada di database migration.
 
 Untuk membuat model untuk buku, silahkan jalankan perintah berikut.
 
