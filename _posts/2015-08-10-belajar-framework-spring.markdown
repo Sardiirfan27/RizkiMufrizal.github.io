@@ -12,11 +12,11 @@ share: true
 date: 2015-08-10T17:39:00+07:00
 ---
 
-Setelah mempelajari sedikit tentang [framework hibernate](http://rizkimufrizal.github.io/belajar-hibernate), kali ini kita akan belajar tentang framework [spring](https://spring.io/). Apa itu spring ?
+Setelah mempelajari sedikit tentang [framework hibernate](http://adf.ly/1lPHmw){:target="_blank"}, kali ini kita akan belajar tentang framework [spring](http://adf.ly/1lPIQN){:target="_blank"}. Apa itu spring ?
 
->[Spring](https://spring.io/) adalah salah satu framework untuk java enterprise. Hingga saat ini sangat banyak developer yang menggunakan framework ini dikarenakan kinerja tinggi, mudah diuji dan kode dapat digunakan kembali. Spring dibuat oleh Rod Johnson dan di di umumkan pada juni 2003 diatas lisensi apache. Spring digunakan untuk mengembangkan aplikasi java terutama dalam membangun sebuah aplikasi web diatas platfom JEE. Dan spring menerapakan kembali pemograman yang berbasis POJO (plain old java object).
+>[Spring](http://adf.ly/1lPIQN){:target="_blank"} adalah salah satu framework untuk java enterprise. Hingga saat ini sangat banyak developer yang menggunakan framework ini dikarenakan kinerja tinggi, mudah diuji dan kode dapat digunakan kembali. Spring dibuat oleh Rod Johnson dan di di umumkan pada juni 2003 diatas lisensi apache. Spring digunakan untuk mengembangkan aplikasi java terutama dalam membangun sebuah aplikasi web diatas platfom JEE. Dan spring menerapakan kembali pemograman yang berbasis POJO (plain old java object).
 
-[Spring](https://spring.io/) adalah salah satu framework yang menerapkan konsep DI (Depedency Injection) dimana depedency injection ini adalah salah satu penerapan dari konsep IoC (inversion of control). Banyak yang menjelaskan bahwa konsep DI dan IoC adalah dua hal yang sama. hal tersebut tidak benar, mengapa demikian ? karena IoC merupakan sebuah konsep yang paling umum dan salah satu penerapan konsep IoC dapat dengan menggunakan DI (depedency injection).
+[Spring](http://adf.ly/1lPIQN){:target="_blank"} adalah salah satu framework yang menerapkan konsep DI (Depedency Injection) dimana depedency injection ini adalah salah satu penerapan dari konsep IoC (inversion of control). Banyak yang menjelaskan bahwa konsep DI dan IoC adalah dua hal yang sama. hal tersebut tidak benar, mengapa demikian ? karena IoC merupakan sebuah konsep yang paling umum dan salah satu penerapan konsep IoC dapat dengan menggunakan DI (depedency injection).
 
 Oke kita akan mulai dengan membuat project spring. Seperti biasa, kita akan menggunakan maven sebagai build toolnya. Jalankan perintah berikut untuk membuat project.
 
@@ -305,4 +305,4 @@ Sesuaikan dengan nama folder anda. Jika berhasil maka akan muncul output seperti
 
 {% endhighlight %}
 
-Sekian tutorial belajar spring dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Spring](https://github.com/RizkiMufrizal/Belajar-Spring).
+Sekian tutorial belajar spring dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Spring](http://adf.ly/1lPIRQ){:target="_blank"}.

@@ -12,16 +12,16 @@ share: true
 date: 2015-09-20T13:42:58+07:00
 ---
 
-Pada [tutorial sebelumnya](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/){:target="_blank"} penulis telah membahas bagaimana cara instalasi untuk coding node js. Kali ini kita akan belajar bagaimana membagun sebuah aplikasi berbasis node js.
+Pada [tutorial sebelumnya](http://adf.ly/1lPIVl){:target="_blank"}{:target="_blank"} penulis telah membahas bagaimana cara instalasi untuk coding node js. Kali ini kita akan belajar bagaimana membagun sebuah aplikasi berbasis node js.
 
 Berikut merupakan tahapan untuk membuat sebuah aplikasi dengan node js :
 
-- Initialisasi Project Node JS
-- Initialisasi dependency Library dengan bower
-- Membuat model
-- Membuat Router
-- Membuat view
-- Uji Coba
+- [Initialisasi Project Node JS](#initialisasi-project-node-js)
+- [Initialisasi dependency Library dengan bower](#initialisasi-dependency-library-dengan-bower)
+- [Membuat model](#membuat-model)
+- [Membuat Router](#membuat-router)
+- [Membuat view](#membuat-view)
+- [Uji Coba](#uji-coba)
 
 ## Initialisasi Project Node JS
 
@@ -34,13 +34,13 @@ Berikut merupakan list dari library diatas :
 
 - body-parser : digunakan untuk parsing sebuah url dan json
 - cookie-parser : digunakan untuk konfigurasi cookie
-- csurf : digunakan untuk konfigurasi [CSRF(Cross Site Request Forgery)](https://en.wikipedia.org/wiki/Cross-site_request_forgery){:target="_blank"}, untuk pembahasan CSRF akan dibahas pada tutorial selanjutnya :)
+- csurf : digunakan untuk konfigurasi [CSRF(Cross Site Request Forgery)](http://adf.ly/1lPIWZ){:target="_blank"}{:target="_blank"}, untuk pembahasan CSRF akan dibahas pada tutorial selanjutnya :)
 - errorhandler : digunakan untuk handle error pada node js
-- [express](http://expressjs.com/){:target="_blank"} : merupakan framework node js untuk membangun sebuah aplikasi web
+- [express](http://adf.ly/1lPIX3){:target="_blank"}{:target="_blank"} : merupakan framework node js untuk membangun sebuah aplikasi web
 - express-session : digunakan sebagai session pada express
-- [jade](http://jade-lang.com/){:target="_blank"} : digunakan sebagai template engine pada node js, sebenarnya masih ada banyak template engine lain seperti [EJS](http://www.embeddedjs.com/){:target="_blank"} akan tetapi kita akan menggunakan template jade dikarenakan jade termasuk template yang bagus terutama support terhadap extends template
+- [jade](http://adf.ly/1lPIXR){:target="_blank"}{:target="_blank"} : digunakan sebagai template engine pada node js, sebenarnya masih ada banyak template engine lain seperti [EJS](http://adf.ly/1lPIY7){:target="_blank"}{:target="_blank"} akan tetapi kita akan menggunakan template jade dikarenakan jade termasuk template yang bagus terutama support terhadap extends template
 - method-override : biasnya digunakan untuk membangun protokol HTTP method
-- mongoose : sebagai framework ODM (Object Document Mapping) yang akan melakukan akses ke mongoDB. MongoDB adalah database yang berbasis NoSQL, silahkan install MongoDB berikut dokumentasi cara [instalasi MongoDB](http://docs.mongodb.org/master/tutorial/install-mongodb-on-ubuntu/){:target="_blank"}
+- mongoose : sebagai framework ODM (Object Document Mapping) yang akan melakukan akses ke mongoDB. MongoDB adalah database yang berbasis NoSQL, silahkan install MongoDB berikut dokumentasi cara [instalasi MongoDB](http://adf.ly/1lPIYi){:target="_blank"}{:target="_blank"}
 - morgan : digunakan sebagai log aplikasi
 - node-uuid : digunakan untuk generate otomatis UUID, UUID merupakan key yang unik, biasanya digunakan untuk generate ID pada sebuah database yang bersifat primary key
 - serve-favicon : digunakan untuk favicon atau icon sebuah web
@@ -56,7 +56,7 @@ bower install jquery bootstrap --save
 
 ## Membuat model
 
-Framework express mendukung pattern MVC (model view controller) sama halnya seperti framework lain seperti [Ruby On Rails](http://rubyonrails.org/){:target="_blank"} dan [Spring Framework](https://spring.io/){:target="_blank"}. Buat sebuah folder models lalu buat sebuah file `Pegawai.js`. Berikut merupakan codingan dari file `Pegawai.js`.
+Framework express mendukung pattern MVC (model view controller) sama halnya seperti framework lain seperti [Ruby On Rails](http://adf.ly/1lPHaX){:target="_blank"}{:target="_blank"} dan [Spring Framework](http://adf.ly/1lPIQN){:target="_blank"}{:target="_blank"}. Buat sebuah folder models lalu buat sebuah file `Pegawai.js`. Berikut merupakan codingan dari file `Pegawai.js`.
 
 {% highlight javascript %}
 (function() {
@@ -521,4 +521,4 @@ Untuk menghapus, kita dapat menekan tombol hapus dan terdapat alert javascript u
 
 ![Screenshot from 2015-09-20 13:29:05.png](../images/Screenshot from 2015-09-20 13:29:05.png)
 
-Sekian tutorial belajar express dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Express](https://github.com/RizkiMufrizal/Belajar-ExpressJS){:target="_blank"}.
+Sekian tutorial belajar express dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Express](http://adf.ly/1lPIaS){:target="_blank"}{:target="_blank"}.
