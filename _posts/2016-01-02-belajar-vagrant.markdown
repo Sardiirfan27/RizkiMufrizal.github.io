@@ -18,11 +18,11 @@ Ketika kita melakukan development terhadap sebuah aplikasi terkadang kita membut
 * Kesulitan ketika server yang digunakan menggunakan sistem operasi yang berbeda.
 * Kesulitan ketika project yang sedang dikerjakan tidak dapat berjalan di PC yang lain.
 
-Dari beberapa kesulitan tersebut kita dapat meminimalkannya dengan menggunakan [vagrant](https://www.vagrantup.com/). Apa itu vagrant ?
+Dari beberapa kesulitan tersebut kita dapat meminimalkannya dengan menggunakan [vagrant](http://adf.ly/1lPKgE){:target="_blank"}. Apa itu vagrant ?
 
->>[Vagrant](https://www.vagrantup.com/) adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
+>>[Vagrant](http://adf.ly/1lPKgE){:target="_blank"} adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
 
-Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti [virtual box](https://www.virtualbox.org/) dan [VmWare](http://www.vmware.com/). Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi [ubuntu](http://www.ubuntu.com/) maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.
+Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti [virtual box](http://adf.ly/1lPKf8){:target="_blank"} dan [VmWare](http://adf.ly/1lPKdd){:target="_blank"}. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi [ubuntu](http://adf.ly/1lPKcL){:target="_blank"} maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.
 
 Ketika ingin melakukan duplikasi atau dibagikan kepada team developer yang lain maka kita tinggal menggunakan perintah vagrant sehingga secara otomatis vagrant akan melakukan konfigurasi pada PC masing - masing team developer sehingga mempermudah dalam development sebuah aplikasi.
 
@@ -55,7 +55,7 @@ sudo apt-get install virtualbox-5.0
 
 ## Instalasi Vagrant
 
-Untuk melakukan instalasi vagrant silahkan download vagrant terlebih dahulu di [vagrant download](https://www.vagrantup.com/downloads.html), disini penulis menggunakan ubuntu 16.04 64 bit maka penulis memilih versi debian 64 bit. Untuk melakukan instalasinya silahkan jalankan perintah.
+Untuk melakukan instalasi vagrant silahkan download vagrant terlebih dahulu di [vagrant download](http://adf.ly/1lPKb6){:target="_blank"}, disini penulis menggunakan ubuntu 16.04 64 bit maka penulis memilih versi debian 64 bit. Untuk melakukan instalasinya silahkan jalankan perintah.
 
 {% highlight bash %}
 sudo dpkg -i vagrant_1.8.1_x86_64.deb
@@ -75,7 +75,7 @@ Box pada vagrant berfungsi sebagai virtual machine yang memuat sistem operasi da
 
 Salah satu alasannya adalah ketika menggunakan vagrant maka vagrant akan melakukan semua konfigurasi hanya dengan satu perintah pada saat sistem operasi start up sedangkan jika kita menggunakan virtual box maka kita harus melakukan konfigurasi secara manual.
 
-Repository box bisa dilihat di [repository box](https://atlas.hashicorp.com/boxes/search). Berikut adalah bentuk umum untuk melakukan instalasi box.
+Repository box bisa dilihat di [repository box](http://adf.ly/1lPKZh){:target="_blank"}. Berikut adalah bentuk umum untuk melakukan instalasi box.
 
 {% highlight bash %}
 vagrant box add user/box
@@ -318,4 +318,4 @@ Kemudian silahkan akses `http://127.0.0.1:8080/` pada browser anda. Berikut adal
 
 ![](../images/Screenshot from 2016-01-02 11:35:34.png)
 
-Untuk source code nya silahkan lihat di [Belajar Vagrant](https://github.com/RizkiMufrizal/Belajar-Vagrant). Sekian artikel mengenai belajar vagrant dan terima kasih :).
+Untuk source code nya silahkan lihat di [Belajar Vagrant](http://adf.ly/1lPKXD){:target="_blank"}. Sekian artikel mengenai belajar vagrant dan terima kasih :).
