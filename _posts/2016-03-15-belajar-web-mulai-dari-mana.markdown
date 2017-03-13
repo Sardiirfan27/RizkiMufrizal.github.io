@@ -18,7 +18,7 @@ Membuat sebuah aplikasi berbasis web adalah salah satu keahlian yang banyak dibu
 
 >>HTML(hypertext markup Language) adalah sebuah bahasa markup untuk membuat sebuah halaman web.
 
-Yang pertama kali yang harus anda pelajari adalah html. Mengapa html ? dikarenakan semua aplikasi web pasti ditulis dengan html. Html biasanya digunakan untuk membuat tampilan halaman web. Seorang developer web yang sudah ahli, tag - tag html merupakan hafalan di luar kepala sehingga dia sangat paham betul sintak - sintak html. Nah bagaimana agar kita bisa seperti developer diatas ? cara nya mudah yaitu sering - sering ngoding html dengan menggunakan text editor yang tidak memiliki auto complete seperti `gedit`, `notepad++` dan sebagainya. Silahkan anda pelajari seluruh tag html terutama html 5 di [w3school](http://www.w3schools.com/html/default.asp).
+Yang pertama kali yang harus anda pelajari adalah html. Mengapa html ? dikarenakan semua aplikasi web pasti ditulis dengan html. Html biasanya digunakan untuk membuat tampilan halaman web. Seorang developer web yang sudah ahli, tag - tag html merupakan hafalan di luar kepala sehingga dia sangat paham betul sintak - sintak html. Nah bagaimana agar kita bisa seperti developer diatas ? cara nya mudah yaitu sering - sering ngoding html dengan menggunakan text editor yang tidak memiliki auto complete seperti `gedit`, `notepad++` dan sebagainya. Silahkan anda pelajari seluruh tag html terutama html 5 di [w3school](http://adf.ly/1lPMAl){:target="_blank"}.
 
 ## Pelajari CSS
 
@@ -26,7 +26,7 @@ Yang pertama kali yang harus anda pelajari adalah html. Mengapa html ? dikarenak
 
 Mengapa kita harus mempelajari css ? kan sekarang banyak template dan framework css seperti bootstrap ? Inti dari mempelajari css adalah agar anda dapat mengetahui minimal bagaimana caranya mengubah warna, bagaimana cara mengatur tinggi, lebar dan sebagainya. Sehingga dengan mempelajari css, anda tidak hanya bisa menggunakan framework css bahkan anda dapat membuat template anda sendiri. Pada saat melamar kerja, setiap developer front end pasti diwajibkan menguasai css, mengapa demikian ? dikarenakan setiap perusahaan pasti menginginkan pembuatan template web yang bagus sesuai dengan permintaan perusahaan tersebut.
 
-Pada zaman sekarang terdapat beberapa bahasa baru agar anda dapat lebih optimal untuk melakukan coding css, diantaranya adalah [less](http://lesscss.org/) dan [sass](http://sass-lang.com/). Biasanya developer akan menggunakan bahasa diatas karena masing - masing bahasa diatas dapat menggunakan annotation fitur - fitur lain nya. Bahasa diatas nantinya akan di conver menjadi css yang siap dipakai. Bagi anda yang ingin belajar css silahkan akses di [w3school](http://www.w3schools.com/css/).
+Pada zaman sekarang terdapat beberapa bahasa baru agar anda dapat lebih optimal untuk melakukan coding css, diantaranya adalah [less](http://adf.ly/1lPMA3){:target="_blank"} dan [sass](http://adf.ly/1lPM9o){:target="_blank"}. Biasanya developer akan menggunakan bahasa diatas karena masing - masing bahasa diatas dapat menggunakan annotation fitur - fitur lain nya. Bahasa diatas nantinya akan di conver menjadi css yang siap dipakai. Bagi anda yang ingin belajar css silahkan akses di [w3school](http://adf.ly/1lPM9M){:target="_blank"}.
 
 ## Pelajari JavaScript
 
@@ -36,14 +36,14 @@ JavaScript adalah salah satu bahasa yang sangat powerfull. Hal ini terbukti pada
 
 Pada sub ini, kita hanya fokus pada javascript di sisi client. Di sisi client terdapat banyak framework yang dapat kita pelajari. Berikut adalah contoh framework dan library yang bisa dipelajari.
 
-* [Angular JS](https://angularjs.org/)
-* [React](https://facebook.github.io/react/)
-* [JQuery](https://jquery.com/)
-* [Backbone JS](http://backbonejs.org/)
-* [Ember JS](http://emberjs.com/)
+* [Angular JS](http://adf.ly/1lPM8i){:target="_blank"}
+* [React](http://adf.ly/1lPM8D){:target="_blank"}
+* [JQuery](http://adf.ly/1lPJ7N){:target="_blank"}
+* [Backbone JS](http://adf.ly/1lPM5V){:target="_blank"}
+* [Ember JS](http://adf.ly/1lPM57){:target="_blank"}
 * dan lain - lain
 
-Fungsi dari javascript sebenarnya sangatlah banyak, diantaranya adalah kita dapat membuat aplikasi dengan konsep ajax. Dimana konsep ajax ini sangatlah banyak digunakan karena pertukaran data terjadi di belakang aplikasi. Bagi anda yang ingin belajar javascript silahkan akses [w2school](http://www.w3schools.com/js/).
+Fungsi dari javascript sebenarnya sangatlah banyak, diantaranya adalah kita dapat membuat aplikasi dengan konsep ajax. Dimana konsep ajax ini sangatlah banyak digunakan karena pertukaran data terjadi di belakang aplikasi. Bagi anda yang ingin belajar javascript silahkan akses [w2school](http://adf.ly/1lPM4o){:target="_blank"}.
 
 ## Pilih Bahasa Pemrograman
 
