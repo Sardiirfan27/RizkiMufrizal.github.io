@@ -94,7 +94,7 @@ Silahkan download template LyX pada repository github saya di [TemplatePenulisan
 - Jabref bersifat portable sehingga dapat langsung dibuka
 - Buka jabref, pilih menu file lalu pilih open database, pilih file `biblio.bib` maka tampilannya akan seperti ini.
 ![Screenshot from 2015-09-20 15:21:48.png](../images/Screenshot from 2015-09-20 15:21:48.png)
-- Kemudian kita akan mencari daftar pustaka dengan bantuan [google scholar](https://scholar.google.co.id/){:target="_blank"}, buka google scholar lalu cari sebuah pengarang dengan judul bukunya misalnya `ifnu bima java desktop` maka akan muncul seperti ini.
+- Kemudian kita akan mencari daftar pustaka dengan bantuan [google scholar](http://adf.ly/1lPIhn){:target="_blank"}, buka google scholar lalu cari sebuah pengarang dengan judul bukunya misalnya `ifnu bima java desktop` maka akan muncul seperti ini.
 ![Screenshot from 2015-09-20 15:24:24.png](../images/Screenshot from 2015-09-20 15:24:24.png)
 - Pilih kutipan maka akan muncul sebuah popup, lalu pilih `BibTeX` maka akan muncul codingan BibTex
 - copy codingan BibTex, kemudian ke jabref pilih menu bibtex lalu pilih new entry lalu pilih buku
