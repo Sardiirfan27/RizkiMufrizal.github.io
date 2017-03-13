@@ -12,7 +12,7 @@ share: true
 date: 2016-03-06T15:34:51+07:00
 ---
 
-Pada artikel [sebelumnya](http://rizkimufrizal.github.io/heroku-sebagai-komputasi-modern/) penulis telah membahas sedikit mengenai cloud computing. Pada artikel ini, penulis akan membuat cloud storage sendiri dengan owncloud sehingga bisa diakses oleh siapa pun dan dimana pun dengan ketentuan komputer client terhubung dengan 1 jaringan komputer server. Pada artikel ini akan dibahas bagaimana cara instalasi, konfigurasi owncloud pada laptop masing - masing sehingga laptop anda nantinya akan kita gunakan sebagai server. Nah bagaimana jika kita ingin mengakses lewat aplikasi owncloud melalui mobile ? pastinya kita akan menggunakan provider yang support untuk owncloud.
+Pada artikel [sebelumnya](http://adf.ly/1lPLpM){:target="_blank"} penulis telah membahas sedikit mengenai cloud computing. Pada artikel ini, penulis akan membuat cloud storage sendiri dengan owncloud sehingga bisa diakses oleh siapa pun dan dimana pun dengan ketentuan komputer client terhubung dengan 1 jaringan komputer server. Pada artikel ini akan dibahas bagaimana cara instalasi, konfigurasi owncloud pada laptop masing - masing sehingga laptop anda nantinya akan kita gunakan sebagai server. Nah bagaimana jika kita ingin mengakses lewat aplikasi owncloud melalui mobile ? pastinya kita akan menggunakan provider yang support untuk owncloud.
 
 ## Apa Itu OwnCloud ?
 
@@ -22,7 +22,7 @@ Dengan menggunakan owncloud, kita dapat mengatur layanan cloud storage mulai dar
 
 ## Setup OwnCloud
 
-OwnCloud dibangun dengan menggunakan bahasa pemrograman PHP, bagi yang belum melakukan instalasi php, silahkan lihat di artikel [instalasi perlengkapan php untuk coding php](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-php/). Owncloud support untuk 2 database yaitu mysql/mariadb dan postgresql, pada artikel ini penulis akan menggunakan database postgresql, bagi yang belum melakukan instalasi postgresql, silahkan lihat artikel di [instalasi dan konfigurasi PostgreSQL pada linux](http://rizkimufrizal.github.io/instalasi-dan-konfigurasi-postgresql/). Silahkan download owncloud di [owncloud](https://owncloud.org/install/), Setelah selesai silahkan extract di dalam folder `/var/www/html` kemudian berikan hak akses dengan perintah.
+OwnCloud dibangun dengan menggunakan bahasa pemrograman PHP, bagi yang belum melakukan instalasi php, silahkan lihat di artikel [instalasi perlengkapan php untuk coding php](http://adf.ly/1lPJMc){:target="_blank"}. Owncloud support untuk 2 database yaitu mysql/mariadb dan postgresql, pada artikel ini penulis akan menggunakan database postgresql, bagi yang belum melakukan instalasi postgresql, silahkan lihat artikel di [instalasi dan konfigurasi PostgreSQL pada linux](http://adf.ly/1lPLqF){:target="_blank"}. Silahkan download owncloud di [owncloud](http://adf.ly/1lPLqn){:target="_blank"}, Setelah selesai silahkan extract di dalam folder `/var/www/html` kemudian berikan hak akses dengan perintah.
 
 {% highlight bash %}
 sudo chmod -R 777 /var/www/html/*
@@ -98,7 +98,7 @@ Jika ingin melihat filenya ada di dalam folder `nama user owncloud/files`, berik
 
 ## Instalasi Dan Konfigurasi OwnCloud Pada Provider OpenShift
 
-Mengapa kita menggunakan provider ? karena kita ingin agar owncloud dapat diakses melalui internet :D. Salah satu provider yang dapat kita gunakan adalah openshift :). Jika anda ingin menggunakan provider lain, bisa dilihat di [owncloud provider](https://owncloud.org/providers/). Untuk tool client openshift sendiri kita akan menggunakan The OpenShift Client Tools (rhc). Untuk melakukan instalasi rhc, anda diharuskan melakukan instalasi ruby dan git, bagi yang belum melakukan instalasi ruby bisa di lihat pada artikel [instalasi perlengkapan coding ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/) dan untuk git bisa dilihat di artikel [belajar git](http://rizkimufrizal.github.io/belajar-git/). Silahkan jalankan perintah berikut untuk instalasi rhc.
+Mengapa kita menggunakan provider ? karena kita ingin agar owncloud dapat diakses melalui internet :D. Salah satu provider yang dapat kita gunakan adalah openshift :). Jika anda ingin menggunakan provider lain, bisa dilihat di [owncloud provider](http://adf.ly/1lPLrn){:target="_blank"}. Untuk tool client openshift sendiri kita akan menggunakan The OpenShift Client Tools (rhc). Untuk melakukan instalasi rhc, anda diharuskan melakukan instalasi ruby dan git, bagi yang belum melakukan instalasi ruby bisa di lihat pada artikel [instalasi perlengkapan coding ruby](http://adf.ly/1lOCbO){:target="_blank"} dan untuk git bisa dilihat di artikel [belajar git](http://adf.ly/1lPLst){:target="_blank"}. Silahkan jalankan perintah berikut untuk instalasi rhc.
 
 {% highlight bash %}
 gem install rhc
@@ -249,7 +249,7 @@ Setelah selesai, silahkan akses web nya berdasarkan nama domain anda, berikut ad
 http://owncloud-$yourdomain.rhcloud.com
 {% endhighlight %}
 
-Seperti kita lihat pada task sebelumnya, pada saat push atau deploy ke openshift, owncloud secara otomatis melakukan konfigurasi ke database, konfigurasi ini sendiri sebenarnya telah disediakan pada repository [openshift](https://github.com/openshift/owncloud-openshift-quickstart). Setelah melakukan akses web silahkan login dengan username dan password yang telah digenerate oleh owncloud, username dan password bisa dilihat pada task push ke openshift. Username dan password bisa dilihat pada baris.
+Seperti kita lihat pada task sebelumnya, pada saat push atau deploy ke openshift, owncloud secara otomatis melakukan konfigurasi ke database, konfigurasi ini sendiri sebenarnya telah disediakan pada repository [openshift](http://adf.ly/1lPLty){:target="_blank"}. Setelah melakukan akses web silahkan login dengan username dan password yang telah digenerate oleh owncloud, username dan password bisa dilihat pada task push ke openshift. Username dan password bisa dilihat pada baris.
 
 {% highlight bash %}
 remote: CLIENT_RESULT:       Username: admin
@@ -262,7 +262,7 @@ Jika berhasil login, maka akan muncul halaman home. Dan tidak ada perbedaan anta
 
 ## Instalasi Dan Konfigurasi Client Mobile oCloud
 
-Jika sebelumnya kita telah menggunakan client desktop owncloud untuk pc, pada bagian ini kita akan coba menggunakan mobile. Untuk mobile, kita bisa menggunakan OCloud, silahkan cari di playstore. Jika melalui web, aplikasinya bisa dilihat di [play store](https://play.google.com/store/apps/details?id=com.ocloud24.android).
+Jika sebelumnya kita telah menggunakan client desktop owncloud untuk pc, pada bagian ini kita akan coba menggunakan mobile. Untuk mobile, kita bisa menggunakan OCloud, silahkan cari di playstore. Jika melalui web, aplikasinya bisa dilihat di [play store](http://adf.ly/1lPLuO){:target="_blank"}.
 
 Setelah selesai melakukan instalasi aplikasi tersebut, silahkan anda buat username dan password untuk user baru pada owncloud yang ada di openshift, tujuannya adalah kita ingin melakukan akses user tersebut melalui aplikasi mobile.
 
