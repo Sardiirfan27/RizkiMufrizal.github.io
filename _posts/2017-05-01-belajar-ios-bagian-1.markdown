@@ -472,4 +472,4 @@ struct Image: Mappable {
 }
 {% endhighlight %}
 
-Akhirnya selesai juga untuk class response nya :D. Artikel selanjutnya akan membahas mengenai bagaimana cara membuat service, view dan controller nya :). Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS/tree/bagian-1){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 1, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
+Akhirnya selesai juga untuk class response nya :D. Artikel selanjutnya akan membahas mengenai bagaimana cara membuat service, view dan controller nya :). Untuk source code diatas dapat anda akses di [Belajar-iOS](http://microify.com/kJr){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 1, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
