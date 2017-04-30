@@ -12,22 +12,22 @@ share: true
 date: 2017-04-01T20:15:28+07:00
 ---
 
-Pada artikel [sebelumnya](https://rizkimufrizal.github.io/belajar-swift/) penulis telah membahas mengenai bahasa pemrograman swift versi 3. Pada artikel ini, penulis akan membahas bagaimana cara membuat aplikasi iOS sederhana :).
+Pada artikel [sebelumnya](http://atominik.com/1XNv){:target="_blank"} penulis telah membahas mengenai bahasa pemrograman swift versi 3. Pada artikel ini, penulis akan membahas bagaimana cara membuat aplikasi iOS sederhana :).
 
 ## Kebutuhan Project
 
-Pada dasarnya, swift dapat dijalankan di linux dan OSX, akan tetapi ketika kita mulai ingin membangun sebuah aplikasi iOS maka kita membutuhkan sistem operasi OSX. Mengapa demikian ? karena untuk membuat aplikasi iOS membutuhkan IDE Xcode, mungkin ada yang bertanya, apakah kita dapat membuat aplikasi iOS tanpa Xcode ? ya bisa saja seperti menggunakan [AppCode]() punya jetbrains, akan tetapi kita diharuskan semuanya untuk ngoding mulai dari logic hingga UI nya :(, berbeda dengan Xcode yang akan memberikan fitur UI layaknya android studio :D. Penulis menyarankan anda untuk menggunakan Xcode untuk development iOS, terdapat banyak fitur salah satunya adalah Xcode dapat memberitahukan kepada kita jika layout yang kita buat tidak responsive bahkan dia dapat mengetahui jika tata letak suatu komponent tidak sesuai dengan letaknya :). Wow... mungkin fitur Xcode bahkan bisa dibilang lebih lengkap dari android studio, oke berikut adalah kebutuhan project untuk development iOS.
+Pada dasarnya, swift dapat dijalankan di linux dan OSX, akan tetapi ketika kita mulai ingin membangun sebuah aplikasi iOS maka kita membutuhkan sistem operasi OSX. Mengapa demikian ? karena untuk membuat aplikasi iOS membutuhkan IDE Xcode, mungkin ada yang bertanya, apakah kita dapat membuat aplikasi iOS tanpa Xcode ? ya bisa saja seperti menggunakan [AppCode](http://atominik.com/1XO2){:target="_blank"} punya jetbrains, akan tetapi kita diharuskan semuanya untuk ngoding mulai dari logic hingga UI nya :(, berbeda dengan Xcode yang akan memberikan fitur UI layaknya android studio :D. Penulis menyarankan anda untuk menggunakan Xcode untuk development iOS, terdapat banyak fitur salah satunya adalah Xcode dapat memberitahukan kepada kita jika layout yang kita buat tidak responsive bahkan dia dapat mengetahui jika tata letak suatu komponent tidak sesuai dengan letaknya :). Wow... mungkin fitur Xcode bahkan bisa dibilang lebih lengkap dari android studio, oke berikut adalah kebutuhan project untuk development iOS.
 
-* MacBook / Laptop dengan [Hackintosh](http://www.hackintosh.com/), disarankan menggunakan OSX sierra
-* Xcode terbaru, pada artikel ini penulis menggunakan Xcode versi 8.3
+* MacBook / Laptop dengan [Hackintosh](http://atominik.com/1XO4){:target="_blank"}, disarankan menggunakan OSX sierra
+* Xcode terbaru, pada artikel ini penulis menggunakan Xcode versi 8.3.2
 * secangkir kopi untuk bersantai :D
 
 ## Tahap - Tahap Development
 
-Kira - kira kita akan membuat apa ya ? ya, pada artikel ini, kita akan membuat sebuah aplikasi untuk menampilkan lagu - lagu yang ada di [spotify](https://www.spotify.com) :D. Bagaimana cara nya kita dapat mendapatkan datanya ? :o, gampang kok, kita hanya perlu mengakses API yang telah disediakan oleh spotify [disini](https://developer.spotify.com/web-api/console/), karena kita hanya akan menampilkan item tertentu maka kita akan menggunakan API search yang ada pada spotify yaitu API yang ada [disini](https://developer.spotify.com/web-api/console/get-search-item/). Pada API spotify, kita tidak diharuskan untuk login terkecuali jika berhubungan dengan data user :). Berikut adalah tahapan development yang akan kita lakukan.
+Kira - kira kita akan membuat apa ya ? ya, pada artikel ini, kita akan membuat sebuah aplikasi untuk menampilkan lagu - lagu yang ada di [spotify](http://atominik.com/1XO6){:target="_blank"} :D. Bagaimana cara nya kita dapat mendapatkan datanya ? :o, gampang kok, kita hanya perlu mengakses API yang telah disediakan oleh spotify [disini](http://atominik.com/1XOA){:target="_blank"}, karena kita hanya akan menampilkan item tertentu maka kita akan menggunakan API search yang ada pada spotify yaitu API yang ada [disini](http://atominik.com/1XOD){:target="_blank"}. Pada API spotify, kita tidak diharuskan untuk login terkecuali jika berhubungan dengan data user :). Berikut adalah tahapan development yang akan kita lakukan.
 
 * Membuat Project iOS dengan Xcode
-* Melakukan Instalasi Dependency Dengan [Cocoapods](https://cocoapods.org/)
+* Melakukan Instalasi Dependency Dengan [Cocoapods](http://atominik.com/1XOH){:target="_blank"}
 * Membuat Model Response
 * Membuat Service / Consume API
 * Membuat View Dengan Multi StoryBoard Dan Navigation
@@ -54,9 +54,9 @@ Jika berhasil maka akan muncul menu project seperti berikut.
 
 ## Melakukan Instalasi Dependency Dengan Cocoapods
 
-Terkadang pada sebuah project yang kita buat, kita membutuhkan dependency library dari pihak lain misalnya seperti [Alamofire](https://github.com/Alamofire/Alamofire) untuk consume API dan lain sebagainya. Setiap bahasa pemrograman mempunya tool tersendiri, begitu pula dengan swift, di swift kita dapat menggunakan [Cocoapods](https://cocoapods.org/) sebagai dependency management karena [Cocoapods](https://cocoapods.org/) salah satu tool yang sangat banyak digunakan oleh kalangan developer iOS.
+Terkadang pada sebuah project yang kita buat, kita membutuhkan dependency library dari pihak lain misalnya seperti [Alamofire](http://atominik.com/1XOJ){:target="_blank"} untuk consume API dan lain sebagainya. Setiap bahasa pemrograman mempunya tool tersendiri, begitu pula dengan swift, di swift kita dapat menggunakan [Cocoapods](http://atominik.com/1XOH){:target="_blank"} sebagai dependency management karena [Cocoapods](http://atominik.com/1XOH){:target="_blank"} salah satu tool yang sangat banyak digunakan oleh kalangan developer iOS.
 
-Untuk melakukan instalasi [Cocoapods](https://cocoapods.org/), kita dapat menggunakan fungsi gem yang secara default telah tersedia di OSx, silahkan jalankan perintah berikut untuk melakukan instalasi cocoapods.
+Untuk melakukan instalasi [Cocoapods](http://atominik.com/1XOH){:target="_blank"}, kita dapat menggunakan fungsi gem yang secara default telah tersedia di OSx, silahkan jalankan perintah berikut untuk melakukan instalasi cocoapods.
 
 {% highlight bash %}
 gem install cocoapods
@@ -72,7 +72,7 @@ Maka akan terbentuk sebuah file yaitu `Podfile` langka selanjutnya silahkan buka
 
 {% highlight ruby %}
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+ platform :ios, '10.0'
 
 target 'Belajar-iOS' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -84,6 +84,10 @@ target 'Belajar-iOS' do
   pod 'ObjectMapper', '~> 2.2'
   pod 'Alamofire', '~> 4.4'
   pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'Kingfisher', '~> 3.0'
+  pod 'SwiftOverlays', '~> 3.0.0'
+  pod 'AudioPlayerManager'
+  pod 'MarqueeLabel/Swift'
 
   target 'Belajar-iOSTests' do
     inherit! :search_paths
@@ -106,6 +110,10 @@ Berikut adalah beberapa penjelasan dari konfigurasi diatas :
 * ObjectMapper : berfungsi untuk melakukan mapping json
 * Alamofire : berfungsi untuk mengakses API
 * AlamofireObjectMapper : berfungsi untuk mengubah response dari alamofire menjadi object swift
+* Kingfisher : berfungsi untuk cache gambar
+* SwiftOverlays : berfungsi untuk animasi loading
+* AudioPlayerManager : berfungsi untuk memutarkan lagu
+* MarqueeLabel : berfungsi untuk membuat text marquee
 
 Oke, selanjutnya silahkan jalankan perintah berikut untuk melakukan instalasi dependency diatas.
 
@@ -362,7 +370,7 @@ Kita tidak akan menggunakan semua value diatas, kita hanya akan menampilkan trac
 //  TrackResponse.swift
 //  Belajar-iOS
 //
-//  Created by rizki mufrizal on 3/31/17.
+//  Created by rizki mufrizal on 4/30/17.
 //  Copyright © 2017 rizki mufrizal. All rights reserved.
 //
 
@@ -383,7 +391,7 @@ struct TrackResponse: Mappable {
 
 struct Track: Mappable {
     var limit: Int?
-    var next: Int?
+    var next: String?
     var offset: Int?
     var previous: String?
     var total: Int?
@@ -464,4 +472,4 @@ struct Image: Mappable {
 }
 {% endhighlight %}
 
-Akhirnya selesai juga untuk class response nya :D. Artikel selanjutnya akan membahas mengenai bagaimana cara membuat service, view dan controller nya :). Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS). Sekian artikel mengenai Belajar iOS bagian 1, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
+Akhirnya selesai juga untuk class response nya :D. Artikel selanjutnya akan membahas mengenai bagaimana cara membuat service, view dan controller nya :). Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS/tree/bagian-1){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 1, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
