@@ -9,7 +9,7 @@ image:
   background: abstract-3.png
 comments: true
 share: true
-date: 2017-04-01T20:15:28+07:00
+date: 2017-04-08T20:15:28+07:00
 ---
 
 Hy jumpa lagi :D, artikel ini merupakan kelanjutan dari artikel [sebelumnya](http://atominik.com/1XUG){:target="_blank"}. Pada bagian kedua ini kita akan mencoba membuat hingga tahap menampilkan data :). Berikut adalah tahapan development yang akan kita lakukan.
