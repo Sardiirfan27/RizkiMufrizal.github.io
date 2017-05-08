@@ -9,7 +9,7 @@ image:
   background: abstract-3.png
 comments: true
 share: true
-date: 2017-04-01T20:15:28+07:00
+date: 2017-05-01T20:15:28+07:00
 ---
 
 Pada artikel [sebelumnya](http://atominik.com/1XNv){:target="_blank"} penulis telah membahas mengenai bahasa pemrograman swift versi 3. Pada artikel ini, penulis akan membahas bagaimana cara membuat aplikasi iOS sederhana :).
