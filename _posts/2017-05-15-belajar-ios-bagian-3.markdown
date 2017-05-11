@@ -9,7 +9,7 @@ image:
   background: abstract-3.png
 comments: true
 share: true
-date: 2017-04-01T20:15:28+07:00
+date: 2017-05-15T20:15:28+07:00
 ---
 
 Sebelumnya kita telah membuat aplikasi untuk melihat list musik, akan tetapi kurang jika kita tidak menambahkan fitur search :). Oke, pada artikel ini kita akan membahas mengenai bagaimana cara membuat search :D. Mungkin artikel ini adalah artikel yang terpendek dikarenkan untuk membuat sebuah search bar di swift sangatlah gampang :). Oke kita langsung buka project iOS dengan xcode, project yang kita gunakan adalah project sebelum nya yang ada di artikel [sebelumnya](http://bluenik.com/13tc){:target="_blank"}.
