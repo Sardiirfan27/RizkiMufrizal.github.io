@@ -6,7 +6,7 @@ categories:
 description: belajar laravel
 tags: [laravel, vim, mvc, nginx, mariadb, hhvm, model, migration, seed]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-05-19T09:02:57+07:00

@@ -6,7 +6,7 @@ categories:
 description: membuat RESTful Web Service dengan Framework Spring Boot
 tags: [spring boot, RESTful Web Service, mongodb]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2017-01-13T20:15:28+07:00

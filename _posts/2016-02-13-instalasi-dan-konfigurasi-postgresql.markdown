@@ -6,7 +6,7 @@ categories:
 description: instalasi dan konfigurasi PostgreSQL pada linux
 tags: [PostgreSQL, Instalasi PostgreSQL, pgadmin, instalasi pgadmin, query pada PostgreSQL]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-02-13T08:41:23+07:00

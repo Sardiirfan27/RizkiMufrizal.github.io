@@ -6,7 +6,7 @@ categories:
 description: belajar membuat cloud storage dengan owncloud
 tags: [owncloud, cloud computing, membuat cloud storage]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-03-06T15:34:51+07:00

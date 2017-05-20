@@ -6,7 +6,7 @@ categories:
 description: belajar cara instalasi software pada linux
 tags: [linux, software, install, ubuntu, distro linux, package management, ppa]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-12-09T18:32:13+07:00

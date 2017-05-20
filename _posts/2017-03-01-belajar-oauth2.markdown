@@ -6,7 +6,7 @@ categories:
 description: Belajar OAuth2
 tags: [Authentication, Authorization, OAuth2, Open Authorization]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2017-03-01T20:15:28+07:00

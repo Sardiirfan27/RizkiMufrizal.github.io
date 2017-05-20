@@ -6,7 +6,7 @@ categories:
 description: belajar shell script pada linux
 tags: [shell, shell script, linux, bash]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-01-30T17:16:48+07:00

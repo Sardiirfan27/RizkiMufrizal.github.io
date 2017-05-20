@@ -6,7 +6,7 @@ categories:
 description: belajar hibernate
 tags: [hibernate, orm, object relational mapping, belajar hibernate]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-07-23T11:35:10+07:00

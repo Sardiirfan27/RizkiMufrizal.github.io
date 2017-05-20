@@ -6,7 +6,7 @@ categories:
 description: belajar load balancing dengan haproxy, docker dan spring boot
 tags: [HAProxy, docker, spring boot, load balancing, load balancing dengan HAProxy, docker dan HAProxy, docker, HAProxy dan spring boot]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-09-03T07:55:42+07:00

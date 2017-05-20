@@ -7,5 +7,4 @@ node_modules
 Gemfile.lock
 .sass-cache
 .jekyll-metadata
-.bundle
 .vscode/

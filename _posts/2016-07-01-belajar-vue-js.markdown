@@ -6,7 +6,7 @@ categories:
 description: belajar vue js
 tags: [vue js]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-07-01T07:59:27+07:00

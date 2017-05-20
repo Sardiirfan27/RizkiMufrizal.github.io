@@ -6,7 +6,7 @@ categories:
 description: belajar angular js
 tags: [angular js, hello word angular js, mv*, crud angular js]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-05-03T22:13:58+07:00

@@ -6,7 +6,7 @@ categories:
 description: belajar docker
 tags: [docker, docker compose, docker image, docker container, vagrant, sails js, node js, mariadb, arsitektur docker]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-08-01T07:15:48+07:00

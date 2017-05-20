@@ -6,7 +6,7 @@ categories:
 description: instalasi perlengkapan node js pada linux
 tags: [node js, sails, express js, instalasi node js, nvm, bower, coffee-script, nodemon]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-08-09T16:45:24+07:00

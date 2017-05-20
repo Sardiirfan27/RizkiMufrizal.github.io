@@ -6,7 +6,7 @@ categories:
 description: instalasi perlengkapan php untuk coding php
 tags: [coding php, php, apache, mariadb, phpmyadmin, composer]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-12-21T08:00:12+07:00

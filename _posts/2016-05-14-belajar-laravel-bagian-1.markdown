@@ -6,7 +6,7 @@ categories:
 description: belajar laravel
 tags: [laravel, vim, vagrant, codeigniter, mvc, nginx, mariadb, hhvm, ide-helper]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-05-14T10:56:41+07:00

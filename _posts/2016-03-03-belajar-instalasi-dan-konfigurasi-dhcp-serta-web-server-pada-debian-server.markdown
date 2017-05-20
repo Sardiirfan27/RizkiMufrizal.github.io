@@ -6,7 +6,7 @@ categories:
 description: belajar instalasi dan konfigurasi dhcp serta web server pada debian server
 tags: [dhcp, web server, instalasi dhcp pada debian server, instalasi web server pada debian server, instalasi apache web server]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-03-03T07:28:59+07:00

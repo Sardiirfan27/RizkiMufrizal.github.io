@@ -6,7 +6,7 @@ categories:
 description: belajar instalasi dan konfigurasi dns pada debian server
 tags: [DNS, debian server, instalasi dns pada debian, instalasi dns pada debian server, konfigurasi dns pada debian, konfigurasi dns pada debian server]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-02-26T10:02:14+07:00

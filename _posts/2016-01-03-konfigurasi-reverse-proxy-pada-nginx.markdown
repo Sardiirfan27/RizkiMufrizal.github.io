@@ -6,7 +6,7 @@ categories:
 description: belajar konfigurasi reverse proxy pada nginx
 tags: [nginx, reverse proxy, proxy]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-01-03T11:15:23+07:00

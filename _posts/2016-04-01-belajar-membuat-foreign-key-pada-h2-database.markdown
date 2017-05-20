@@ -6,7 +6,7 @@ categories:
 description: belajar membuat foreign key pada h2 database
 tags: [foreign key, h2 database]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-04-01T08:55:48+07:00

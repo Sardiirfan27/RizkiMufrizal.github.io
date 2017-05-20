@@ -6,7 +6,7 @@ categories:
 description: belajar membuat REST API dengan codeigniter
 tags: [REST API, REST, API, codeigniter, php]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-10-18T10:21:28+07:00

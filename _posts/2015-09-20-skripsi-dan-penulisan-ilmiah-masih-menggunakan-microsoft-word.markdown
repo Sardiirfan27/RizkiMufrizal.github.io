@@ -6,7 +6,7 @@ categories:
 description: belajar menulis tulisan ilmiah dengan lyx
 tags: [lyx, latex, microsoft word, google scholar, jabref, skripsi, penulisan ilmiah]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-09-20T15:40:45+07:00

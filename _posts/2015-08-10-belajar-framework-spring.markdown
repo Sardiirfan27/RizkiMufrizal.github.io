@@ -6,7 +6,7 @@ categories:
 description: belajar framework spring
 tags: [framework, spring, belajar spring, dependecy injection, inversion of control]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-08-10T17:39:00+07:00

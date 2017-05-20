@@ -6,7 +6,7 @@ categories:
 description: belajar git pada linux
 tags: [git, belajar git, github, clone, commit, add, push, pull, clone, gitignore, repository]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-07-28T18:14:04+07:00

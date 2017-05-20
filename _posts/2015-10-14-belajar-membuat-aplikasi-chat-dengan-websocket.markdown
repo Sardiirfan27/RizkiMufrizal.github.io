@@ -6,7 +6,7 @@ categories:
 description: belajar membuat aplikasi chat dengan websocket menggunakan node js
 tags: [chat, web socket, ajax, aplikasi chat, node js, express js, socket.io]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-10-14T15:43:18+07:00

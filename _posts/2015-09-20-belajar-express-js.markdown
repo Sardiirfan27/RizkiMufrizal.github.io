@@ -6,7 +6,7 @@ categories:
 description: belajar framework express js
 tags: [express js, belajar express js, mongodb, mongoose, jade]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-09-20T13:42:58+07:00

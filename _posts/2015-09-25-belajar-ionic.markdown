@@ -6,7 +6,7 @@ categories:
 description: belajar ionic
 tags: [belajar ionic, ionic, android, apk, hybrid]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-09-25T06:49:11+07:00

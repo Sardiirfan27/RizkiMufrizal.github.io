@@ -6,7 +6,7 @@ categories:
 description: Belajar iOS Bagian 4
 tags: [Swift, iOS, Xcode, alamofire, RxSwift, ObjectMapper, Audio Player Manager, Marquee Label]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2017-05-22T20:15:28+07:00

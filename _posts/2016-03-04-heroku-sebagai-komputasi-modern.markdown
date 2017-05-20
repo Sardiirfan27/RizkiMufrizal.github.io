@@ -6,7 +6,7 @@ categories:
 description: heroku sebagai komputasi modern
 tags: [komptutasi modern, heroku, cloud computing, PaaS, IaaS, IaaS]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-03-04T07:58:26+07:00

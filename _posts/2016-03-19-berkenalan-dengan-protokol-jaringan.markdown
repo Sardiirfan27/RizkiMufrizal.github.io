@@ -6,7 +6,7 @@ categories:
 description: berkenalan dengan protokol jaringan
 tags: [protokol, protokol jaringan]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-03-19T07:17:12+07:00

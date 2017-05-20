@@ -6,7 +6,7 @@ categories:
 description: belajar dan berkenalan dengan gulp
 tags: [gulp, gulp html, gulp css, gulp js]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-12-27T11:30:20+07:00

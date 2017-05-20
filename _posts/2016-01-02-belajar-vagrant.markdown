@@ -6,7 +6,7 @@ categories:
 description: belajar instalasi dan konfigurasi vagrant
 tags: [vagrant, linux, virtual box]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-01-02T07:31:24+07:00

@@ -6,7 +6,7 @@ categories:
 description: belajar framework ruby on rails
 tags: [ruby, ruby on rails, framework ruby on rails, crud ruby on rails]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-08-03T07:36:10+07:00

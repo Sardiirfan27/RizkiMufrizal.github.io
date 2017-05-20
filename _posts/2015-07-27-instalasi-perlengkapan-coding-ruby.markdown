@@ -6,7 +6,7 @@ categories:
 description: instalasi perlengkapan ruby pada linux
 tags: [ruby, instalasi ruby, ruby on rails, sinatra, rvm, rubymine]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-07-27T07:06:33+07:00

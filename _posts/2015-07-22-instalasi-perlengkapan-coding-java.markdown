@@ -6,7 +6,7 @@ categories:
 description: instalasi java pada linux
 tags: [instalasi java, maven, ant, gradle, sbt, java, netbeans, eclipse, intellij idea, instalasi java di ubuntu]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-07-22T21:08:21+07:00

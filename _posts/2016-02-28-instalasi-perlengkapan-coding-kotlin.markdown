@@ -6,7 +6,7 @@ categories:
 description: instalasi perlengkapan coding kotlin
 tags: [kotlin, bahasa pemrograman kotlin, instalasi perlengkapan kotlin, coding kotlin]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2016-02-28T16:41:12+07:00

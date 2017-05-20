@@ -6,7 +6,7 @@ categories:
 description: belajar membuat blog dengan jekyll
 tags: [blog, jekyll, membuat blog dengan jekyll, jekyll blog]
 image:
-  background: abstract-3.png
+  background: abstract-2.png
 comments: true
 share: true
 date: 2015-07-31T19:38:00+07:00
