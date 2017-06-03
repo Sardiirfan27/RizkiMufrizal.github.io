@@ -2,7 +2,7 @@
 layout: post
 title: Belajar Laravel Bagian 2
 modified: 2017-06-3T20:15:28+07:00
-categories: 
+categories:
 description: belajar laravel
 tags: [laravel, vim, mvc, nginx, mariadb, hhvm, model, migration, seed]
 image:

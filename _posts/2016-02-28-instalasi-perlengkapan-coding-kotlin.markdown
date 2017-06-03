@@ -205,15 +205,19 @@ Setelah selesai, silahkan buat sebuah file `Belajar.kt` di dalam package com.riz
 {% highlight bash %}
 package com.rizki.mufrizal.belajarKotlin
 
-open class Belajar
+class Belajar {
 
     fun hello(nama: String): String {
         return "hello $nama"
     }
 
-    fun main(args : Array<String>) {
-        println(hello("rizki"))
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            println(Belajar().hello("rizki"))
+        }
     }
+}
 {% endhighlight %}
 
 Kemudian buat file `BelajarTest.kt` di dalam package com.rizki.mufrizal.belajarKotlin di dalam folder `src/test` untuk kebutuhan testing, Masukkan codingan seperti berikut.
@@ -227,7 +231,7 @@ import org.junit.Test
 public class BelajarTest {
 
     @Test fun helloTest(): Unit {
-        Assert.assertEquals("hello rizki", hello("rizki"))
+        Assert.assertEquals("hello rizki", Belajar().hello("rizki"))
     }
 
 }
