@@ -12,13 +12,13 @@ share: true
 date: 2015-07-28T18:14:04+07:00
 ---
 
-Untuk kerja team sebuah project, kita butuh tool untuk melakukan manajemen project. Dahulu biasanya penulis menggunakan [svn](http://adf.ly/1lOCFn){:target="_blank"} untuk version control system (VCS), kali ini kita akan menggunakan teknologi baru dari version control system (VCS) yaitu [git](http://adf.ly/1lOCI4){:target="_blank"}.
+Untuk kerja team sebuah project, kita butuh tool untuk melakukan manajemen project. Dahulu biasanya penulis menggunakan [svn](https://subversion.apache.org/){:target="_blank"} untuk version control system (VCS), kali ini kita akan menggunakan teknologi baru dari version control system (VCS) yaitu [git](https://git-scm.com/){:target="_blank"}.
 
->Version Control System (VCS) adalah sebuah sistem yang dapat mencatat setiap perubahan dari sebuah file sedangkan [git](http://adf.ly/1lOCI4){:target="_blank"} merupakan salah satu contoh version control system yang diciptakan oleh linus torvalds yang dulunya digunakan untuk memanajemen project kernel linux.
+>Version Control System (VCS) adalah sebuah sistem yang dapat mencatat setiap perubahan dari sebuah file sedangkan [git](https://git-scm.com/){:target="_blank"} merupakan salah satu contoh version control system yang diciptakan oleh linus torvalds yang dulunya digunakan untuk memanajemen project kernel linux.
 
 Oke kita langsung mulai melakukan konfigurasi git pada linux. Berikut tahapan yang harus diperhatikan.
 
-- Instalasi git dan Buat akun [github](http://adf.ly/1lOCLR){:target="_blank"}.
+- Instalasi git dan Buat akun [github](https://github.com/){:target="_blank"}.
 - Konfigurasi git
 - Buat repository baru dan belajar commit
 - Penjelasan Gitignore
@@ -43,7 +43,7 @@ dan terakhir install git
 sudo apt-get install git
 {% endhighlight %}
 
-Instalasi selesai, lalu silahkan bagi yang belum membuat akun, anda dapat melakukan registrasi di [Github](http://adf.ly/1lOCLR){:target="_blank"}. Github ini merupakan sebuah sebuah media social bagi developer, disana kita dapat melakukan upload project, berbagi project dan sebagainya.
+Instalasi selesai, lalu silahkan bagi yang belum membuat akun, anda dapat melakukan registrasi di [Github](https://github.com/){:target="_blank"}. Github ini merupakan sebuah sebuah media social bagi developer, disana kita dapat melakukan upload project, berbagi project dan sebagainya.
 
 ## Konfigurasi Git
 
@@ -149,6 +149,6 @@ Setelah selesai, anda download dulu source code yang sudah ada di github dengan 
 
 ## Penjelasan Gitignore
 
-Gitignore merupakan sebuah file yang berfungsi untuk mendeklarasikan file - file apa saja yang tidak akan di commit. File gitignore biasanya ditulis dengan nama `.gitignore`, file ini bersifat hidden sehingga untuk menampilkannya, kita harus melakukan perintah `ctrl + H`. Misalnya jika kita membuat project java dengan menggunakan maven, maka akan muncul folder `target` yang berisi kompalasi program maka folder tersebut kita daftarkan pada gitignore sehingga tidak akan di commit. Untuk mengetahui file apa saja yang yang di daftarkan pada gitignore untuk setiap bahasa pemrograman, anda dapat melihatnya di [repository gitignore](http://adf.ly/1lOCPl){:target="_blank"}. 
+Gitignore merupakan sebuah file yang berfungsi untuk mendeklarasikan file - file apa saja yang tidak akan di commit. File gitignore biasanya ditulis dengan nama `.gitignore`, file ini bersifat hidden sehingga untuk menampilkannya, kita harus melakukan perintah `ctrl + H`. Misalnya jika kita membuat project java dengan menggunakan maven, maka akan muncul folder `target` yang berisi kompalasi program maka folder tersebut kita daftarkan pada gitignore sehingga tidak akan di commit. Untuk mengetahui file apa saja yang yang di daftarkan pada gitignore untuk setiap bahasa pemrograman, anda dapat melihatnya di [repository gitignore](https://github.com/github/gitignore){:target="_blank"}. 
 
 Sekian tutorial Belajar Git, Semoga bermanfaat dan terima kasih :).

@@ -12,11 +12,11 @@ share: true
 date: 2015-08-03T07:36:10+07:00
 ---
 
-Tutorial kali ini akan membahas tentang salah satu framework ruby yaitu [ruby on rails](http://adf.ly/1lPHaX){:target="_blank"} atau sering disebut dengan ROR. Banyak yang mengambil struktur project dari ruby on rails beberapa diantaranya seperti [play framework](http://adf.ly/1lPHcK){:target="_blank"} (scala/java), [Spring Roo](http://adf.ly/1lPHhu){:target="_blank"} (java) dan [sails](http://adf.ly/1lPHlF){:target="_blank"} (node js). Salah satu kelebihan ruby on rails adalah framework ini sudah support dengan teknologi ORM, untuk penjelasan ORM ada di tutorial [belajar hibernate](http://adf.ly/1lPHmw){:target="_blank"}. Tidak hanya fitur ORM, akan tetapi framework ini dilengkapi dengan dokumentasi yang lengkap serta komunitas framework yang paling banyak di dalam bahasa pemrograman ruby. Baiklah lets coding ruby with ruby on rails :D.
+Tutorial kali ini akan membahas tentang salah satu framework ruby yaitu [ruby on rails](http://rubyonrails.org/){:target="_blank"} atau sering disebut dengan ROR. Banyak yang mengambil struktur project dari ruby on rails beberapa diantaranya seperti [play framework](https://www.playframework.com/){:target="_blank"} (scala/java), [Spring Roo](http://projects.spring.io/spring-roo/){:target="_blank"} (java) dan [sails](http://sailsjs.org/){:target="_blank"} (node js). Salah satu kelebihan ruby on rails adalah framework ini sudah support dengan teknologi ORM, untuk penjelasan ORM ada di tutorial [belajar hibernate](http://rizkimufrizal.github.io/belajar-hibernate/){:target="_blank"}. Tidak hanya fitur ORM, akan tetapi framework ini dilengkapi dengan dokumentasi yang lengkap serta komunitas framework yang paling banyak di dalam bahasa pemrograman ruby. Baiklah lets coding ruby with ruby on rails :D.
 
 ## Instalasi Ruby On Rails
 
-Untuk melakukan instalasi ruby on rails, kita menggunakan [gem](http://adf.ly/1lPHop){:target="_blank"}. Bagi yang belum melakukan instalasi ruby, dapat dilihat pada tutorial [instalasi ruby](http://adf.ly/1lOCbO){:target="_blank"}. [Gem](http://adf.ly/1lPHop){:target="_blank"} ini ibarat NPM di dalam node js. Bingung dengan NPM ? pada tutorial selanjutnya akan ada postingan tentang node js. Untuk melakukan instalasi ruby on rails pada linux jalankan perintah berikut.
+Untuk melakukan instalasi ruby on rails, kita menggunakan [gem](https://rubygems.org/){:target="_blank"}. Bagi yang belum melakukan instalasi ruby, dapat dilihat pada tutorial [instalasi ruby](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-ruby/){:target="_blank"}. [Gem](https://rubygems.org/){:target="_blank"} ini ibarat NPM di dalam node js. Bingung dengan NPM ? pada tutorial selanjutnya akan ada postingan tentang node js. Untuk melakukan instalasi ruby on rails pada linux jalankan perintah berikut.
 
 {% highlight bash %}
 gem install rails
@@ -359,4 +359,4 @@ Tampilan delete data buku
 
 ![Screenshot from 2015-07-27 11:14:34.png](../images/Screenshot from 2015-07-27 11:14:34.png)
 
-Sekian tutorial belajar Ruby On Rails dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Ruby On Rails](http://adf.ly/1lPHuw){:target="_blank"}.
+Sekian tutorial belajar Ruby On Rails dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Ruby On Rails](https://github.com/RizkiMufrizal/Belajar-RubyOnRails){:target="_blank"}.
