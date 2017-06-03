@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Load Balancing Dengan HAProxy, Docker Dan Spring Boot
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: belajar load balancing dengan haproxy, docker dan spring boot
 tags: [HAProxy, docker, spring boot, load balancing, load balancing dengan HAProxy, docker dan HAProxy, docker, HAProxy dan spring boot]
@@ -44,7 +44,7 @@ Berikut adalah gambar dari arsitektur HAProxy
 
 ## Membuat Load Balancing Dengan HAProxy Dan Docker
 
-Bagi anda yang belum mengerti docker, silahkan baca artikel [Belajar Docker](http://adf.ly/1lPOUj){:target="_blank"}. Karena kita tidak memiliki server beneran maka kita akan mencoba menggunakan docker sebagai visualisasi server. Untuk melakukan uji terhadap aplikasi web, maka penulis telah membuat contoh aplikasi web java, silahkan download di [Belajar Load Balancing](http://adf.ly/1lPOTb){:target="_blank"}, Karena aplikasi ini adalah aplikasi java web maka anda perlu melakukan instalasi java untuk melakukan build web java tersebut, bagi anda yang belum melakukan instalasi java, silakan lihat di artikel [Instalasi Perlengkapan Coding Java](http://adf.ly/1lOBKt){:target="_blank"}. Berikut adalah beberapa teknologi yang akan kita gunakan untuk load balancing :
+Bagi anda yang belum mengerti docker, silahkan baca artikel [Belajar Docker](https://rizkimufrizal.github.io/belajar-docker/). Karena kita tidak memiliki server beneran maka kita akan mencoba menggunakan docker sebagai visualisasi server. Untuk melakukan uji terhadap aplikasi web, maka penulis telah membuat contoh aplikasi web java, silahkan download di [Belajar Load Balancing](https://github.com/RizkiMufrizal/Belajar-Load-Balancing/tree/ebb6901f59da614297684b714da01062747cc12e), Karena aplikasi ini adalah aplikasi java web maka anda perlu melakukan instalasi java untuk melakukan build web java tersebut, bagi anda yang belum melakukan instalasi java, silakan lihat di artikel [Instalasi Perlengkapan Coding Java](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/). Berikut adalah beberapa teknologi yang akan kita gunakan untuk load balancing :
 
 * Web Server : jetty web server
 * Framework Aplikasi Web : Spring Boot, Spring Data JPA
@@ -60,7 +60,7 @@ Dan berikut adalah arsitektur yang akan kita gunakan untuk membuat load balancin
 
 Dari gambar diatas dapat kita lihat bahwa kita menggunakan 4 server, dimana 1 server menghadle database, 2 server menghadle web dan 1 server lagi khusus untuk load balancing dengan menggunakan HAProxy. User akan melakukan akses terhadap server load balancing, lalu HAProxy secara otomatis akan meneruskan request tersebut ke server selanjutnya, sebelumnya meneruskan request, HAProxy akan melakukan pengecekan terlebih dahulu dengan menggunakan algoritma load balancing, biasanya yang paling sering digunakan adalah algoritma Round Robin, algoritma ini biasanya akan membagikan beban trafik secara bergiliran ke setiap server.
 
-Jika project [Belajar Load Balancing](http://adf.ly/1lPOTb){:target="_blank"} telah anda download, kemudian jalankan perintah.
+Jika project [Belajar Load Balancing](https://github.com/RizkiMufrizal/Belajar-Load-Balancing/tree/ebb6901f59da614297684b714da01062747cc12e) telah anda download, kemudian jalankan perintah.
 
 {% highlight bash %}
 mvn clean package docker:build
@@ -231,7 +231,7 @@ Dari gambar diatas dapat kita lihat bahwa terdapat 2 server yang menghandle requ
 
 ## Uji Coba Load Balancing Dengan JMeter
 
-Untuk melakukan uji coba kehandalan atau uji coba performance sebuah aplikasi, kita dapat menggunakan aplikasi [JMeter](http://adf.ly/1lPOT8){:target="_blank"}. Silahkan download aplikasi tersebut lalu jalankan file `ApacheJMeter.jar` di dalam folder `bin`. Jika berhasil maka akan muncul output seperti berikut.
+Untuk melakukan uji coba kehandalan atau uji coba performance sebuah aplikasi, kita dapat menggunakan aplikasi [JMeter](http://jmeter.apache.org/). Silahkan download aplikasi tersebut lalu jalankan file `ApacheJMeter.jar` di dalam folder `bin`. Jika berhasil maka akan muncul output seperti berikut.
 
 ![Screenshot from 2016-08-13 15-46-25.png](../images/Screenshot from 2016-08-13 15-46-25.png)
 
@@ -247,4 +247,4 @@ Kemudian pilih kembali thread Group lalu pilih menu add, pilih menu listener dan
 
 ![Screenshot from 2016-08-13 15-57-22.png](../images/Screenshot from 2016-08-13 15-57-22.png)
 
-Bagi anda yang ingin melihat source code codingan, silahkan lihat di [Belajar Load Balancing](http://adf.ly/1lPOSi){:target="_blank"}. Sekian artikel mengenai belajar load balancing dan terima kasih :)
+Bagi anda yang ingin melihat source code codingan, silahkan lihat di [Belajar Load Balancing](https://github.com/RizkiMufrizal/Belajar-Load-Balancing). Sekian artikel mengenai belajar load balancing dan terima kasih :)

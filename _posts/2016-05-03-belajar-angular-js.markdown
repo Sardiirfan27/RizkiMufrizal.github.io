@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Angular JS
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar angular js
 tags: [angular js, hello word angular js, mv*, crud angular js]
@@ -20,7 +20,7 @@ Angular JS biasanya digunakan sebagai framework di bagian front end suatu websit
 
 ## Membuat Hello Word Dengan Angular JS
 
-Untuk mempermudah pemahaman, kita akan langsung mencoba membuat hello word dengan menggunakan angular js :D. Untuk mendownload kebutuhan dependency angular, penulis akan menggunakan [bower](http://adf.ly/1lPNMs){:target="_blank"}, karena menggunakan bower maka anda diwajibkan untuk melakukan instalasi node js. Bagi anda yang belum melakukan instalasi node js, silahkan lihat di [Instalasi Perlengkapan Coding Node JS](http://adf.ly/1lPNOT){:target="_blank"}. Silahkan buat sebuah folder dengan nama `Belajar-AngularJS`, kemudian akses foder tersebut dengan terminal. Kemudian jalankan perintah berikut.
+Untuk mempermudah pemahaman, kita akan langsung mencoba membuat hello word dengan menggunakan angular js :D. Untuk mendownload kebutuhan dependency angular, penulis akan menggunakan [bower](http://bower.io/), karena menggunakan bower maka anda diwajibkan untuk melakukan instalasi node js. Bagi anda yang belum melakukan instalasi node js, silahkan lihat di [Instalasi Perlengkapan Coding Node JS](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Silahkan buat sebuah folder dengan nama `Belajar-AngularJS`, kemudian akses foder tersebut dengan terminal. Kemudian jalankan perintah berikut.
 
 {% highlight bash %}
 bower init
@@ -84,7 +84,7 @@ Berikut adalah penjelasan mengenai codingan diatas.
 * `ng-model` berfungsi sebagai model yang dapat menampung data, nantinya data ini akan ditampilkan.
 * {% raw %} {{nama}} {% endraw %} berfungsi untuk menampilkan data, di dalam angular, kita akan menggunakan tanda {% raw %} {{}} {% endraw %} untuk menampilkan data
 
-Nah setelah selesai, selanjutnya kita akan menjalankan file `index.html`, untuk menjalankannya, kita akan menggunakan plugin [http-server](http://adf.ly/1lPNQV){:target="_blank"} dari node js :D. Bagi anda yang masing bingung dengan node js, silahkan simak di artikel [instalasi perlengkapan node js](http://adf.ly/1lPNOT){:target="_blank"}. Untuk melakukan instalasi http-server, silahkan jalankan perintah berikut.
+Nah setelah selesai, selanjutnya kita akan menjalankan file `index.html`, untuk menjalankannya, kita akan menggunakan plugin [http-server](https://github.com/indexzero/http-server) dari node js :D. Bagi anda yang masing bingung dengan node js, silahkan simak di artikel [instalasi perlengkapan node js](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Untuk melakukan instalasi http-server, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
  npm install -g http-server
@@ -325,4 +325,4 @@ output untuk proses delete
 
 ![Screenshot from 2016-05-03 10-41-24.png](../images/Screenshot from 2016-05-03 10-41-24.png)
 
-Sekian tutorial belajar angular js dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Angular JS](http://adf.ly/1lPNUJ){:target="_blank"}.
+Sekian tutorial belajar angular js dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Angular JS](https://github.com/RizkiMufrizal/Belajar-AngularJS).

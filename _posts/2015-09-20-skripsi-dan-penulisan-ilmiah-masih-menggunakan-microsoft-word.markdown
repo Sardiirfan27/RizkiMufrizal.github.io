@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Skripsi Dan Penulisan Ilmiah Masih Menggunakan Microsoft Word ???
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: belajar menulis tulisan ilmiah dengan lyx
 tags: [lyx, latex, microsoft word, google scholar, jabref, skripsi, penulisan ilmiah]
@@ -21,11 +21,11 @@ Kebanyakan mahasiswa masih menggunakan microsoft word untuk mengerjakan skripsi 
 - Daftar isi, daftar gambar dan daftar tabel diharuskan membuat sendiri, pembuatan nama tabel juga harus dibuat oleh pengguna misalnya `gambar 3.2 : helloword`
 - Untuk perpustakaan, kita diharuskan untuk membuat sendiri tanpa bantuan lain, sehingga banyak tulisan daftar pustaka yang tidak sesuai aturan penulisan.
 
-Trus bagaimana mengatasinya ? untuk soal penulisan ada beberapa tool yang disarankan, diantaranya adalah dengan menggunakan [LaTeX](http://adf.ly/1lPIe2){:target="_blank"} dan [Markdown](http://adf.ly/1lPIef){:target="_blank"}. Diantara 2 tool tersebut, LaTeX merupakan salah satu tool yang paling banyak digunakan dalam bidang akademik sedangkan markdown lebih ke arah pembuatan ebook dan dokumentasi. Untuk penulisan skripsi dan penulisan ilmiah kita gunakan LaTex saja, tapi tunggu bukankah LaTeX itu diharuskan kita untuk coding secara manual ? yups tapi jangan khawatir karena ada sebuah tool lagi yang mirip fungsinya seperti microsoft word yaitu [LyX](http://adf.ly/1lPIfB){:target="_blank"}.
+Trus bagaimana mengatasinya ? untuk soal penulisan ada beberapa tool yang disarankan, diantaranya adalah dengan menggunakan [LaTeX](https://www.latex-project.org/) dan [Markdown](https://en.wikipedia.org/wiki/Markdown). Diantara 2 tool tersebut, LaTeX merupakan salah satu tool yang paling banyak digunakan dalam bidang akademik sedangkan markdown lebih ke arah pembuatan ebook dan dokumentasi. Untuk penulisan skripsi dan penulisan ilmiah kita gunakan LaTex saja, tapi tunggu bukankah LaTeX itu diharuskan kita untuk coding secara manual ? yups tapi jangan khawatir karena ada sebuah tool lagi yang mirip fungsinya seperti microsoft word yaitu [LyX](http://www.lyx.org/).
 
 ## Instalasi LyX
 
-Untuk pengguna windows silahkan anda download di [LyX](http://adf.ly/1lPIfs){:target="_blank"} sedangkan pengguna linux, kita akan menggunakan terminal.
+Untuk pengguna windows silahkan anda download di [LyX](http://www.lyx.org/Download) sedangkan pengguna linux, kita akan menggunakan terminal.
 
 tambahkan repsitory terlebih dahulu.
 
@@ -53,7 +53,7 @@ sudo apt-get install texlive-lang-other
 
 ## Menggunakan LyX dan Template LyX
 
-Silahkan download template LyX pada repository github saya di [TemplatePenulisanLyX](http://adf.ly/1lPIga){:target="_blank"} kemudian buka file yang berektensi `.lyx` misalnya disini saya membuka template skripsi. maka hasilnya seperti ini.
+Silahkan download template LyX pada repository github saya di [TemplatePenulisanLyX](https://github.com/RizkiMufrizal/TemplatePenulisanLyX) kemudian buka file yang berektensi `.lyx` misalnya disini saya membuka template skripsi. maka hasilnya seperti ini.
 ![Screenshot from 2015-09-20 14:57:16.png](../images/Screenshot from 2015-09-20 14:57:16.png)
 
 ### Mengganti Nama Penulis, Dosen Pembimbing Dst
@@ -90,11 +90,11 @@ Silahkan download template LyX pada repository github saya di [TemplatePenulisan
 
 ### Membuat Daftar Pustaka
 
-- Download terlebih dahulu [Jabef](http://adf.ly/1lPIhM){:target="_blank"} yang digunakan untuk memasukkan daftar isi
+- Download terlebih dahulu [Jabef](http://jabref.sourceforge.net/) yang digunakan untuk memasukkan daftar isi
 - Jabref bersifat portable sehingga dapat langsung dibuka
 - Buka jabref, pilih menu file lalu pilih open database, pilih file `biblio.bib` maka tampilannya akan seperti ini.
 ![Screenshot from 2015-09-20 15:21:48.png](../images/Screenshot from 2015-09-20 15:21:48.png)
-- Kemudian kita akan mencari daftar pustaka dengan bantuan [google scholar](http://adf.ly/1lPIhn){:target="_blank"}, buka google scholar lalu cari sebuah pengarang dengan judul bukunya misalnya `ifnu bima java desktop` maka akan muncul seperti ini.
+- Kemudian kita akan mencari daftar pustaka dengan bantuan [google scholar](https://scholar.google.co.id/), buka google scholar lalu cari sebuah pengarang dengan judul bukunya misalnya `ifnu bima java desktop` maka akan muncul seperti ini.
 ![Screenshot from 2015-09-20 15:24:24.png](../images/Screenshot from 2015-09-20 15:24:24.png)
 - Pilih kutipan maka akan muncul sebuah popup, lalu pilih `BibTeX` maka akan muncul codingan BibTex
 - copy codingan BibTex, kemudian ke jabref pilih menu bibtex lalu pilih new entry lalu pilih buku

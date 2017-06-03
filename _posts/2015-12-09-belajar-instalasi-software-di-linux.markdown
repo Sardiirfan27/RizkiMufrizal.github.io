@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Instalasi Software Di Linux
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar cara instalasi software pada linux
 tags: [linux, software, install, ubuntu, distro linux, package management, ppa]
@@ -99,7 +99,7 @@ Jika berhasil maka sticky notes akan terinstall dan diterminal anda akan muncul 
 
 ## Instalasi Software Dengan dpkg (Debian Package Manager)
 
-Sebelumnya kita melakukan instalasi dengan menggunakan `apt-get` nah kali ini kita akan menggunakan fungsi `dpkg` untuk melakukan instalasi software. Syarat yang dibutuhkan untuk instalasi software dengan menggunakan dpkg adalah kita diharuskan mendownload file executable dengan extensi `.deb`. Misalnya penulis ingin melakukan instalasi sofware `mysql workbench`, silahkan anda download terlebih dahulu di [Mysql Workbench](http://adf.ly/1lPJk3){:target="_blank"} jangan lupa sesuaikan dengan versi ubuntu anda.
+Sebelumnya kita melakukan instalasi dengan menggunakan `apt-get` nah kali ini kita akan menggunakan fungsi `dpkg` untuk melakukan instalasi software. Syarat yang dibutuhkan untuk instalasi software dengan menggunakan dpkg adalah kita diharuskan mendownload file executable dengan extensi `.deb`. Misalnya penulis ingin melakukan instalasi sofware `mysql workbench`, silahkan anda download terlebih dahulu di [Mysql Workbench](https://dev.mysql.com/downloads/workbench/) jangan lupa sesuaikan dengan versi ubuntu anda.
 
 Berikut merupakan bentuk umum untuk melakukan instalasi dengan menggunakan dpkg
 
@@ -167,7 +167,7 @@ Bagaimana membuat shortcut pada ubuntu jika software tersebut tidak perlu diinst
 sudo apt-get install --no-install-recommends gnome-panel
 {% endhighlight %}
 
-Misalnya penulis ingin membuat shortcut untuk spring tool suite, silahkan download terlebih dahulu di [Spring Tool Suite](http://adf.ly/1lPJiN){:target="_blank"} dan extrack. Setelah selesai buka terminal dan jalankan perintah.
+Misalnya penulis ingin membuat shortcut untuk spring tool suite, silahkan download terlebih dahulu di [Spring Tool Suite](https://spring.io/tools/sts/all) dan extrack. Setelah selesai buka terminal dan jalankan perintah.
 
 {% highlight bash %}
 sudo gnome-desktop-item-edit --create-new /usr/share/applications/

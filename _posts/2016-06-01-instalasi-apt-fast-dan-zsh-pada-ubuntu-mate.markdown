@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Instalasi Apt-Fast Dan ZSH Pada Ubuntu Mate
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: instalasi apt-fast dan zsh pada ubuntu mate
 tags: [apt-fast, zsh, ubuntu mate]
@@ -16,7 +16,7 @@ Pada bulan april yang lalu, akhirnya ubuntu merilis sistem operasi baru dengan c
 
 ## Apa Itu Apt-Fast ?
 
-Pada [artikel sebelumnya](http://adf.ly/1lPO1A){:target="_blank"} penulis telah membahas mengenai package management pada ubuntu yaitu bisa menggunakan apt-get dan juga dpkg. Pada ubuntu 16.04 lebih disarankan untuk menggunakan perintah `apt` saja tanpa perlu menggunakan perintah `apt-get`. Terus apa hubungannya dengan apt-fast ?
+Pada [artikel sebelumnya](http://rizkimufrizal.github.io/belajar-instalasi-software-di-linux/) penulis telah membahas mengenai package management pada ubuntu yaitu bisa menggunakan apt-get dan juga dpkg. Pada ubuntu 16.04 lebih disarankan untuk menggunakan perintah `apt` saja tanpa perlu menggunakan perintah `apt-get`. Terus apa hubungannya dengan apt-fast ?
 
 >>apt-fast adalah shell script yang berfungsi sebagai pembungkus apt-get dan aptitude atau dapat dikatakan bahwa apt-fast merupakan perintah yang dikembangkan dari dasar apt-get yang dapat melakukan download package secara paralel dengan multiple koneksi per package.
 
@@ -56,7 +56,7 @@ Untuk melakukan instalasi ZSH silahkan jalankan perintah berikut.
 sudo apt install zsh
 {% endhighlight %}
 
-Untuk konfigurasi ZSH, penulis menggunakan tool [Oh My Zsh](http://adf.ly/1lPO08){:target="_blank"}. Untuk melakukan instalasinya, silahkan jalankan perintah berikut.
+Untuk konfigurasi ZSH, penulis menggunakan tool [Oh My Zsh](http://ohmyz.sh/). Untuk melakukan instalasinya, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -72,7 +72,7 @@ Nah setelah selesai, silahkan tutup terminal anda lalu buka kembali, jika berhas
 
 ![Screenshot from 2016-06-01 09:38:10.png](../images/Screenshot from 2016-06-01 09:38:10.png)
 
-Langkah selanjutnya, penulis ingin mengganti thema zsh menjadi [agnoster](http://adf.ly/1lPNyq){:target="_blank"}, akan tetapi untuk instalasi thema agnoster memerlukan sedikit konfigurasi untuk font. Silahkan jalankan perintah berikut untuk melakukan clone repository [powerline/font](http://adf.ly/1lPNzM){:target="_blank"}
+Langkah selanjutnya, penulis ingin mengganti thema zsh menjadi [agnoster](https://gist.github.com/agnoster/3712874), akan tetapi untuk instalasi thema agnoster memerlukan sedikit konfigurasi untuk font. Silahkan jalankan perintah berikut untuk melakukan clone repository [powerline/font](https://github.com/powerline/fonts)
 
 {% highlight bash %}
 git clone https://github.com/powerline/fonts.git
@@ -188,7 +188,7 @@ Silahkan restart kembali terminal anda, dan berikut adalah hasilnya
 
 ![Screenshot from 2016-06-01 10:04:29.png](../images/Screenshot from 2016-06-01 10:04:29.png)
 
-Waw... hasilnya lebih bagus :D. Langkah terakhir, karena secara default thema agnoster menggunakan warna solarized, maka kita akan melakukan konfigurasi warna solarized pada terminal mate. Secara default, terminal mate tidak memiliki warna solarized meskipun sudah ubuntu mate versi 16.04 :(, untuk itu kita perlu sedikit melakukan konfigurasi. Silahkan jalankan perintah berikut untuk melakukan clone [mate-terminal-colors-solarized](http://adf.ly/1lPNyI){:target="_blank"}.
+Waw... hasilnya lebih bagus :D. Langkah terakhir, karena secara default thema agnoster menggunakan warna solarized, maka kita akan melakukan konfigurasi warna solarized pada terminal mate. Secara default, terminal mate tidak memiliki warna solarized meskipun sudah ubuntu mate versi 16.04 :(, untuk itu kita perlu sedikit melakukan konfigurasi. Silahkan jalankan perintah berikut untuk melakukan clone [mate-terminal-colors-solarized](https://github.com/NeuralSandwich/mate-terminal-colors-solarized).
 
 {% highlight bash %}
 git clone https://github.com/NeuralSandwich/mate-terminal-colors-solarized.git
@@ -242,7 +242,7 @@ Kemudian restart terminal anda kembali, kemudian silahkan pilih menu edit pada t
 
 ## Konfigurasi Apt-Fast Pada ZSH
 
-Agar fitur autocomplete apt-fast pada ZSH berjalan, kita harus melakukan beberapa konfigurasi. Silahkan jalankan perintah berikut untuk melakukan clone repository [apt-fast](http://adf.ly/1lPNxh){:target="_blank"}.
+Agar fitur autocomplete apt-fast pada ZSH berjalan, kita harus melakukan beberapa konfigurasi. Silahkan jalankan perintah berikut untuk melakukan clone repository [apt-fast](https://github.com/ilikenwf/apt-fast).
 
 {% highlight bash %}
 git clone https://github.com/ilikenwf/apt-fast.git

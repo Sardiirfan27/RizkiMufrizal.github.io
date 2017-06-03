@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Instalasi Perlengkapan Coding PHP
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: instalasi perlengkapan php untuk coding php
 tags: [coding php, php, apache, mariadb, phpmyadmin, composer]
@@ -16,7 +16,7 @@ Sebelum kita melakukan coding PHP pada linux, kita diharuskan untuk melakukan in
 
 ## Instalasi Apache Web Server
 
->>[Apache web server](http://adf.ly/1lPJt9){:target="_blank"} adalah server web yang dapat dijalankan di banyak sistem operasi (Unix, BSD, Linux, Microsoft Windows dan Novell Netware serta platform lainnya) yang berguna untuk melayani dan memfungsikan situs web. Protokol yang digunakan untuk melayani fasilitas web/www ini menggunakan HTTP.
+>>[Apache web server](https://httpd.apache.org/) adalah server web yang dapat dijalankan di banyak sistem operasi (Unix, BSD, Linux, Microsoft Windows dan Novell Netware serta platform lainnya) yang berguna untuk melayani dan memfungsikan situs web. Protokol yang digunakan untuk melayani fasilitas web/www ini menggunakan HTTP.
 
 Nah untuk menjalankan PHP kita dapat menggunakan web server apache ini, untuk melakukan instalasi apache silahkan jalankan perintah berikut ini.
 
@@ -38,9 +38,9 @@ jika berhasil maka akan muncul halaman web tentang web server apache seperti ber
 
 ## Instalasi PHP
 
->>[PHP](http://adf.ly/1lPJuv){:target="_blank"} adalah singkatan dari "PHP: Hypertext Prepocessor", yaitu bahasa pemrograman yang digunakan secara luas untuk penanganan pembuatan dan pengembangan sebuah situs web dan bisa digunakan bersamaan dengan HTML. PHP diciptakan oleh Rasmus Lerdorf pertama kali tahun 1994.
+>>[PHP](https://secure.php.net/) adalah singkatan dari "PHP: Hypertext Prepocessor", yaitu bahasa pemrograman yang digunakan secara luas untuk penanganan pembuatan dan pengembangan sebuah situs web dan bisa digunakan bersamaan dengan HTML. PHP diciptakan oleh Rasmus Lerdorf pertama kali tahun 1994.
 
-Langkah selanjutnya adalah melakukan instalasi [PHP](http://adf.ly/1lPJuv){:target="_blank"}, karena [PHP 7](http://adf.ly/1lPJuv){:target="_blank"} udah release maka kita akan menggunakan PHP 7 :D. Untuk melakukan instalasi PHP silahkan jalankan perintah berikut ini.
+Langkah selanjutnya adalah melakukan instalasi [PHP](https://secure.php.net/), karena [PHP 7](https://secure.php.net/) udah release maka kita akan menggunakan PHP 7 :D. Untuk melakukan instalasi PHP silahkan jalankan perintah berikut ini.
 
 {% highlight bash %}
 sudo add-apt-repository ppa:ondrej/php
@@ -80,7 +80,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
 
 ## Instalasi MariaDB
 
->>[Mariadb](http://adf.ly/1lPJx6){:target="_blank"} adalah produk fork dari [MySQL](http://adf.ly/1lPJyP){:target="_blank"} yang didukung langsung dari community. Sejak diakuisisinya MySQL oleh [Oracle](http://adf.ly/1lPJza){:target="_blank"} pada September 2010, Monty Program sebagai penulis awal kode sumber MySQL memisahkan diri dari pengembangan dan membuat versi yang lebih sendiri yakni MariaDB.
+>>[Mariadb](https://mariadb.org/) adalah produk fork dari [MySQL](https://www.mysql.com/) yang didukung langsung dari community. Sejak diakuisisinya MySQL oleh [Oracle](http://www.oracle.com/) pada September 2010, Monty Program sebagai penulis awal kode sumber MySQL memisahkan diri dari pengembangan dan membuat versi yang lebih sendiri yakni MariaDB.
 
 Dari definisi diatas dapat ditarik kesimpulan bahwa sebenarnya mariadb dengan mysql tidak memiliki perbedaan yang jauh sehingga tidak ada masalah jika kita menggunakan mariadb. Salah satu faktor memilih mariadb adalah disupport oleh community dan juga memiliki performance yang lebih baik dari mysql. Untuk melakukan instalasinya silahkan jalankan perintah berikut.
 
@@ -106,9 +106,9 @@ mysql -u root -p
 
 ## Instalasi PhpMyAdmin
 
->>[phpMyAdmin](http://adf.ly/1lPK1O){:target="_blank"} adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL. phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perijinan (permissions), dan lain-lain).
+>>[phpMyAdmin](https://www.phpmyadmin.net/) adalah perangkat lunak bebas yang ditulis dalam bahasa pemrograman PHP yang digunakan untuk menangani administrasi MySQL. phpMyAdmin mendukung berbagai operasi MySQL, diantaranya (mengelola basis data, tabel-tabel, bidang (fields), relasi (relations), indeks, pengguna (users), perijinan (permissions), dan lain-lain).
 
-Untuk administrasi mysql kita dapat menggunakan phpMyAdmin, silahkan download di [phpMyAdmin](http://adf.ly/1lPK2p){:target="_blank"} pilih yang `phpMyAdmin-4.5.2-all-languages.tar.xz` kemudian extrak dan rename foldernya dengan `phpmyadmin`, hasilnya ektraknya silahkan anda copy ke folder `/var/www/html/` kemudian akses pada `http://127.0.0.1/phpmyadmin/` maka akan muncul halaman phpmyadmin seperti berikut ini.
+Untuk administrasi mysql kita dapat menggunakan phpMyAdmin, silahkan download di [phpMyAdmin](https://www.phpmyadmin.net/downloads/) pilih yang `phpMyAdmin-4.5.2-all-languages.tar.xz` kemudian extrak dan rename foldernya dengan `phpmyadmin`, hasilnya ektraknya silahkan anda copy ke folder `/var/www/html/` kemudian akses pada `http://127.0.0.1/phpmyadmin/` maka akan muncul halaman phpmyadmin seperti berikut ini.
 
 ![Screenshot from 2015-12-21 08:40:35.png](../images/Screenshot from 2015-12-21 08:40:35.png)
 
@@ -126,9 +126,9 @@ kemudian akses kembali phpmyadmin anda :).
 
 ## Instalasi Composer
 
-Tahap selanjutnya kita akan melakukan instalasi [Composer](http://adf.ly/1lPK4t){:target="_blank"}. apa itu composer ?
+Tahap selanjutnya kita akan melakukan instalasi [Composer](https://getcomposer.org/). apa itu composer ?
 
->>[Composer](http://adf.ly/1lPK4t){:target="_blank"} merupakan sebuah build tool untuk dependency manager terhadap library yang dibutuhkan oleh project PHP.
+>>[Composer](https://getcomposer.org/) merupakan sebuah build tool untuk dependency manager terhadap library yang dibutuhkan oleh project PHP.
 
 Buka terminal pada folder yang akan dijadikan sebagai folder composer. Kemudian jalankan perintah berikut
 

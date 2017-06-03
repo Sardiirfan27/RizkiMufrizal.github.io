@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar iOS Bagian 4
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: Belajar iOS Bagian 4
 tags: [Swift, iOS, Xcode, alamofire, RxSwift, ObjectMapper, Audio Player Manager, Marquee Label]
@@ -336,4 +336,4 @@ dan hasilnya seperti berikut :D.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ef35KSBwykA" frameborder="0" allowfullscreen></iframe>
 
-Akhirnya selesai juga artikel mengenai belajar iOS dari bagian 1 hingga 4 :). Untuk source code diatas dapat anda akses di [Belajar-iOS](http://riffhold.com/1bjT){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 4, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
+Akhirnya selesai juga artikel mengenai belajar iOS dari bagian 1 hingga 4 :). Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS/tree/bagian-4){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 4, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)

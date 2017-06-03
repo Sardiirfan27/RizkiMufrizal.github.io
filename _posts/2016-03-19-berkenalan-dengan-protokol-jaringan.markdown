@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Berkenalan Dengan Protokol Jaringan
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: berkenalan dengan protokol jaringan
 tags: [protokol, protokol jaringan]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Membuat RESTful Web Service Dengan Framework Spring Boot
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: membuat RESTful Web Service dengan Framework Spring Boot
 tags: [spring boot, RESTful Web Service, mongodb]
@@ -12,19 +12,19 @@ share: true
 date: 2017-01-13T20:15:28+07:00
 ---
 
-Setelah sekian lama tidak update blog, nah kali ini penulis akan membuat sebuah artikel mengenai bagaimana cara membuat RESTful Web Service dengan menggunakan Framework Spring Boot :). Spring Boot merupakan salah satu project dari pivotal yaitu sebuah perusahaan yang mengembangkan framework spring. Bagi anda yang belum kenal dengan spring framework bisa membaca artikel di [Belajar Spring Framework](http://adf.ly/1lPOdn){:target="_blank"}. Karena spring framework merupakan salah satu framework dari bahasa pemrograman java maka anda diwajibkan untuk melakukan instalasi java, bagi anda yang belum melakukan instalasi java dapat membaca artikel [Instalasi Perlengkapan Coding Java](http://adf.ly/1lOBKt){:target="_blank"}.
+Setelah sekian lama tidak update blog, nah kali ini penulis akan membuat sebuah artikel mengenai bagaimana cara membuat RESTful Web Service dengan menggunakan Framework Spring Boot :). Spring Boot merupakan salah satu project dari pivotal yaitu sebuah perusahaan yang mengembangkan framework spring. Bagi anda yang belum kenal dengan spring framework bisa membaca artikel di [Belajar Spring Framework](https://rizkimufrizal.github.io/belajar-framework-spring/). Karena spring framework merupakan salah satu framework dari bahasa pemrograman java maka anda diwajibkan untuk melakukan instalasi java, bagi anda yang belum melakukan instalasi java dapat membaca artikel [Instalasi Perlengkapan Coding Java](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/).
 
 ## Setup Project
 
-Pada artikel ini, kita akan menggunakan [groovy](http://adf.ly/1lPOcc){:target="_blank"} yaitu salah satu bahasa scripting yang dikembangkan diatas JVM (java virtual machine) dimana bahasa groovy ini dapat diinterpretasikan atau dikompilasi. Masih terdapat bahasa pemrograman lain yang dikembangkan diatas JVM seperti [scala](http://adf.ly/1lPObp){:target="_blank"}, [kotlin](http://adf.ly/1lPLWb){:target="_blank"}, [jruby](http://adf.ly/1lPObN){:target="_blank"}, [jython](http://adf.ly/1lPOap){:target="_blank"} dan lain sebagainya. Di blog pribadi saya, terdapat salah satu pembahasan bahasa pemrograman diatas yaitu [kotlin](http://adf.ly/1lPLWb){:target="_blank"}, bagi anda yang ingin membaca tentang kotlin, silahkan akses di [Instalasi Perlengkapan Coding Kotlin](http://adf.ly/1lPOYx){:target="_blank"}.
+Pada artikel ini, kita akan menggunakan [groovy](http://www.groovy-lang.org/) yaitu salah satu bahasa scripting yang dikembangkan diatas JVM (java virtual machine) dimana bahasa groovy ini dapat diinterpretasikan atau dikompilasi. Masih terdapat bahasa pemrograman lain yang dikembangkan diatas JVM seperti [scala](https://www.scala-lang.org/), [kotlin](https://kotlinlang.org/), [jruby](http://jruby.org/), [jython](http://www.jython.org/) dan lain sebagainya. Di blog pribadi saya, terdapat salah satu pembahasan bahasa pemrograman diatas yaitu [kotlin](https://kotlinlang.org/), bagi anda yang ingin membaca tentang kotlin, silahkan akses di [Instalasi Perlengkapan Coding Kotlin](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-kotlin/).
 
-Untuk melakukan setup project spring boot, kita dapat mengenerate projectnya melalui [start spring.io](http://adf.ly/1lPOYX){:target="_blank"}. Silahkan isikan konfigurasi seperti berikut.
+Untuk melakukan setup project spring boot, kita dapat mengenerate projectnya melalui [start spring.io](http://start.spring.io/). Silahkan isikan konfigurasi seperti berikut.
 
 ![Screen Shot 2017-01-12 at 6.10.31 PM.png](../images/Screen Shot 2017-01-12 at 6.10.31 PM.png)
 
 Kemudian silahkan pilih menu generate project. Maka secara otomatis akan dibuatkan sebuah project spring boot dengan menggunakan bahasa pemrograman groovy :D. Disini kita akan menggunakan database mongodb dan menggunakan arsitektur HATEOAS (Hypermedia as the Engine of Application State). HATEOAS adalah salah satu constraint untuk membangun sebuah RESTful Web Service, dimana HATEOAS ini merupakan level 3 pada constraint RESTful Web Service. Pembahasan mengenai HATEOAS akan dibahas pada artikel berikutnya :).
 
-Silahkan extract file yang telah didownload. Pada artikel ini, kita akan menggunakan [IntellIJ IDE](http://adf.ly/1lOB72){:target="_blank"}. Silahkan buka IDE tersebut lalu import project spring boot, berikut adalah struktur project jika dilihat dari IDE tersebut.
+Silahkan extract file yang telah didownload. Pada artikel ini, kita akan menggunakan [IntellIJ IDE](https://www.jetbrains.com/idea/). Silahkan buka IDE tersebut lalu import project spring boot, berikut adalah struktur project jika dilihat dari IDE tersebut.
 
 ![Screen Shot 2017-01-12 at 10.03.00 PM.png](../images/Screen Shot 2017-01-12 at 10.03.00 PM.png)
 
@@ -319,4 +319,4 @@ berikut adalah proses menyimpan data untuk penjualan detail
 
 ![Screen Shot 2017-01-13 at 10.26.38 PM.png](../images/Screen Shot 2017-01-13 at 10.26.38 PM.png)
 
-Bagi anda yang ingin melihat source code codingan, silahkan lihat di [Belajar Spring Boot](http://adf.ly/1lPOXP){:target="_blank"}. Sekian artikel mengenai Membuat RESTful Web Service Dengan Framework Spring Boot dan terima kasih :)
+Bagi anda yang ingin melihat source code codingan, silahkan lihat di [Belajar Spring Boot](https://github.com/RizkiMufrizal/Belajar-Spring-Boot). Sekian artikel mengenai Membuat RESTful Web Service Dengan Framework Spring Boot dan terima kasih :)

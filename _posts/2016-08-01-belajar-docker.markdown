@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Docker
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar docker
 tags: [docker, docker compose, docker image, docker container, vagrant, sails js, node js, mariadb, arsitektur docker]
@@ -12,11 +12,11 @@ share: true
 date: 2016-08-01T07:15:48+07:00
 ---
 
-Pada artikel [Belajar Vagrant](http://adf.ly/1lPLAD){:target="_blank"}, penulis sudah menulis sedikit mengenai tool - tool yang mempermudah kita dalam development sebuah aplikasi. Salah satu tool tersebut adalah vagrant, pada artikel sebelumnya penulis telah membahas mengenai berbagai masalah yang terjadi pada saat development sebuah aplikasi. Pada artikel ini, penulis akan mencoba membahas mengenai teknologi baru yang patut dicoba karena teknologi ini merupakan salah satu teknologi yang akan digunakan pada masa depan :D, teknologi itu adalah docker.
+Pada artikel [Belajar Vagrant](https://rizkimufrizal.github.io/belajar-vagrant/), penulis sudah menulis sedikit mengenai tool - tool yang mempermudah kita dalam development sebuah aplikasi. Salah satu tool tersebut adalah vagrant, pada artikel sebelumnya penulis telah membahas mengenai berbagai masalah yang terjadi pada saat development sebuah aplikasi. Pada artikel ini, penulis akan mencoba membahas mengenai teknologi baru yang patut dicoba karena teknologi ini merupakan salah satu teknologi yang akan digunakan pada masa depan :D, teknologi itu adalah docker.
 
 ## Apa Itu Docker ?
 
->>[Docker](http://adf.ly/1lPOLU){:target="_blank"} adalah sebuah project open source yang ditujukan untuk developer atau sysadmin untuk membangun, mengemas dan menjalankan aplikasi dimana pun di dalam sebuah container.
+>>[Docker](https://www.docker.com/) adalah sebuah project open source yang ditujukan untuk developer atau sysadmin untuk membangun, mengemas dan menjalankan aplikasi dimana pun di dalam sebuah container.
 
 Mungkin anda sedikit bingung dengan pengertian diatas dikarenakan terlalu sulit untuk membayangkan bagaimana pengembangan aplikasi yang sebenarnya. Docker berfungsi sebagai virtualisasi sebuah sistem operasi atau sebuah server atau sebuah web server atau bahkan sebuah database server, dimana dengan menggunakan virtualisasi ini, diharapkan developer dapat mengembangkan aplikasi sesuai dengan spesifikasi server atau dengan kata lain, jika kita mengembangkan sebuah aplikasi lalu kita jalankan pada komputer kita sendiri maka secara otomatis aplikasi akan berjalan dengan baik, nah bagaimana jika server yang akan menjalankan aplikasi kita memiliki banyak perbedaan dengan komputer kita seperti perbedaan sistem operasi, arsitektur processor dan sebagainya. Dengan menggunakan virtualisasi ini maka para developer lebih mudah untuk mengatur mengenai deployment atau menjalankan aplikasi di server production.
 
@@ -24,7 +24,7 @@ Sebelum kita membahas mengenai docker lebih lanjut, kita akan mencoba membahas s
 
 ![comparefeat-dock-vagrant.png](../images/comparefeat-dock-vagrant.png)
 
-gambar diatas dapat anda lihat [disini](http://adf.ly/1lPOM2){:target="_blank"}. Dari gambar dapat dilihat bahwa terdapat banyak sekali perbedaan antara docker dan vagrant. Perbedaan yang sangat mencolok adalah docker menggunakan resource atau memory yang lebih sedikit ketimbang vagrant, ini dapat dilihat dari penggunaaan RAM, penggunaan images sistem operasi dan juga dapat dilihat perbedaannya, jika menggunakan vagrant maka kita wajib melakukan instalasi virtual machine seperti virtual box atau vmware, berbeda dengan docker menggunakan linux container sehingga kita tidak perlu melakukan instalasi virtual machine.
+gambar diatas dapat anda lihat [disini](https://www.ociweb.com/resources/publications/sett/march-2015-docker-vs-vagrant/). Dari gambar dapat dilihat bahwa terdapat banyak sekali perbedaan antara docker dan vagrant. Perbedaan yang sangat mencolok adalah docker menggunakan resource atau memory yang lebih sedikit ketimbang vagrant, ini dapat dilihat dari penggunaaan RAM, penggunaan images sistem operasi dan juga dapat dilihat perbedaannya, jika menggunakan vagrant maka kita wajib melakukan instalasi virtual machine seperti virtual box atau vmware, berbeda dengan docker menggunakan linux container sehingga kita tidak perlu melakukan instalasi virtual machine.
 
 ## Arsitektur Docker
 
@@ -46,7 +46,7 @@ Docker container bisa dikatakan sebagai sebuah folder, dimana docker container i
 
 ### Docker Registry
 
-Docker registry adalah kumpulan docker image yang bersifat private maupun public yang dapat anda akses di [docker hub](http://adf.ly/1lPON1){:target="_blank"}. Dengan menggunakan docker registry, anda dapat menggunakan docker image yang telah dibuat oleh developer yang lain, sehingga mempermudahkan kita dalam pengembangan aplikasi.
+Docker registry adalah kumpulan docker image yang bersifat private maupun public yang dapat anda akses di [docker hub](https://hub.docker.com/). Dengan menggunakan docker registry, anda dapat menggunakan docker image yang telah dibuat oleh developer yang lain, sehingga mempermudahkan kita dalam pengembangan aplikasi.
 
 ## Instalasi Docker
 
@@ -140,7 +140,7 @@ Jika berhasil maka anda akan melihat output seperti gambar berikut.
 
 Setelah melakukan instalasi docker engine atau core docker, langkah selanjutnya kita akan melakukan instalasi docker compose, apa itu docker compose ?
 
->>[Docker compose](http://adf.ly/1lPONj){:target="_blank"} berfungsi untuk menjalankan container docker secara bersamaan.
+>>[Docker compose](https://docs.docker.com/compose/) berfungsi untuk menjalankan container docker secara bersamaan.
 
 docker compose ini sangat berguna ketika aplikasi kita terpisah - pisah pada komputer yang berbeda, contohnya adalah aplikasi yang dibuat berada pada 1 container sedangkan database yang akan digunakan oleh aplikasi tersebut berada pada container yang lain. Ketika menggunakan docker compose maka kita dapat menjalankan kedua container tersebut secara bersamaan dan bahkan kita dapat melakukan link ke container yang kita inginkan.
 
@@ -184,7 +184,7 @@ docker-compose version 1.8.0, build f3628c7
 
 Untuk mempercepat latihan, kita akan mencoba menggunakan Sails JS, apa itu Sails JS ?
 
->>[Sails JS](http://adf.ly/1lPHlF){:target="_blank"} adalah salah satu framework mvc untuk node js.
+>>[Sails JS](http://sailsjs.org/) adalah salah satu framework mvc untuk node js.
 
 Sails JS merupakan framework yang dikembangkan dari framework express js, dengan menggunakan scaffolding dari Sails JS maka Sails JS akan secara otomatis membuat project tanpa perlu membuat project dari awal. Sails JS telah menggunakan salah satu framework orm node js yaitu waterline sehingga mempermudah kita untuk melakukan migrasi antar database. Dan salah satu keunggulan dari Sails JS adalah mudahnya membuat API dengan menggunakan arsitektur REST.
 
@@ -192,7 +192,7 @@ Pada artikel ini, kita hanya akan membuat sebuah REST API dengan menggunakan Sai
 
 ![Arsitektur Docker Sails.svg](../images/Arsitektur Docker Sails.svg)
 
-Setelah mengetahui arsitektur yang akan kita gunakan, hal yang pertama kali kita lakukan sekarang adalah melakukan instalasi `Sails JS` pada pc kita terlebih dahulu, karena Sails JS merupakan framework node js maka kita membutuhkan instalasi node js, bagi anda yang belum melakukan instalasi node js, silahkan lihat artikel [instalasi perlengkapan coding node js ](http://adf.ly/1lPNOT){:target="_blank"}. Untuk melakukan instalasi Sails JS silahkan jalankan perintah berikut.
+Setelah mengetahui arsitektur yang akan kita gunakan, hal yang pertama kali kita lakukan sekarang adalah melakukan instalasi `Sails JS` pada pc kita terlebih dahulu, karena Sails JS merupakan framework node js maka kita membutuhkan instalasi node js, bagi anda yang belum melakukan instalasi node js, silahkan lihat artikel [instalasi perlengkapan coding node js ](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Untuk melakukan instalasi Sails JS silahkan jalankan perintah berikut.
 
 {% highlight bash %}
 npm -g install sails
@@ -432,7 +432,7 @@ belajar-sailsjs-docker:
     - mariadb
 {% endhighlight %}
 
-Bisa dilihat bahwa kita menggunakan konfigurasi docker compose versi 1, di dalam konfigurasi tersebut terdapat dua service/container yang akan dijalankan yaitu mariadb dan belajar-sailsjs-docker. Container belajar-sailsjs-docker mempunyai link terhadap container mariadb, sehingga container mariadb wajib dijalankan terlebih dahulu. Agar container mariadb dapat dijalankan terlebih dahulu maka kita dapat menggunakan [dockeriza](http://adf.ly/1lPOPN){:target="_blank"}, aplikasi sails harus dijalankan dengan perintah `sails lift` maka di dalam command kita menggunakan perintah `sails lift`. Pada codingan diatas kita menggunakan perintah `sh ./install.sh` karena kita membutuhkan beberapa command bash, maka silahkan anda buat sebuah file `install.sh` di dalam root project, lalu masukkan codingan seperti berikut.
+Bisa dilihat bahwa kita menggunakan konfigurasi docker compose versi 1, di dalam konfigurasi tersebut terdapat dua service/container yang akan dijalankan yaitu mariadb dan belajar-sailsjs-docker. Container belajar-sailsjs-docker mempunyai link terhadap container mariadb, sehingga container mariadb wajib dijalankan terlebih dahulu. Agar container mariadb dapat dijalankan terlebih dahulu maka kita dapat menggunakan [dockeriza](https://github.com/jwilder/dockerize), aplikasi sails harus dijalankan dengan perintah `sails lift` maka di dalam command kita menggunakan perintah `sails lift`. Pada codingan diatas kita menggunakan perintah `sh ./install.sh` karena kita membutuhkan beberapa command bash, maka silahkan anda buat sebuah file `install.sh` di dalam root project, lalu masukkan codingan seperti berikut.
 
 {% highlight bash %}
 dockerize -wait tcp://db:3306
@@ -535,4 +535,4 @@ Lalu tekan tombol send, maka data akan tersimpan, untuk mengetahui apakah data t
 
 ![Screenshot from 2016-08-01 00-08-24.png](../images/Screenshot from 2016-08-01 00-08-24.png)
 
-Bagi anda yang ingin melihat contoh project docker yang lain, silahkan lihat di [Belajar Docker](http://adf.ly/1lPOPs){:target="_blank"}. Sekian artikel mengenai belajar docker dan terima kasih :)
+Bagi anda yang ingin melihat contoh project docker yang lain, silahkan lihat di [Belajar Docker](https://github.com/RizkiMufrizal/Belajar-Docker). Sekian artikel mengenai belajar docker dan terima kasih :)

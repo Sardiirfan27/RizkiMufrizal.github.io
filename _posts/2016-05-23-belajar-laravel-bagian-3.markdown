@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Laravel Bagian 3
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar laravel
 tags: [laravel, vim, mvc, nginx, mariadb, hhvm, controller, router, authentication, gulp, browserify, bootstrap, sass]
@@ -12,7 +12,7 @@ share: true
 date: 2016-05-23T10:00:45+07:00
 ---
 
-Setelah menyelesaikan [artikel sebelumnya](http://adf.ly/1lPNv5){:target="_blank"}, penulis kembali menulis artikel lanjutan dari artikle sebelumnya :D. Artikel mengenai laravel ini sedikit panjang dikarenakan penulis sedang mempelajari dan mencoba menjelaskan lebih detail bagaimana cara kerja laravel itu sendiri. Pada artikel kali ini, penulis akan membahas mengenai controller, routing, view, valisasi sekaligus kita akan melakukan testing terhadap aplikasi yang telah kita buat.
+Setelah menyelesaikan [artikel sebelumnya](https://rizkimufrizal.github.io/belajar-laravel-bagian-2/), penulis kembali menulis artikel lanjutan dari artikle sebelumnya :D. Artikel mengenai laravel ini sedikit panjang dikarenakan penulis sedang mempelajari dan mencoba menjelaskan lebih detail bagaimana cara kerja laravel itu sendiri. Pada artikel kali ini, penulis akan membahas mengenai controller, routing, view, valisasi sekaligus kita akan melakukan testing terhadap aplikasi yang telah kita buat.
 
 ## Membuat Controller Pada Laravel
 
@@ -511,7 +511,7 @@ masing - masing route tersebut memiliki method yang berbeda - beda dikarenakan k
 
 ## Membuat View Pada Laravel
 
-Setelah melewati banyak konfigurasi pada model dan controller, tahap selanjutnya adalah kita akan membuat view :). Tahap ini merupakan tahap akhir dari project yang akan kita buat. Pada laravel, kita akan menggunakan template engine bawaan laravel yaitu `blade`. Dokumentasi tentang penggunaan view tidak dibahas pada code dokumentasi laravel, akan tetapi dibahas terpisah di [Laravel Collective](http://adf.ly/1lPNuV){:target="_blank"}. Di dalam dokumentasi laravel collective, disana dijelaskan tentang bagaimana cara membuat form dan sebagainya dengan menggunakan blade, akan tetapi kita diharuskan melakukan instalasi library laravel collective pada project yang akan kita gunakan sekarang. Salah satu kelebihan dari laravel collective ini adalah kita dapat menggunakan teknologi CSRF sehingga kita tidak perlu repot - repot membuat konfigurasi CSRF lagi :D. Silahkan anda buka file `composer.json` yang berada pada root folder project anda. Kemudian tambahkan codingan seperti berikut pada bagian `require`.
+Setelah melewati banyak konfigurasi pada model dan controller, tahap selanjutnya adalah kita akan membuat view :). Tahap ini merupakan tahap akhir dari project yang akan kita buat. Pada laravel, kita akan menggunakan template engine bawaan laravel yaitu `blade`. Dokumentasi tentang penggunaan view tidak dibahas pada code dokumentasi laravel, akan tetapi dibahas terpisah di [Laravel Collective](http://). Di dalam dokumentasi laravel collective, disana dijelaskan tentang bagaimana cara membuat form dan sebagainya dengan menggunakan blade, akan tetapi kita diharuskan melakukan instalasi library laravel collective pada project yang akan kita gunakan sekarang. Salah satu kelebihan dari laravel collective ini adalah kita dapat menggunakan teknologi CSRF sehingga kita tidak perlu repot - repot membuat konfigurasi CSRF lagi :D. Silahkan anda buka file `composer.json` yang berada pada root folder project anda. Kemudian tambahkan codingan seperti berikut pada bagian `require`.
 
 {% highlight json %}
 "laravelcollective/html": "5.2.*"
@@ -684,7 +684,7 @@ maka hasilnya akan seperti berikut.
     ],
 {% endhighlight %}
 
-Langkah selanjutnya adalah melakukan instalasi gulp. Gulp merupakan salah satu build tool untuk automated task, bagi anda yang masih bingung bagaimana cara menggunakan gulp, silahkan lihat di artikel [belajar gulp](http://adf.ly/1lPNtz){:target="_blank"}. Untuk melakukan instalasi gulp, silahkan jalankan perintah berikut.
+Langkah selanjutnya adalah melakukan instalasi gulp. Gulp merupakan salah satu build tool untuk automated task, bagi anda yang masih bingung bagaimana cara menggunakan gulp, silahkan lihat di artikel [belajar gulp](http://rizkimufrizal.github.io/berkenalan-dengan-gulp/). Untuk melakukan instalasi gulp, silahkan jalankan perintah berikut.
 
 {% highlight bash %}
 npm install -g gulp
@@ -1458,4 +1458,4 @@ Berikut adalah output untuk halaman data peminjaman buku.
 
 ![Screenshot from 2016-05-23 09-42-03.png](../images/Screenshot from 2016-05-23 09-42-03.png)
 
-Setelah menulis 3 artikel mengenai laravel, aplikasi perpustakaan dengan menggunakan laravel akhirnya selesai juga :D. Sekian tutorial belajar laravel bagian 3 dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Laravel](http://adf.ly/1lPNsr){:target="_blank"}.
+Setelah menulis 3 artikel mengenai laravel, aplikasi perpustakaan dengan menggunakan laravel akhirnya selesai juga :D. Sekian tutorial belajar laravel bagian 3 dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Laravel](https://github.com/RizkiMufrizal/Belajar-Laravel).

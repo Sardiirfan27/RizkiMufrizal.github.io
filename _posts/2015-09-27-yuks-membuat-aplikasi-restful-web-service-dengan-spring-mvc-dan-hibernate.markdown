@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yuks Membuat Aplikasi RESTful Web Service Dengan Spring MVC Dan Hibernate
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: belajar membuat aplikasi RESTful web service dengan spring mvc dan hibernate
 tags: [spring mvc, hibernate, rest, restful, web service, json, xml, http]
@@ -451,7 +451,7 @@ Kemudian buat sebuah file `hibernate.cfg.xml` untuk konfigurasi hibernate, berik
 </hibernate-configuration>
 {% endhighlight %}
 
-Kodingan diatas telah dibahas pada tutorial [Belajar Hibernate](http://adf.ly/1lPHmw){:target="_blank"}. Selanjutnya adalah kita membuat sebuah file lagi yaitu `mvc-dispatcher-servlet.xml` untuk konfigurasi spring mvc. Berikut kodingannya.
+Kodingan diatas telah dibahas pada tutorial [Belajar Hibernate](https://rizkimufrizal.github.io/belajar-hibernate/). Selanjutnya adalah kita membuat sebuah file lagi yaitu `mvc-dispatcher-servlet.xml` untuk konfigurasi spring mvc. Berikut kodingannya.
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -556,7 +556,7 @@ log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss:SSS} %C:%L %-5p - %m%n
 {% endhighlight %}
 
-Untuk menjalankannya dengan perintah `mvc clean jetty:run` mari kita lakukan uji coba dengan menggunakan [Postman](http://adf.ly/1lPIvG){:target="_blank"}. Buka postman lalu lakukan uji coba dengan method `POST` untuk menyimpan data seperti ini.
+Untuk menjalankannya dengan perintah `mvc clean jetty:run` mari kita lakukan uji coba dengan menggunakan [Postman](https://www.getpostman.com/). Buka postman lalu lakukan uji coba dengan method `POST` untuk menyimpan data seperti ini.
 
 ![Screenshot from 2015-09-27 21:30:25.png](../images/Screenshot from 2015-09-27 21:30:25.png)
 
@@ -572,4 +572,4 @@ Dan yang adalah uji coba dengan menggunakan method DELETE untuk menghapus data
 
 ![Screenshot from 2015-09-27 21:31:28.png](../images/Screenshot from 2015-09-27 21:31:28.png)
 
-Sekian tutorial membuat aplikasi resftful web service dengan teknologi spring mvc, hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Spring MVC dan Hibernate](http://adf.ly/1lPIun){:target="_blank"}.
+Sekian tutorial membuat aplikasi resftful web service dengan teknologi spring mvc, hibernate dan Terima kasih :). Untuk source code lengkap, penulis publish di [Belajar Spring MVC dan Hibernate](https://github.com/RizkiMufrizal/Belajar-SpringMVC-Hibernate).

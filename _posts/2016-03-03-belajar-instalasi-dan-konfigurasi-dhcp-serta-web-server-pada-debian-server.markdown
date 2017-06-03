@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Instalasi Dan Konfigurasi DHCP Serta Web Server Pada Debian Server
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar instalasi dan konfigurasi dhcp serta web server pada debian server
 tags: [dhcp, web server, instalasi dhcp pada debian server, instalasi web server pada debian server, instalasi apache web server]
@@ -12,7 +12,7 @@ share: true
 date: 2016-03-03T07:28:59+07:00
 ---
 
-Pada tutorial [sebelumnya](http://adf.ly/1lPLlp){:target="_blank"} kita telah membahas bagaimana cara instalasi dan konfigurasi dns pada debian server, kali ini penulis akan melanjutnya artikel mengenai bagaimana konfigurasi DHCP dan web server pada debian :).
+Pada tutorial [sebelumnya](https://rizkimufrizal.github.io/belajar-instalasi-dan-konfigurasi-dns-pada-debian-server/) kita telah membahas bagaimana cara instalasi dan konfigurasi dns pada debian server, kali ini penulis akan melanjutnya artikel mengenai bagaimana konfigurasi DHCP dan web server pada debian :).
 
 ## Apa Itu DHCP ?
 

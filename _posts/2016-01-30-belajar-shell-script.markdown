@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Shell Script
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar shell script pada linux
 tags: [shell, shell script, linux, bash]
@@ -36,7 +36,7 @@ Jika anda menggunakan linux, maka menyusun perintah - perintah shell di dalam se
 
 ## Setup Vagrant
 
-Seperti biasanya, penulis akan menggunakan vagrant. Bagi yang belum mengerti apa itu vagrant, silahkan akses di [Belajar Vagrant](http://adf.ly/1lPLMU){:target="_blank"}. Kali ini kita akan menggunakan box [debian/jessie64](http://adf.ly/1lPLLu){:target="_blank"} atau debian 8.
+Seperti biasanya, penulis akan menggunakan vagrant. Bagi yang belum mengerti apa itu vagrant, silahkan akses di [Belajar Vagrant](https://rizkimufrizal.github.io/belajar-vagrant/). Kali ini kita akan menggunakan box [debian/jessie64](https://atlas.hashicorp.com/debian/boxes/jessie64) atau debian 8.
 
 Silahkan buat sebuah folder `belajar-shell` kemudian jalankan perintah
 
@@ -260,4 +260,4 @@ Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 {% endhighlight %}
 
-Sekian tutorial tentang belajar shell script, bagi anda yang ingin melihat konfigurasi untuk instalasi ubuntu, silahkan akses di [Perlengkapan Ubuntu](http://adf.ly/1lPLJG){:target="_blank"} dan terima kasih :).
+Sekian tutorial tentang belajar shell script, bagi anda yang ingin melihat konfigurasi untuk instalasi ubuntu, silahkan akses di [Perlengkapan Ubuntu](https://github.com/RizkiMufrizal/Perlengkapan-Ubuntu) dan terima kasih :).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pengalaman Sidang Komprehensif Paket 1 Teknik Informatika Universitas Gunadarma 2016
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: pengalaman sidang komprehensif paket 1 teknik informatika universitas gunadarma 2016
 tags: [komprehensif, paket 1, teknik informatika, universitas gunadarma, 2016]

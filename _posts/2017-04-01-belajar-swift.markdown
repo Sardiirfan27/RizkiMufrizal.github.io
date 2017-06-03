@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Swift
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: Belajar Swift
 tags: [Swift, iOS, xcode]
@@ -18,7 +18,7 @@ Bermula dari project yang sedang saya kerjakan di kantor yaitu aplikasi iOS, pad
 
 >>Swift adalah bahasa pemrograman yang digunakan untuk membangun aplikasi untuk produk apple seperti iOS, OSX dan lain sebagainya.
 
-Terdapat 2 bahasa pemrograman yang dapat kita gunakan untuk mengembangkan aplikasi untuk produk apple yaitu Objective-C dan Swift. Pada artikel ini, penulis hanya membahas mengenai bahasa pemrograman swift untuk versi 3, untuk migrasi versi swift 3 silahkan lihat di [migration swift 3](http://adf.ly/1lr9jS){:target="_blank"}.
+Terdapat 2 bahasa pemrograman yang dapat kita gunakan untuk mengembangkan aplikasi untuk produk apple yaitu Objective-C dan Swift. Pada artikel ini, penulis hanya membahas mengenai bahasa pemrograman swift untuk versi 3, untuk migrasi versi swift 3 silahkan lihat di [migration swift 3](https://swift.org/migration-guide/){:target="_blank"}.
 
 ### Mengapa Menggunakan Swift ?
 
@@ -28,15 +28,15 @@ Pada zaman sekarang, para developer core dari berbagai bahasa pemrograman akan m
 
 Swift sendiri dibangun dengan paradigma yang berbeda dengan Objective-C, dimana bahasa pemrograman swift lebih mudah dibaca jika anda beralirah ke bahasa pemrograman berorientasi object seperti java, javascript, ruby dan lain sebagainya. Jika anda dulu nya adalah developer bahasa C atau C++ maka anda akan lebih mudah membaca source code Objective-C. Jika anda adalah developer pemula, penulis sarankan untuk mempelajari bahasa pemrograman swift 3 karena Objective-C dan swift adalah bahasa pemrograman yang berbeda dan tidak ada kaitan dari kedua nya.
 
-Jika anda adalah seorang developer android, terlebih jika anda telah terbiasa menggunakan bahasa pemrograman [kotlin](http://adf.ly/1lPLWb){:target="_blank"} maka anda tidak akan terlalu susah jika migrasi dari android ke iOS. Bahkan anda akan memiliki learning curve yang lebih cepat.
+Jika anda adalah seorang developer android, terlebih jika anda telah terbiasa menggunakan bahasa pemrograman [kotlin](https://kotlinlang.org/){:target="_blank"} maka anda tidak akan terlalu susah jika migrasi dari android ke iOS. Bahkan anda akan memiliki learning curve yang lebih cepat.
 
 ### Latihan Swift
 
-Pada artikel ini, penulis menggunakan [IBM Swift Sandbox](http://adf.ly/1lrOzj){:target="_blank"} karena kita hanya akan latihan cli dengan menggunakan bahasa pemrograman swift 3. [IBM Swift Sandbox](http://adf.ly/1lrOzj){:target="_blank"} adalah salah satu editor cli online untuk latihan bahasa pemrograman swift, disana terdapat 2 versi yaitu swift versi 2 dan versi 3. Pada artikel ini, penulis akan menggunakan swift 3. 
+Pada artikel ini, penulis menggunakan [IBM Swift Sandbox](https://swift.sandbox.bluemix.net){:target="_blank"} karena kita hanya akan latihan cli dengan menggunakan bahasa pemrograman swift 3. [IBM Swift Sandbox](https://swift.sandbox.bluemix.net){:target="_blank"} adalah salah satu editor cli online untuk latihan bahasa pemrograman swift, disana terdapat 2 versi yaitu swift versi 2 dan versi 3. Pada artikel ini, penulis akan menggunakan swift 3. 
 
 #### Latihan Variabel Pada Swift
 
-Secara default, pada [IBM Swift Sandbox](http://adf.ly/1lrOzj){:target="_blank"} akan menampilkan source code seperti berikut.
+Secara default, pada [IBM Swift Sandbox](https://swift.sandbox.bluemix.net){:target="_blank"} akan menampilkan source code seperti berikut.
 
 {% highlight swift %}
 print("Hello world!")

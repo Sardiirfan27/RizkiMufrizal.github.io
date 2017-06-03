@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Ionic
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: belajar ionic
 tags: [belajar ionic, ionic, android, apk, hybrid]
@@ -20,17 +20,15 @@ Salah satu kelebihan ionic adalah mobile hybrid artinya kita hanya perlu melakuk
 
 Berikut merupakan tahapan yang akan kita lakukan untuk membuat project dengan menggunakan ionic.
 
-- [Instalasi Android](#instalasi-android)
-- [Instalasi Ionic](#instalasi-ionic)
-- [Membuat Sebuah Aplikasi Android](#membuat-sebuah-aplikasi-android)
-- [Membuat File APK](#membuat-file-apk)
-- [Instalasi File APK Ke Device Android](#instalasi-file-apk-ke-device-android)
-    - [Install Ke Emulator Android](#install-ke-emulator-android)
-    - [Install Ke Device Android](#install-ke-device-android)
+- Instalasi Android
+- Instalasi Ionic
+- Membuat Sebuah Aplikasi Android
+- Membuat File APK
+- Instalasi File APK Ke Device Android
 
 ## Instalasi Android
 
-Bagi yang belum melakukan instalasi java, silahkan dilihan di [instalasi perlengkapan coding java](http://adf.ly/1lPIlo){:target="_blank"} Silahkan anda download [android studio](http://adf.ly/1lPInw){:target="_blank"}. Kemudian extract dan install sdk android versi 5.1.1 atau API 22. Setelah selesai, kita akan mulai melakukan path android. Jalankan perintah berkut.
+Bagi yang belum melakukan instalasi java, silahkan dilihan di [instalasi perlengkapan coding java](http://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/) Silahkan anda download [android studio](https://developer.android.com/sdk/index.html). Kemudian extract dan install sdk android versi 5.1.1 atau API 22. Setelah selesai, kita akan mulai melakukan path android. Jalankan perintah berkut.
 
 {% highlight bash %}
 sudo gedit /etc/environment
@@ -52,7 +50,7 @@ Silahkan restart komputer anda agar variabel tersebut dapat terbaca di terminal 
 
 ## Instalasi Ionic
 
-Untuk melakukan instalasi ionic, diwajibkan untuk melakukan instalasi node js, bagi yang belum melakukan instalasi node js silahkan lihat di [instalasi perlengkapan coding node JS](http://adf.ly/1lPIVl){:target="_blank"}. Kemudian jalankan perintah berikut.
+Untuk melakukan instalasi ionic, diwajibkan untuk melakukan instalasi node js, bagi yang belum melakukan instalasi node js silahkan lihat di [instalasi perlengkapan coding node JS](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/). Kemudian jalankan perintah berikut.
 
 {% highlight bash %}
 npm install -g cordova ionic
@@ -117,7 +115,7 @@ Masukkan password dan data lainnya. Jika berhasil maka di dalam folder tersebut 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore android-release-unsigned.apk alias_name
 {% endhighlight %}
 
-Tahap selanjutnya adalah silahkan anda download [zipaligner](http://adf.ly/1lPIoy){:target="_blank"}. Zipaligner berfungsi untuk membuat file apk yang telah release. Extract kemudian copy semua file zipaligner ke folder `platforms/android/build/outputs/apk/` kemudian beri hak akses dengan sintak `chmoa a+x zipalign` kemudian untuk membuat apk jalankan perintah berikut.
+Tahap selanjutnya adalah silahkan anda download [zipaligner](https://github.com/RizkiMufrizal/zipaligner). Zipaligner berfungsi untuk membuat file apk yang telah release. Extract kemudian copy semua file zipaligner ke folder `platforms/android/build/outputs/apk/` kemudian beri hak akses dengan sintak `chmoa a+x zipalign` kemudian untuk membuat apk jalankan perintah berikut.
 
 {% highlight bash %}
 ./zipalign -v 4 android-release-unsigned.apk Belajar-Ionic.apk

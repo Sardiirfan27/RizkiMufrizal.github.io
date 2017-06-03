@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Instalasi Perlengkapan Coding Ruby
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: instalasi perlengkapan ruby pada linux
 tags: [ruby, instalasi ruby, ruby on rails, sinatra, rvm, rubymine]
@@ -12,7 +12,7 @@ share: true
 date: 2015-07-27T07:06:33+07:00
 ---
 
-Sebelumnya kita pernah membahas tentang bagaimana [instalasi java pada linux](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/){:target="_blank"}. Kali ini penulis akan menjelaskan bagaimana instalasi ruby pada linux.
+Sebelumnya kita pernah membahas tentang bagaimana [instalasi java pada linux](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-java/). Kali ini penulis akan menjelaskan bagaimana instalasi ruby pada linux.
 
 >Ruby adalah bahasa pemrograman dinamis berbasis skrip yang berorientasi obyek. Tujuan dari ruby adalah menggabungkan kelebihan dari semua bahasa-bahasa pemrograman skrip yang ada di dunia. Ruby ditulis dengan bahasa pemrograman C dengan kemampuan dasar seperti Perl dan Python.
 
@@ -27,7 +27,7 @@ Ruby juga memiliki berbagai framework diantaranya adalah
 - Nancy
 - dan lain - lain
 
-Baiklah untuk melakukan instalasi ruby pada linux, kita menggunakan [RVM (ruby version manager)](https://rvm.io/){:target="_blank"}. Berikut adalah tahapan untuk melakukan instalasi ruby pada linux.
+Baiklah untuk melakukan instalasi ruby pada linux, kita menggunakan [RVM (ruby version manager)](https://rvm.io/). Berikut adalah tahapan untuk melakukan instalasi ruby pada linux.
 
 Buka terminal lalu install public key terlebih dahulu dengan perintah
 
@@ -93,6 +93,6 @@ jika ingin mengetahui versi release ruby dengan perintah
 rvm list known
 {% endhighlight %}
 
-Untuk menggunakan interpreter ruby dapat dengan menggunakan perintah `irb` pada terminal. Selanjutnya untuk IDE ruby, penulis menggunakan ruby mine dari produknya jetbrains. Anda dapat menggunakan IDE selain dar ruby mine tapi penulis menyarankan menggunakan ruby mine dikarenakan karena kelangkapan dari fitur ruby mine seperti auto complete, support framework ruby on rails. Download terlebih dahulu di [ruby mine](https://www.jetbrains.com/ruby/){:target="_blank"}. ekstrak pada folder tertentu, beri akses eksekusi pada file `rubymine.sh` pada folder bin, kemudian jalankan dengan perintah `./rubymine.sh`. Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
+Untuk menggunakan interpreter ruby dapat dengan menggunakan perintah `irb` pada terminal. Selanjutnya untuk IDE ruby, penulis menggunakan ruby mine dari produknya jetbrains. Anda dapat menggunakan IDE selain dar ruby mine tapi penulis menyarankan menggunakan ruby mine dikarenakan karena kelangkapan dari fitur ruby mine seperti auto complete, support framework ruby on rails. Download terlebih dahulu di [ruby mine](https://www.jetbrains.com/ruby/). ekstrak pada folder tertentu, beri akses eksekusi pada file `rubymine.sh` pada folder bin, kemudian jalankan dengan perintah `./rubymine.sh`. Secara otomatis IDE tersebut akan membuat shortcut pada linux anda.
 
 Sekian tutorial kali ini dan selamat coding ruby. Terima kasih :).

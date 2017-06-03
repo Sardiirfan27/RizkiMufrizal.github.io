@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Membuat Manual Book Dengan Markdown
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar membuat manual book dengan markdown
 tags: [manual book, markdown, pandoc]
@@ -38,7 +38,7 @@ sudo apt-get install pandoc texlive-latex-base texlive-xetex latex-beamer
 
 ## Download Template Manual Book
 
-Silahkan download terlebih dahulu [template manual book markdown](http://adf.ly/1lPJdN){:target="_blank"}. Di dalam template tersebut terdapat beberapa file yaitu `01-teori.md`,`02-perancangan.md` dan lain - lain berfungsi mewakili dari masing - masing bab, misalnya `01-teori.md` mewakili dari bab 1 dan sebagainya.
+Silahkan download terlebih dahulu [template manual book markdown](https://github.com/RizkiMufrizal/Manual-Book-Markdown). Di dalam template tersebut terdapat beberapa file yaitu `01-teori.md`,`02-perancangan.md` dan lain - lain berfungsi mewakili dari masing - masing bab, misalnya `01-teori.md` mewakili dari bab 1 dan sebagainya.
 
 ## Cara Penggunaan Template
 

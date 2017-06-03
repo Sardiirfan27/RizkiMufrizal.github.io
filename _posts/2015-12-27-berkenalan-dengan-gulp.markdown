@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Berkenalan Dengan Gulp
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar dan berkenalan dengan gulp
 tags: [gulp, gulp html, gulp css, gulp js]
@@ -12,15 +12,15 @@ share: true
 date: 2015-12-27T11:30:20+07:00
 ---
 
-Jika anda adalah seorang developert javascript terutama yang udah sering ngoding di node js pasti udah tidak asing lagi dengan yang namanya [gulp](http://adf.ly/1lPKO4){:target="_blank"} :D.
+Jika anda adalah seorang developert javascript terutama yang udah sering ngoding di node js pasti udah tidak asing lagi dengan yang namanya [gulp](http://gulpjs.com/) :D.
 
->>[Gulp](http://adf.ly/1lPKO4){:target="_blank"} adalah sebuah build tool yang biasanya digunakan untuk automated task atau bisa dibilang sebagai automator.
+>>[Gulp](http://gulpjs.com/) adalah sebuah build tool yang biasanya digunakan untuk automated task atau bisa dibilang sebagai automator.
 
 Biasanya gulp digunakan untuk melakukan serangkaian kerja seperti membuat minify terhadap file html, css, js, melakukan concat file js, dan sebagainya. Pada artikel kali ini, penulis ingin membahas bagaimana cara penggunaan gulp untuk setup development sebuah project :D.
 
 ## Instalasi Gulp
 
-Karena gulp basic nya menggunakan node js maka anda diharuskan melakukan instalasi node js, yang belum melakukan instalasi node js silahkan lihat di [Instalasi Perlengkapan Coding NodeJS](http://adf.ly/1lPIVl){:target="_blank"}.
+Karena gulp basic nya menggunakan node js maka anda diharuskan melakukan instalasi node js, yang belum melakukan instalasi node js silahkan lihat di [Instalasi Perlengkapan Coding NodeJS](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-node-js/).
 
 Untuk melakukan instalasi gulp silahkan jalankan perintah
 
@@ -280,4 +280,4 @@ untuk menjalankannya dengan perintah
 gulp build
 {% endhighlight %}
 
-Untuk source code nya silahkan lihat di [Belajar Gulp](http://adf.ly/1lPKHZ){:target="_blank"}. Sekian artikel mengenai berkenalan dengan gulp dan terima kasih :).
+Untuk source code nya silahkan lihat di [Belajar Gulp](https://github.com/RizkiMufrizal/Belajar-Gulp). Sekian artikel mengenai berkenalan dengan gulp dan terima kasih :).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Instalasi Dan Konfigurasi PostgreSQL
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: instalasi dan konfigurasi PostgreSQL pada linux
 tags: [PostgreSQL, Instalasi PostgreSQL, pgadmin, instalasi pgadmin, query pada PostgreSQL]
@@ -12,7 +12,7 @@ share: true
 date: 2016-02-13T08:41:23+07:00
 ---
 
->>[PostgreSQL](http://www.postgresql.org/){:target="_blank"} adalah salah satu dbms yang menawarkan skalabilitas dan kinerja tinggi berbasis open source.
+>>[PostgreSQL](http://www.postgresql.org/) adalah salah satu dbms yang menawarkan skalabilitas dan kinerja tinggi berbasis open source.
 
 Pada artikel ini, penulis akan mencoba menjelaskan bagaimana instalasi dan konfigurasi postgreSQL pada linux.
 
@@ -123,7 +123,7 @@ belajar-postgresql=>
 
 ### Melakukan Instalasi PGAdmin
 
->> [PGAdmin](http://adf.ly/1lPLPk){:target="_blank"} adalah salah satu editor atau GUI untuk melakukan akses terhadap database postgreSQL.
+>> [PGAdmin](http://www.pgadmin.org/) adalah salah satu editor atau GUI untuk melakukan akses terhadap database postgreSQL.
 
 Sebenarnya masih banyak GUI yang lain untuk melakukan akses terhadap database postgreSQL, akan tetapi penulis hanya menggunakan pgAdmin, mengapa demikian ? dikarenakan kemudahan dalam konfigurasi database postgreSQL pada pgAdmin. Untuk melakukan instalasi pgAdmin silahkan jalankan perintah berikut.
 

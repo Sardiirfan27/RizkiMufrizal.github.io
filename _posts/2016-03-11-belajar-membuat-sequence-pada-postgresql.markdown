@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Membuat Sequence Pada PostgreSQL
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar membuat sequence pada postgresql
 tags: [postgresql, sequence pada postgresql]
@@ -12,7 +12,7 @@ share: true
 date: 2016-03-11T21:15:46+07:00
 ---
 
-Pada artikel [sebelumnya](http://adf.ly/1lPLxc){:target="_blank"}, penulis telah membahas mengenai bagaimana cara instalasi dan konfigurasi postgresql :). Jika pada artikel sebelumnya kita hanya belajar bagaimana cara instalasi, konfigurasi serta belajar mengenai DDL, DML dan DCL pada postgresql, sedangkan pada artikel ini kita akan membahas mengenai sequence pada postgresql :).
+Pada artikel [sebelumnya](https://rizkimufrizal.github.io/instalasi-dan-konfigurasi-postgresql/), penulis telah membahas mengenai bagaimana cara instalasi dan konfigurasi postgresql :). Jika pada artikel sebelumnya kita hanya belajar bagaimana cara instalasi, konfigurasi serta belajar mengenai DDL, DML dan DCL pada postgresql, sedangkan pada artikel ini kita akan membahas mengenai sequence pada postgresql :).
 
 ## Apa Itu Sequence Pada PostgreSQL ?
 
@@ -26,15 +26,15 @@ Sequence merupakan salah satu fitur yang terdapat pada postgresql. Sequence memi
 
 Berikut adalah list database yang menggunakan sequence :
 
-* [PostgreSQL](http://adf.ly/1lPLxx){:target="_blank"}
-* [Oracle Database](http://adf.ly/1lPLyM){:target="_blank"}
-* [FireBird](http://adf.ly/1lPLyp){:target="_blank"}
-* [H2 Database](http://adf.ly/1lPLzN){:target="_blank"}
-* [HSQLDB](http://adf.ly/1lPLzk){:target="_blank"}
+* [PostgreSQL](http://www.postgresql.org/)
+* [Oracle Database](https://www.oracle.com/database/index.html)
+* [FireBird](http://www.firebirdsql.org/)
+* [H2 Database](http://www.h2database.com/html/main.html)
+* [HSQLDB](http://hsqldb.org/)
 
 ## Membuat Sequence Pada PostgreSQL
 
-Sebelum membuat sequence, kita terlebih dahulu membuat tabel. Database yang akan digunakan adalah `belajar-postgresql` sama seperti pada artikel [instalasi dan konfigurasi postgresql](http://adf.ly/1lPLxc){:target="_blank"}. Untuk membuat tabel, silahkan jalanlan perintah berikut.
+Sebelum membuat sequence, kita terlebih dahulu membuat tabel. Database yang akan digunakan adalah `belajar-postgresql` sama seperti pada artikel [instalasi dan konfigurasi postgresql](https://rizkimufrizal.github.io/instalasi-dan-konfigurasi-postgresql/). Untuk membuat tabel, silahkan jalanlan perintah berikut.
 
 {% highlight sql %}
 CREATE TABLE barang(

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar iOS Bagian 3
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: Belajar iOS Bagian 3
 tags: [Swift, iOS, Xcode, alamofire, RxSwift, ObjectMapper, Search Bar]
@@ -12,7 +12,7 @@ share: true
 date: 2017-05-15T20:15:28+07:00
 ---
 
-Sebelumnya kita telah membuat aplikasi untuk melihat list musik, akan tetapi kurang jika kita tidak menambahkan fitur search :). Oke, pada artikel ini kita akan membahas mengenai bagaimana cara membuat search :D. Mungkin artikel ini adalah artikel yang terpendek dikarenkan untuk membuat sebuah search bar di swift sangatlah gampang :). Oke kita langsung buka project iOS dengan xcode, project yang kita gunakan adalah project sebelum nya yang ada di artikel [sebelumnya](http://bluenik.com/13tc){:target="_blank"}.
+Sebelumnya kita telah membuat aplikasi untuk melihat list musik, akan tetapi kurang jika kita tidak menambahkan fitur search :). Oke, pada artikel ini kita akan membahas mengenai bagaimana cara membuat search :D. Mungkin artikel ini adalah artikel yang terpendek dikarenkan untuk membuat sebuah search bar di swift sangatlah gampang :). Oke kita langsung buka project iOS dengan xcode, project yang kita gunakan adalah project sebelum nya yang ada di artikel [sebelumnya](https://rizkimufrizal.github.io/belajar-ios-bagian-2/){:target="_blank"}.
 
 Untuk membuat search bar silahkan buka file `ViewController`, kemudian deklarasikan sebuah variabel `searchBar` seperti berikut.
 
@@ -201,4 +201,4 @@ Nah setelah selesai, silahkan jalankan aplikasi kalian, berikut adalah demo apli
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/khhhK9H13k8" frameborder="0" allowfullscreen></iframe>
 
-Artikel selanjutnya akan membahas mengenai bagaimana cara untuk memutar lagu :D. Untuk source code diatas dapat anda akses di [Belajar-iOS](http://babblecase.com/1APM){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 3, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
+Artikel selanjutnya akan membahas mengenai bagaimana cara untuk memutar lagu :D. Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS/tree/bagian-3){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 3, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)

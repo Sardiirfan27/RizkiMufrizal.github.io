@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Heroku Sebagai Komputasi Modern
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: heroku sebagai komputasi modern
 tags: [komptutasi modern, heroku, cloud computing, PaaS, IaaS, IaaS]

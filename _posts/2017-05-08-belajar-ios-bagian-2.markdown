@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar iOS Bagian 2
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories:
 description: Belajar iOS Bagian 2
 tags: [Swift, iOS, Xcode, alamofire, RxSwift, ObjectMapper]
@@ -12,7 +12,7 @@ share: true
 date: 2017-05-08T20:15:28+07:00
 ---
 
-Hy jumpa lagi :D, artikel ini merupakan kelanjutan dari artikel [sebelumnya](http://atominik.com/1XUG){:target="_blank"}. Pada bagian kedua ini kita akan mencoba membuat hingga tahap menampilkan data :). Berikut adalah tahapan development yang akan kita lakukan.
+Hy jumpa lagi :D, artikel ini merupakan kelanjutan dari artikel [sebelumnya](https://rizkimufrizal.github.io/belajar-ios-bagian-1/){:target="_blank"}. Pada bagian kedua ini kita akan mencoba membuat hingga tahap menampilkan data :). Berikut adalah tahapan development yang akan kita lakukan.
 
 * Apa Itu Storyboards, xib dan auto layout ?
 * Membuat View Dan Navigation
@@ -85,7 +85,7 @@ Tahap selanjutnya, silahkan ikuti tutorial berikut untuk main storyboard.
 
 ## Membuat Service Dengan RxSwift Dan Alamofire
 
-Pada bagian ini, kita akan membuat service. Biasanya service disini saya gunakan untuk melakukan request data ke API. Untuk melakukan request data, kita akan menggunakan [Alamofire](http://pintient.com/qcV){:target="_blank"}. Untuk melakukan parsing json ke object swift biasanya saya menggunakan [ObjectMapper](http://pintient.com/qch){:target="_blank"}. Untuk membuat aplikasi suatu event request yang asynchronous maka kita gunakan [RxSwift](http://pintient.com/qcy){:target="_blank"}, bagi anda yang ingin memperdalam tentang reactivex silahkan baca di [ReactiveX](http://pintient.com/qd6){:target="_blank"}.
+Pada bagian ini, kita akan membuat service. Biasanya service disini saya gunakan untuk melakukan request data ke API. Untuk melakukan request data, kita akan menggunakan [Alamofire](https://github.com/Alamofire/Alamofire){:target="_blank"}. Untuk melakukan parsing json ke object swift biasanya saya menggunakan [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper){:target="_blank"}. Untuk membuat aplikasi suatu event request yang asynchronous maka kita gunakan [RxSwift](https://github.com/ReactiveX/RxSwift){:target="_blank"}, bagi anda yang ingin memperdalam tentang reactivex silahkan baca di [ReactiveX](http://reactivex.io/){:target="_blank"}.
 
 Silahkan buat sebuah group dengan nama `services` lalu buatlah sebuah file swift dengan nama `TrackService` di dalam group service tersebut. Lalu isikan kodingan seperti berikut.
 
@@ -341,4 +341,4 @@ Jika telah selesai, silahkan jalankan project nya, jika berhasil maka anda dapat
 
 ![Screen Shot 2017-05-01 at 1.16.04 AM.png](../images/Screen Shot 2017-05-01 at 1.16.04 AM.png)
 
-Artikel selanjutnya akan membahas mengenai bagaimana cara membuat search bar :). Untuk source code diatas dapat anda akses di [Belajar-iOS](http://pintient.com/qsg){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 2, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)
+Artikel selanjutnya akan membahas mengenai bagaimana cara membuat search bar :). Untuk source code diatas dapat anda akses di [Belajar-iOS](https://github.com/RizkiMufrizal/Belajar-iOS/tree/bagian-2){:target="_blank"}. Sekian artikel mengenai Belajar iOS bagian 2, jika ada saran dan komentar silahkan isi dibawah dan terima kasih :)

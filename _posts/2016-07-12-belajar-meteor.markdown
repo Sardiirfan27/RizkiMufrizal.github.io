@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Meteor
-modified:
+modified: 2017-06-3T20:15:28+07:00
 categories: 
 description: belajar meteor
 tags: [meteor, blaze, angular js, angular 2, react, collection, mongodb, openshift, heroku]
@@ -16,9 +16,9 @@ Beberapa hari yang lalu, penulis iseng - iseng lihat sebuah framework node js ya
 
 ## Apa Itu Meteor ?
 
->>[Meteor](http://adf.ly/1lPOFW){:target="_blank"} adalah sebuah platform yang dibangun di atas Node JS untuk membuat aplikasi web real-time.
+>>[Meteor](https://www.meteor.com/) adalah sebuah platform yang dibangun di atas Node JS untuk membuat aplikasi web real-time.
 
-Karena meteor dibangun diatas node js maka kita dapat membuat aplikasi server dan client. Meteor js mendukung beberapa templating yang dapat kita gunakan yaitu [Blaze](http://adf.ly/1lPOF2){:target="_blank"}, [Angular js (1)](http://adf.ly/1lPM8i){:target="_blank"}, [Angular 2](http://adf.ly/1lPOED){:target="_blank"} dan [React](http://adf.ly/1lPM8D){:target="_blank"}. Pada artikel kali ini, penulis akan mencoba membahas mengenai templating blaze, mengapa demikian ? dikarenakan jika anda menggunakan templating seperti angular js maka anda wajib mengerti terlebih dahulu cara kerja angular js :D. Mulai dari server hingga client, kita akan menggunakan bahasa pemrograman javascript, dan javascript yang akan kita gunakan adalah ES6, tapi browser kita masih menggunakan ES5 gimana dong ? tidak perlu khawatir karena meteor akan secara otomatis melakukan convert dari ES6 menjadi ES5.
+Karena meteor dibangun diatas node js maka kita dapat membuat aplikasi server dan client. Meteor js mendukung beberapa templating yang dapat kita gunakan yaitu [Blaze](https://guide.meteor.com/blaze.html), [Angular js (1)](https://angularjs.org/), [Angular 2](https://angular.io/) dan [React](https://facebook.github.io/react/). Pada artikel kali ini, penulis akan mencoba membahas mengenai templating blaze, mengapa demikian ? dikarenakan jika anda menggunakan templating seperti angular js maka anda wajib mengerti terlebih dahulu cara kerja angular js :D. Mulai dari server hingga client, kita akan menggunakan bahasa pemrograman javascript, dan javascript yang akan kita gunakan adalah ES6, tapi browser kita masih menggunakan ES5 gimana dong ? tidak perlu khawatir karena meteor akan secara otomatis melakukan convert dari ES6 menjadi ES5.
 
 ## Instalasi Meteor Dan Setup Project
 
@@ -28,7 +28,7 @@ Jika anda penggunakan keluarga GNU/Linux maka bersyukurlah karena instalasi mete
 curl https://install.meteor.com/ | sh
 {% endhighlight %}
 
-Bagi anda pengguna windows silahkan download installernya di [install meteor](http://adf.ly/1lPODJ){:target="_blank"}. Jika berhasil, maka akan muncul output seperti berikut.
+Bagi anda pengguna windows silahkan download installernya di [install meteor](https://www.meteor.com/install). Jika berhasil, maka akan muncul output seperti berikut.
 
 ![Screenshot from 2016-07-11 21-30-30.png](../images/Screenshot from 2016-07-11 21-30-30.png)
 
@@ -62,7 +62,7 @@ Silahkan akses `http://localhost:3000/` pada browser anda, jika berhasil maka ak
 
 ## Menambah Package Dan Mengatur Tampilan
 
-Meteor telah menyediakan banyak package, package yang anda perlukan dapat anda temukan di [Atmosphere](http://adf.ly/1lPOCW){:target="_blank"}. Pada artikel kali ini, kita akan mencoba menggunakan bootstrap 4 untuk memperindah tampilannya, karena bootstrap 4 masih alpha maka mereka masih banyak menggunakan scss sebagai css preprocessor mereka. Untuk dapat menggunakan package [sass](http://adf.ly/1lPOCB){:target="_blank"}, silahkan akses folder project anda kembali lalu jalankan perintah berikut untuk menghapus standard minifier css.
+Meteor telah menyediakan banyak package, package yang anda perlukan dapat anda temukan di [Atmosphere](https://atmospherejs.com/). Pada artikel kali ini, kita akan mencoba menggunakan bootstrap 4 untuk memperindah tampilannya, karena bootstrap 4 masih alpha maka mereka masih banyak menggunakan scss sebagai css preprocessor mereka. Untuk dapat menggunakan package [sass](https://atmospherejs.com/fourseven/scss), silahkan akses folder project anda kembali lalu jalankan perintah berikut untuk menghapus standard minifier css.
 
 {% highlight bash %}
 meteor remove standard-minifier-css
@@ -304,9 +304,9 @@ Nah disini kita mendeklarasikan event submit untuk id `form-kirim-pesan`, kemudi
 
 ## Deploy Aplikasi Meteor Ke OpenShift
 
-Melakukan deploy aplikasi meteor merupakan sesuatu yang lumayan susah, mengapa demikian ? dikarenakan beberapa hosting tidak menyediakan support untuk meteor. Penulis beberapa kali mencari referensi, termasuk ke heroku akan tetapi repository yang dapat kita gunakan rata - rata masih belum mendukung meteor 1.3, ada yang mendukung tapi kita diwajibkan untuk melakukan verifikasi kartu kredit. Akhirnya, setelah lama mencari referensi, [OpenShift](http://adf.ly/1lPOAw){:target="_blank"} merupakan pilihan yang tepat karena didukung oleh repository dan ketersediaan database mongodb :D. Bagi anda yang belum melakukan konfigurasi OpenShift bisa dilihat di artikel [belajar membuat cloud storage dengan owncloud](http://adf.ly/1lPOAW){:target="_blank"}.
+Melakukan deploy aplikasi meteor merupakan sesuatu yang lumayan susah, mengapa demikian ? dikarenakan beberapa hosting tidak menyediakan support untuk meteor. Penulis beberapa kali mencari referensi, termasuk ke heroku akan tetapi repository yang dapat kita gunakan rata - rata masih belum mendukung meteor 1.3, ada yang mendukung tapi kita diwajibkan untuk melakukan verifikasi kartu kredit. Akhirnya, setelah lama mencari referensi, [OpenShift](https://www.openshift.com) merupakan pilihan yang tepat karena didukung oleh repository dan ketersediaan database mongodb :D. Bagi anda yang belum melakukan konfigurasi OpenShift bisa dilihat di artikel [belajar membuat cloud storage dengan owncloud](https://rizkimufrizal.github.io/belajar-membuat-cloud-storage-dengan-owncloud/).
 
-Untuk melakukan deploy project meteor ke OpenShift, kita akan menggunakan repository [meteor-openshift](http://adf.ly/1lPOAI){:target="_blank"} milik om [jeeeyul](http://adf.ly/1lPOA3){:target="_blank"}. Tahap pertama adalah, kita akan membuat cartridge baru pada OpenShift dengan perintah.
+Untuk melakukan deploy project meteor ke OpenShift, kita akan menggunakan repository [meteor-openshift](https://github.com/jeeeyul/meteor-openshift) milik om [jeeeyul](https://github.com/jeeeyul). Tahap pertama adalah, kita akan membuat cartridge baru pada OpenShift dengan perintah.
 
 {% highlight bash %}
 rhc app create belajarmeteor \
@@ -424,4 +424,4 @@ Berikut adalah output dari aplikasinya.
 
 ![Screenshot from 2016-07-12 02-42-28.png](../images/Screenshot from 2016-07-12 02-42-28.png)
 
-Aplikasi chat sederhana dapat anda akses di [aplikasi chat](http://adf.ly/1lPO8y){:target="_blank"}. Untuk source code nya silahkan lihat di [belajar meteor](http://adf.ly/1lPO8S){:target="_blank"}. Sekian artikel mengenai belajar meteor dan terima kasih :)
+Aplikasi chat sederhana dapat anda akses di https://belajarmeteor-mufrizal.rhcloud.com/. Untuk source code nya silahkan lihat di [belajar meteor](https://github.com/RizkiMufrizal/Belajar-Meteor). Sekian artikel mengenai belajar meteor dan terima kasih :)
