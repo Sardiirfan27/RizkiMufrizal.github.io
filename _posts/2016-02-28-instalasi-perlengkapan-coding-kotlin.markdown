@@ -208,7 +208,7 @@ package com.rizki.mufrizal.belajarKotlin
 open class Belajar
 
     fun hello(nama: String): String {
-        return "hello " + nama
+        return "hello $nama"
     }
 
     fun main(args : Array<String>) {
