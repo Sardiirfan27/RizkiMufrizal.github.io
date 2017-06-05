@@ -9,7 +9,7 @@ image:
   background: abstract-2.png
 comments: true
 share: true
-date: 2017-06-3T20:15:28+07:00
+date: 2017-06-5T20:15:28+07:00
 ---
 
 Pada artikel [instalasi perlengkapan coding kotlin](https://rizkimufrizal.github.io/instalasi-perlengkapan-coding-kotlin/), penulis telah membahas sedikit mengenai bagaimana cara instalasi kotlin dengan sdkman. Oke, pada artikel ini, penulis akan membahas mengenai dasar - dasar dari bahasa pemrograman kotlin. Project yang akan kita buat adalah berbasis gradle, jika anda pengguna linux dan windows silahkan ikutin tutorial langsung dari websitenya [disini](https://gradle.org/install). Untuk penggunakan OSX, anda dapat melakukan instalasi dengan bantuan [Homebrew](https://brew.sh/) seperti berikut.
