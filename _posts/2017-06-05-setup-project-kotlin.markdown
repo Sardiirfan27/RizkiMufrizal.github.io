@@ -3,7 +3,7 @@ layout: post
 title: Setup Project Kotlin
 modified:
 categories:
-description: Belajar API Gateway
+description: Setup Project Kotlin
 tags: [Kotlin, Jetbrains, IntelliJ IDEA, gradle]
 image:
   background: abstract-2.png
