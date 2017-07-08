@@ -178,7 +178,7 @@ token_policies 	[root]
 
 Biasanya token yang digunakan adalah `09cb9604-f9df-c3bc-6e0c-dc1d3bd3a1fc`. Setiap bahasa pemrograman memiliki library tersendiri untuk dapat mengakses vault, silahkan lihat list library tersebut [disini](https://www.vaultproject.io/api/libraries.html).
 
-## Implementasi Akses Vault Dengan Spring
+## Implementasi Akses Vault Dengan Spring Framework
 
 Pada artikel ini, penulis akan melakukan implementasi dengan menggunakan [Spring Vault](http://projects.spring.io/spring-vault/). Silahkan buat sebuah project spring boot melalui [Spring Initializr](https://start.spring.io/), Silahkan isikan property menjadi seperti berikut.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar OAuth2
-modified: 2017-06-3T20:15:28+07:00
+modified: 2017-06-19T20:15:28+07:00
 categories:
 description: Belajar OAuth2
 tags: [Authentication, Authorization, OAuth2, Open Authorization]
@@ -114,9 +114,10 @@ Best practice yang saya buat pada artikel ini berasal dari flow teknologi [Sprin
 Strategi yang biasanya saya gunakan jika menggunakan Spring OAuth2 :
 
 * Authorization dan Resource server berada di dalam 1 war / aplikasi, contoh ini biasanya menggunakan in memory token sehingga antara Authorization dan Resource server biasanya saling bekerja sama.
-* Authorization dan Resource server berada pada server yang berbeda atau dapat dikatakan bahwa mereka berbeda war / aplikasi. Untuk metode ini, kita mempunyai 2 strategi yaitu :
+* Authorization dan Resource server berada pada server yang berbeda atau dapat dikatakan bahwa mereka berbeda war / aplikasi. Untuk metode ini, kita mempunyai 3 strategi yaitu :
   - Remote token service, dimana Authorization server akan menggunakan in memory token, resource server akan melakukan pengecekan melalui protokol http apakah token valid atau invalid.
   - Sharing database, biasanya saya akan menggunakan strategi ini, mengapa demikian ? dikarenakan saya biasanya ingin agar data seperti grant type, expired token dan lain nya dapat berjalan secara dinamis sehingga kita tidak perlu ribet untuk mengubah codingan lagi. Schema OAuth2 pada Spring OAuth2 dapat anda lihat di [schema sql](https://github.com/spring-projects/spring-security-oauth/blob/master/spring-security-oauth2/src/test/resources/schema.sql) atau anda dapat menggunakan schema yang saya gunakan di [schema sql](https://github.com/RizkiMufrizal/Spring-OAuth2-Custom/blob/master/src/main/resources/db/migration/V0.0.1.20170207__Skema%20Awal.sql).
+  - Http Session Redis, pada strategi ini biasanya antara resource dan authorization server akan melakukan koneksi ke redis, dimana semua token akan disimpan ke redis. Apabila resource server akan diakses, resource server akan melakkan pengecekan pada redis. Jika anda menggunakan spring maka anda dapat menggunakan [Spring Session](http://projects.spring.io/spring-session/). Ketika anda melakukan authentication, jika credential anda sesuai maka token akan disimpan ke redis, ketika token tersebut expired maka token tersebut akan dihapus dari redis.
 
 ### Penggunaan Token
 
