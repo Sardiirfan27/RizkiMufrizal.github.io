@@ -24,7 +24,9 @@ Untuk melakukan integrasi dari satu proses dengan proses lain misalnya seperti t
 1. Continuous Deployment adalah proses deployment yang dijalankan secara otomatis mulai dari testing, building hingga deployment ke server production
 2. Continuous Delivery adalah proses deployment yang dijalankan secara otomatis mulai dari testing, building, akan tetapi untuk proses deployment akan dilakukan secara manual. Biasanya yang melakukan deployment ke server production adalah manager IT yang tertinggi untuk memastikan aplikasi berjalan lancar.
 
-Pada artikel ini, penulis akan membahas bagaimana cara melakukan integrasi gitlab (git server) dengan jenkins. Source code yang telah di push ke gitlab nantinya akan diclone di jenkins server lalu dilakukan testing, jika sukses maka source code akan di deploy ke server production, dalam artikel ini penulis akan mencoba melakukan deployment otomatis ke heroku.
+Pada artikel ini, penulis akan membahas bagaimana cara melakukan integrasi gitlab (git server) dengan jenkins. Source code yang telah di push ke gitlab nantinya akan diclone di jenkins server lalu dilakukan testing, jika sukses maka source code akan di deploy ke server production, dalam artikel ini penulis akan mencoba melakukan deployment otomatis ke heroku. Berikut adalah arsitektur yang akan penulis gunakan untuk membuat Continuous Deployment dengan menggunakan docker, gitlab dan jenkins.
+
+![Flow Gitlab Jenkins.svg](../images/Flow Gitlab Jenkins.svg)
 
 ## Setup Docker Compose
 
