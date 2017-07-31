@@ -15,14 +15,13 @@ date: 2017-08-01T20:15:28+07:00
 Setelah melewati proses development aplikasi, maka tahap berikutnya adalah melakukan deployment aplikasi ke server yang dituju. Sebelum melakukan deployment, maka aplikasi wajib dilakukan testing terlebih dahulu. Proses seperti testing, building dan deployment sebenarnya dapat dijalankan secara otomatis dengan menggunakan tool automated deployment misalnya seperti :
 
 * [Jenkins](https://jenkins.io/)
-* [ElectricFlow](http://electric-cloud.com/products/electricflow/)
-* [DeployBot](https://deploybot.com/)
-* [Shippable](https://app.shippable.com/)
+* [Travis CI](https://travis-ci.org/)
+* [CodeShip](https://codeship.com/)
 * [TeamCity](https://www.jetbrains.com/teamcity/)
 
-Untuk melakukan deployment secara otomatis, terdapat 2 jenis tahapan yang dapat kita gunakan yaitu :
+Untuk melakukan integrasi dari satu proses dengan proses lain misalnya seperti testing kemudian menjalankan building lalu mendeploy, dalam hal ini sering disebut dengan Continuous Integration. Di dalam proses Continuous Integration, terdapat 2 jenis yaitu :
 
-1. Continuous Integration adalah proses deployment yang dijalankan secara otomatis mulai dari testing, building hingga deployment ke server production
+1. Continuous Deployment adalah proses deployment yang dijalankan secara otomatis mulai dari testing, building hingga deployment ke server production
 2. Continuous Delivery adalah proses deployment yang dijalankan secara otomatis mulai dari testing, building, akan tetapi untuk proses deployment akan dilakukan secara manual. Biasanya yang melakukan deployment ke server production adalah manager IT yang tertinggi untuk memastikan aplikasi berjalan lancar.
 
 Pada artikel ini, penulis akan membahas bagaimana cara melakukan integrasi gitlab (git server) dengan jenkins. Source code yang telah di push ke gitlab nantinya akan diclone di jenkins server lalu dilakukan testing, jika sukses maka source code akan di deploy ke server production, dalam artikel ini penulis akan mencoba melakukan deployment otomatis ke heroku.
