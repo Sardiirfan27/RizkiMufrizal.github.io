@@ -9,7 +9,7 @@ image:
   background: abstract-2.png
 comments: true
 share: true
-date: 2017-08-01T20:15:28+07:00
+date: 2017-08-14T20:15:28+07:00
 ---
 
 Pada artikel [sebelumnya](https://rizkimufrizal.github.io/setup-project-angular-4/), penulis telah membahas mengenai bagaimana cara setup project angular 4. Pada artikel ini, penulis akan membahas mengenai bagaimana cara membuat routing pada angular 4.
