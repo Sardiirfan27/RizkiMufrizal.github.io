@@ -38,7 +38,7 @@ timezone:    Asia/Jakarta
 future:      true
 highlighter: rouge
 markdown:    kramdown
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
