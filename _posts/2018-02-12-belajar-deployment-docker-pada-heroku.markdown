@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Deployment Docker Pada Heroku
-modified:
+modified: 2018-02-14T20:15:28+07:00
 categories:
 description: Belajar Deployment Docker Pada Heroku
 tags: [docker, deployment, heroku, java, spring]
@@ -344,7 +344,19 @@ Nantinya akan muncul seperti berikut.
 
 ![Screen Shot 2018-02-11 at 11.09.29 PM.png](../images/Screen Shot 2018-02-11 at 11.09.29 PM.png)
 
-Lalu silahkan akses folder `heroku-docker` melalui terminal lalu jalankan perintah berikut untuk melakukan deploy ke heroku. Perintah berikut menggunakan `heroku-cli`, silahkan lihat cara instalasi `heroku-cli` di [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
+Lalu silahkan akses folder `heroku-docker` melalui terminal lalu jalankan perintah berikut untuk melakukan login ke heroku.
+
+{% highlight bash %}
+heroku login
+{% endhighlight %}
+
+silahkan isikan email dan password anda, lalu login ke registry docker heroku dengan perintah
+
+{% highlight bash %}
+heroku container:login
+{% endhighlight %}
+
+Kemudian untuk melakukan deploy ke heroku, silakan jalankan perintah berikut. Perintah berikut menggunakan `heroku-cli`, silahkan lihat cara instalasi `heroku-cli` di [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
 
 {% highlight bash %}
 heroku container:push web --app heroku-docker
