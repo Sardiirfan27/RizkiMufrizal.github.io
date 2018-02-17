@@ -2,7 +2,7 @@
 layout: post
 title: Belajar Docker
 modified: 2017-06-3T20:15:28+07:00
-categories: 
+categories:
 description: belajar docker
 tags: [docker, docker compose, docker image, docker container, vagrant, sails js, node js, mariadb, arsitektur docker]
 image:
@@ -59,25 +59,28 @@ sudo apt update
 Kemudian lakukan update CA certificates dengan perintah.
 
 {% highlight bash %}
-sudo apt-get install apt-transport-https ca-certificates
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
 {% endhighlight %}
 
 Kemudian tambahkan GPG key dengan perintah.
 
 {% highlight bash %}
-sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 {% endhighlight %}
 
-Silahkan buat file `docker.list` dengan perintah.
+Lalu silahkan lakukan verifikasi fingerprint dengan perintah
 
 {% highlight bash %}
-sudo gedit /etc/apt/sources.list.d/docker.list
+sudo apt-key fingerprint 0EBFCD88
 {% endhighlight %}
 
-Karena penulis menggunakan ubuntu 16.04 LTS maka silahkan tambahkan repository berikut.
+Jika berhasil maka akan muncul output seperti berikut
 
 {% highlight bash %}
-deb https://apt.dockerproject.org/repo ubuntu-xenial main
+pub   4096R/0EBFCD88 2017-02-22
+      Key fingerprint = 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+uid                  Docker Release (CE deb) <docker@docker.com>
+sub   4096R/F273FCD8 2017-02-22
 {% endhighlight %}
 
 Kemudian silahkan lakukan update kembali dengan perintah.
@@ -95,13 +98,7 @@ sudo apt purge lxc-docker
 Lalu silahkan jalankan perintah berikut untuk melakukan instalasi docker.
 
 {% highlight bash %}
-sudo apt install docker-engine
-{% endhighlight %}
-
-Kemudian kita akan menjalankan service docker dengan perintah.
-
-{% highlight bash %}
-sudo systemctl start docker
+sudo apt install docker-ce
 {% endhighlight %}
 
 lalu lakukan pengecekan status service docker dengan perintah.
@@ -126,7 +123,7 @@ kemudian tambahkan user ke docker group dengan perintah.
 sudo usermod -aG docker rizki
 {% endhighlight %}
 
-silahkan ganti `rizki` dengan user linux anda. Kita akan melakukan test docker dengan perintah.
+silahkan ganti `rizki` dengan user linux anda. Lalu silahkan restart komputer anda. Kita akan melakukan test docker dengan perintah.
 
 {% highlight bash %}
 docker run hello-world
@@ -153,7 +150,7 @@ sudo -s
 kemudian jalankan perintah berikut.
 
 {% highlight bash %}
-curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 {% endhighlight %}
 
 Setelah selesai lalu beri hak akses eksekusi dengan perintah.
@@ -177,7 +174,7 @@ docker-compose -version
 Jika berhasil maka akan muncul output seperti berikut.
 
 {% highlight bash %}
-docker-compose version 1.8.0, build f3628c7
+docker-compose version 1.19.0, build 9e633ef
 {% endhighlight %}
 
 ## Latihan Sails JS dengan Docker
