@@ -83,6 +83,12 @@ uid                  Docker Release (CE deb) <docker@docker.com>
 sub   4096R/F273FCD8 2017-02-22
 {% endhighlight %}
 
+Lalu tambahan repo docker seperti berikut
+
+{% highlight bash %}
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+{% endhighlight %}
+
 Kemudian silahkan lakukan update kembali dengan perintah.
 
 {% highlight bash %}
