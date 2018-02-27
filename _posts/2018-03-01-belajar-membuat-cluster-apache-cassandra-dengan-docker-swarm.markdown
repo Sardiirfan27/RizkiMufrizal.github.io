@@ -58,6 +58,11 @@ Pada artikel ini, penulis akan menggunakan vagrant untuk virtualisasi 2 server, 
 
 {% highlight bash %}
 Vagrant.configure("2") do |config|
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 3072
+  end
+
   config.vm.define "master" do |master|
     master.vm.box = "centos/7"
     master.vm.hostname = 'master'
@@ -186,172 +191,170 @@ ID diatas dapat dilihat dengan perintah menampilkan semua node yang telah kita l
 Langkah selanjutnya, kita akan membuat sebuah file yaitu `docker-compose.yml`, isinya sama seperti konfigurasi docker compose hanya saja terdapat penambahan untuk kebutuhan docker swarm, silahkan buat file `docker-compose.yml` di dalam server master, lalu tambahkan code berikut.
 
 {% highlight yaml %}
-version: '3.1'
+version: '3'
 services:
   cassandra_dc_1:
-    hostname: cassandra_dc_1
     image: cassandra:latest
     command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 0; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9042:9042"
     deploy:
       placement:
         constraints:
           - node.labels.server == master
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dc_1
       CASSANDRA_SEEDS: cassandra_dc_1,cassandra_dr_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dc_1
-      CASSANDRA_RPC_ADDRESS: cassandra_dc_1
       CASSANDRA_DC: DC
       CASSANDRA_RACK: RACK1
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dc_1
+      default:
 
   cassandra_dc_2:
-    hostname: cassandra_dc_2
     image: cassandra:latest
     command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 120; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9142:9042"
     deploy:
       placement:
         constraints:
           - node.labels.server == master
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dc_2
       CASSANDRA_SEEDS: cassandra_dc_1,cassandra_dr_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dc_2
-      CASSANDRA_RPC_ADDRESS: cassandra_dc_2
       CASSANDRA_DC: DC
       CASSANDRA_RACK: RACK2
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    depends_on:
+      - cassandra_dc_1
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dc_2
+      default:
 
   cassandra_dc_3:
-    hostname: cassandra_dc_3
     image: cassandra:latest
-    command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 180; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9242:9042"
+    command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 240; fi && /docker-entrypoint.sh cassandra -f'
     deploy:
       placement:
         constraints:
           - node.labels.server == master
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dc_3
       CASSANDRA_SEEDS: cassandra_dc_1,cassandra_dr_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dc_3
-      CASSANDRA_RPC_ADDRESS: cassandra_dc_3
       CASSANDRA_DC: DC
       CASSANDRA_RACK: RACK3
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    depends_on:
+      - cassandra_dc_2
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dc_3
+      default:
 
   cassandra_dr_1:
-    hostname: cassandra_dr_1
     image: cassandra:latest
     command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 60; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9342:9042"
     deploy:
       placement:
         constraints:
           - node.labels.server == worker
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dr_1
       CASSANDRA_SEEDS: cassandra_dr_1,cassandra_dc_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dr_1
-      CASSANDRA_RPC_ADDRESS: cassandra_dr_1
       CASSANDRA_DC: DR
       CASSANDRA_RACK: RACK1
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    depends_on:
+      - cassandra_dc_1
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dr_1
+      default:
 
   cassandra_dr_2:
-    hostname: cassandra_dr_2
     image: cassandra:latest
-    command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 240; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9442:9042"
+    command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 180; fi && /docker-entrypoint.sh cassandra -f'
     deploy:
       placement:
         constraints:
           - node.labels.server == worker
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dr_2
       CASSANDRA_SEEDS: cassandra_dr_1,cassandra_dc_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dr_2
-      CASSANDRA_RPC_ADDRESS: cassandra_dr_2
       CASSANDRA_DC: DR
       CASSANDRA_RACK: RACK2
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    depends_on:
+      - cassandra_dr_1
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dr_2
+      default:
 
   cassandra_dr_3:
-    hostname: cassandra_dr_3
     image: cassandra:latest
     command: bash -c 'if [ -z "$$(ls -A /var/lib/cassandra/)" ] ; then sleep 300; fi && /docker-entrypoint.sh cassandra -f'
-    ports:
-      - "9542:9042"
     deploy:
       placement:
         constraints:
           - node.labels.server == worker
       restart_policy:
         condition: on-failure
-    environment: 
+        max_attempts: 3
+        window: 120s
+    environment:
       CASSANDRA_CLUSTER_NAME: "CassandraCluster"
+      CASSANDRA_BROADCAST_ADDRESS: cassandra_dr_3
       CASSANDRA_SEEDS: cassandra_dr_1,cassandra_dc_1
-      CASSANDRA_LISTEN_ADDRESS: cassandra_dr_3
-      CASSANDRA_RPC_ADDRESS: cassandra_dr_3
       CASSANDRA_DC: DR
       CASSANDRA_RACK: RACK3
       CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
-      MAX_HEAP_SIZE: 1G
-      HEAP_NEWSIZE: 400m
+      MAX_HEAP_SIZE: 300m
+      HEAP_NEWSIZE: 200m
+    depends_on:
+      - cassandra_dr_2
+    ports:
+    - "7000"
     networks:
-      main:
-        aliases:
-          - cassandra_dr_3
+      default:
 
 networks:
-  main:
+  default:
 {% endhighlight %}
 
 Setelah selesai, silahkan jalankan perintah berikut untuk melakukan pull image cassandra terlebih dahulu.
@@ -370,4 +373,64 @@ Jika berhasil, silahkan cek service nya dengan perintah
 
 {% highlight bash %}
 docker service ls
+{% endhighlight %}
+
+Maka akan muncul output seperti berikut
+
+{% highlight bash %}
+ID                  NAME                       MODE                REPLICAS            IMAGE               PORTS
+hx95sgod38ip        cassandra_cassandra_dc_1   replicated          1/1                 cassandra:latest    *:30020->7000/tcp
+n3dbljgnptsj        cassandra_cassandra_dc_2   replicated          1/1                 cassandra:latest    *:30021->7000/tcp
+tdqtwh7eaib3        cassandra_cassandra_dc_3   replicated          1/1                 cassandra:latest    *:30016->7000/tcp
+l69lcdacvnnw        cassandra_cassandra_dr_1   replicated          1/1                 cassandra:latest    *:30017->7000/tcp
+tgyypjfaeenf        cassandra_cassandra_dr_2   replicated          1/1                 cassandra:latest    *:30018->7000/tcp
+7ao6ubi2j7e4        cassandra_cassandra_dr_3   replicated          1/1                 cassandra:latest    *:30019->7000/tcp
+{% endhighlight %}
+
+Silahkan cek container yang sudah jalan dengan perintah
+
+{% highlight bash %}
+docker ps
+{% endhighlight %}
+
+Maka akan muncul output seperti berikut
+
+{% highlight bash %}
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                         NAMES
+305e963a4989        cassandra:latest    "docker-entrypoint.s…"   8 minutes ago       Up 8 minutes        7000-7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp   cassandra_cassandra_dc_2.1.53t1s2c5obqwwfzgenbnj3a3f
+03501ebc8870        cassandra:latest    "docker-entrypoint.s…"   8 minutes ago       Up 8 minutes        7000-7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp   cassandra_cassandra_dc_1.1.qj4nikx2x9qweqrjp5h2i644a
+16b1d316c721        cassandra:latest    "docker-entrypoint.s…"   8 minutes ago       Up 8 minutes        7000-7001/tcp, 7199/tcp, 9042/tcp, 9160/tcp   cassandra_cassandra_dc_3.1.f3fesq271jnpky0zw1la4vdhy
+{% endhighlight %}
+
+Cari `NAMES` yang memiliki nama `cassandra_cassandra_dc_1`, misalnya jika dilihat dari atas, kita menemukan nya di `cassandra_cassandra_dc_1.1.qj4nikx2x9qweqrjp5h2i644a`. Lalu silahkan akses container tersebut dengan perintah.
+
+{% highlight bash %}
+docker exec -it 03501ebc8870 /bin/bash
+{% endhighlight %}
+
+Lalu jalankan perintah berikut untuk mengecek cluster cassandra
+
+{% highlight bash %}
+nodetool status
+{% endhighlight %}
+
+Jika berhasil maka akan muncul output seperti berikut.
+
+{% highlight bash %}
+Datacenter: DC
+==============
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  10.0.0.67  92.35 KiB  256          31.5%             a5c66734-eb77-4c2c-9555-7b6de6d61529  RACK1
+UN  10.0.0.69  75.05 KiB  256          34.2%             4a1db9a3-8a29-4da7-9fce-809ef056a35c  RACK2
+UN  10.0.0.59  74.99 KiB  256          35.2%             0e12bb91-91db-4344-b532-1ca01a0e36df  RACK3
+Datacenter: DR
+==============
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  10.0.0.61  69.93 KiB  256          33.1%             d07abb28-c4ce-4b49-b322-0aed46324adc  RACK1
+UN  10.0.0.63  69.93 KiB  256          34.9%             697e25ba-0e1f-4e8b-ba65-d7fa0c8c98b1  RACK2
+UN  10.0.0.65  74.98 KiB  256          31.2%             3c28cce9-7514-4a54-97ca-97a063ecdd06  RACK3
 {% endhighlight %}
