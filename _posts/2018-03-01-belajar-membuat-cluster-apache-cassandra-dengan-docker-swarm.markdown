@@ -434,3 +434,5 @@ UN  10.0.0.61  69.93 KiB  256          33.1%             d07abb28-c4ce-4b49-b322
 UN  10.0.0.63  69.93 KiB  256          34.9%             697e25ba-0e1f-4e8b-ba65-d7fa0c8c98b1  RACK2
 UN  10.0.0.65  74.98 KiB  256          31.2%             3c28cce9-7514-4a54-97ca-97a063ecdd06  RACK3
 {% endhighlight %}
+
+Sekian artikel mengenai Belajar Membuat Cluster Apache Cassandra Dengan Docker Swarm dan terima kasih :).
