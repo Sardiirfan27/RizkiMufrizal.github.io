@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Belajar Docker
-modified: 2017-06-3T20:15:28+07:00
+modified: 2018-03-01T20:15:28+07:00
 categories:
 description: belajar docker
 tags: [docker, docker compose, docker image, docker container, vagrant, sails js, node js, mariadb, arsitektur docker]
@@ -42,7 +42,7 @@ Docker images adalah sebuah template yang bersifat read only. Template ini seben
 
 ### Docker Container
 
-Docker container bisa dikatakan sebagai sebuah folder, dimana docker container ini dibuat dengan menggunakan docker container. Setiap docker container disimpan maka akan terbentuk layer baru tepat diatas docker images atau base image diatasnya. Contohnya misalkan kita menggunakan image ubuntu, kemudian kita membuat sebuah container dari image ubuntu tersebut dengan nama ubuntuku, kemudian kita lakukan instalasi sebuah software misalnya nginx maka secara otomatis container ubuntuku akan berada diatas layer image atau base image ubuntu. Anda dapat membuat banyak docker container dari 1 docker images. Docker container ini nantinya dapat dibuild sehingga akan menghasilkan sebuah docker images, dan docker images yang dihasilkan dari docker container ini dapat kita gunakan kembali untuk membuat docker container yang baru.
+Docker container bisa dikatakan sebagai sebuah folder, dimana docker container ini dibuat dengan menggunakan docker daemon. Setiap docker container disimpan maka akan terbentuk layer baru tepat diatas docker images atau base image diatasnya. Contohnya misalkan kita menggunakan image ubuntu, kemudian kita membuat sebuah container dari image ubuntu tersebut dengan nama ubuntuku, kemudian kita lakukan instalasi sebuah software misalnya nginx maka secara otomatis container ubuntuku akan berada diatas layer image atau base image ubuntu. Anda dapat membuat banyak docker container dari 1 docker images. Docker container ini nantinya dapat dibuild sehingga akan menghasilkan sebuah docker images, dan docker images yang dihasilkan dari docker container ini dapat kita gunakan kembali untuk membuat docker container yang baru.
 
 ### Docker Registry
 
