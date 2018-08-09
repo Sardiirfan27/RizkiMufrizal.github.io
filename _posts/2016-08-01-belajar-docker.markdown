@@ -156,7 +156,7 @@ sudo -s
 kemudian jalankan perintah berikut.
 
 {% highlight bash %}
-curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 {% endhighlight %}
 
 Setelah selesai lalu beri hak akses eksekusi dengan perintah.
@@ -180,7 +180,7 @@ docker-compose -version
 Jika berhasil maka akan muncul output seperti berikut.
 
 {% highlight bash %}
-docker-compose version 1.19.0, build 9e633ef
+docker-compose version 1.22.0, build 9e633ef
 {% endhighlight %}
 
 ## Latihan Sails JS dengan Docker
