@@ -29,10 +29,16 @@ Ruby juga memiliki berbagai framework diantaranya adalah
 
 Baiklah untuk melakukan instalasi ruby pada linux, kita menggunakan [RVM (ruby version manager)](https://rvm.io/). Berikut adalah tahapan untuk melakukan instalasi ruby pada linux.
 
-Buka terminal lalu install public key terlebih dahulu dengan perintah
+Sebelum melakukan install public key dengan gpg2, kita harus melakukan instalasi gpg2 dengan perintah
 
 {% highlight bash %}
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+sudo apt install gnupg2 -y
+{% endhighlight %}
+
+Lalu install public key dengan perintah
+
+{% highlight bash %}
+gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 {% endhighlight %}
 
 Lalu kita melakukan instalasi ruby yang paling stable dengan perintah
