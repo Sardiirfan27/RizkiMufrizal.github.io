@@ -14,7 +14,7 @@ date: 2017-06-3T20:15:28+07:00
 
 # Apa Itu API Gateway ?
 
->>API Gateway adalah merupakan gerbang dari beberapa API, bertugas sebagai management API, merge beberapa API, authentication API dan lain - lain.
+>>API Gateway merupakan gerbang dari beberapa API, bertugas sebagai management API, merge beberapa API, authentication API dan lain - lain.
 
 Berbicara mengenai API gateway maka tidak terlepas dengan pembahasan microservice. Microservice itu sendiri sebenarnya adalah kumpulan dari beberapa service atau kumpulan dari beberapa API. API ini biasanya berbentuk REST API menggunakan protokol http. Microservice sendiri sebenarnya berasal dari monolithic yang telah dipecah. Monolithic adalah aplikasi yang sehari - hari kita kembangkan, dimana semua module terdapat di dalam 1 aplikasi yang sangat besar.
 
