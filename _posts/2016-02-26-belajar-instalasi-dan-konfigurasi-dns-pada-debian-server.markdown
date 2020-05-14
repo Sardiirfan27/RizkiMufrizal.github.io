@@ -22,8 +22,8 @@ Biasanya DNS ini digunakan oleh pengguna internet dikarenakan mengingat sebuah a
 
 Untuk melakukan instalasi dan konfigurasi DNS, penulis menggunakan beberapa software diantaranya adalah :
 
-* Konfigurasi Debian 5 : berfungsi sebagai konfigurasi debian 5 pada VMware, bagi yang belum memiliki silahkan donwload di [Debian 5.rar](https://drive.google.com/folderview?id=0B0eLGkbP10_ZX1UzUGJIUTdvV0U&usp=sharing).
-* ISO Debian 5 : berfungsi sebagai sistem operasi yang akan kita gunakan, silahkan download ISO nya di [debian 5.iso](https://drive.google.com/folderview?id=0B0eLGkbP10_ZX1UzUGJIUTdvV0U&usp=sharing)
+* Konfigurasi Debian 5 : berfungsi sebagai konfigurasi debian 5 pada VMware, bagi yang belum memiliki silahkan donwload di [Debian 5.rar](https://drive.google.com/open?id=1zVvw_MH58gE3_H_7_gjtY5QQAhXehwfv).
+* ISO Debian 5 : berfungsi sebagai sistem operasi yang akan kita gunakan, silahkan download ISO nya di [debian 5.iso](https://drive.google.com/open?id=1zVvw_MH58gE3_H_7_gjtY5QQAhXehwfv)
 * VMware 12 : berfungsi sebagai virtual machine, silahkan download di [VMware](https://my.vmware.com/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/12_0)
 
 Silahkan lakukan instalasi VMware terlebih dahulu, jika telah selesai, silahkan extract file `Debian 5.rar` di sembarang tempat. Langkah selanjutnya buka VMware anda, yang anda buka adalah `VMware Workstation`, maka akan muncul halaman seperti berikut.
